@@ -1,12 +1,21 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  12 MAY 2016 21:00
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  17 MAY 2016 18:14
 entering extended mode
- \write18 enabled.
- file:line:error style messages enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
-**/università/tesi/report_latexian/TSWLatexianTemp_000007.tex
-(/università/tesi/report_latexian/TSWLatexianTemp_000007.tex
+**report_tesi_upd.tex
+(./report_tesi_upd.tex
 LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, german-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabic, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnish, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji, lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, polish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded.
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
+ icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
+iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
+ lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
+ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
+ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
+.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/size10.clo
@@ -24,22 +33,27 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/base/fontenc.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
- (/usr/local/texlive/2011/texmf-dist/tex/latex/base/t1enc.def
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-)) (/usr/local/texlive/2011/texmf-dist/tex/latex/base/inputenc.sty
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
- (/usr/local/texlive/2011/texmf-dist/tex/latex/base/utf8.def
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
- (/usr/local/texlive/2011/texmf-dist/tex/latex/base/t1enc.dfu
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -188,7 +202,8 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
- (/usr/local/texlive/2011/texmf-dist/tex/latex/base/ot1enc.dfu
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -218,7 +233,8 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
- (/usr/local/texlive/2011/texmf-dist/tex/latex/base/omsenc.dfu
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -241,11 +257,14 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-)) (/usr/local/texlive/2011/texmf-dist/tex/generic/babel/babel.sty
+))
+(/usr/local/texlive/2011/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
- (/usr/local/texlive/2011/texmf-dist/tex/generic/babel/english.ldf
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/babel/english.ldf
 Language: english 2005/03/30 v3.3o English support from the babel system
- (/usr/local/texlive/2011/texmf-dist/tex/generic/babel/babel.def
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
@@ -253,7 +272,8 @@ File: babel.def 2008/07/06 v3.8l Babel common definitions
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
-)) (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/mathptmx.sty
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/mathptmx.sty
 Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -288,18 +308,23 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/geometry/geometry.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
- (/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/keyval.sty
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
-) (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
-) (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
 Package ifvtex Info: VTeX not detected.
-) (/usr/local/texlive/2011/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count89
@@ -314,28 +339,36 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen110
 \Gm@layoutvoffset=\dimen111
 \Gm@dimlist=\toks17
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphicx.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphics.sty
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/trig.sty
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/graphics.cfg
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
- (/usr/local/texlive/2011/texmf-dist/tex/latex/pdftex-def/pdftex.def
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
- (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
-) (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count92
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/titlesec/titlesec.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2007/08/12 v2.8 Sectioning titles
 \ttl@box=\box26
 \beforetitleunit=\skip43
@@ -346,9 +379,11 @@ Package: titlesec 2007/08/12 v2.8 Sectioning titles
 \titlewidth=\dimen116
 \titlewidthlast=\dimen117
 \titlewidthfirst=\dimen118
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2010/01/09 v3.1m Customizing captions (AR)
- (/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption3.sty
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
 \captionmargin=\dimen119
 \captionmargin@=\dimen120
@@ -358,7 +393,8 @@ Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
 \caption@hangindent=\dimen124
 )
 \c@ContinuedFloat=\count93
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/subfig/subfig.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 \c@KVtest=\count94
 \sf@farskip=\skip45
@@ -373,21 +409,25 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 \c@lotdepth=\count100
 \sf@top=\skip48
 \sf@bottom=\skip49
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsmath.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
- (/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsgen.sty
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks19
 \ex@=\dimen126
-)) (/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsbsy.sty
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen127
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count101
@@ -427,15 +467,18 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup6
 \symAMSb=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/mh/mathtools.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/mh/mathtools.sty
 Package: mathtools 2011/02/12 v1.10 mathematical typesetting tools
- (/usr/local/texlive/2011/texmf-dist/tex/latex/tools/calc.sty
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count113
 \calc@Bcount=\count114
@@ -447,7 +490,8 @@ LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count115
 \calc@Cskip=\skip55
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/mh/mhsetup.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/mh/mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
 \g_MT_multlinerow_int=\count116
@@ -455,18 +499,25 @@ Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 \origjot=\skip56
 \l_MT_shortvdotswithinadjustabove_dim=\dimen138
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen139
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/tools/bm.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 LaTeX Info: Redefining \bm on input line 204.
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/morefloats/morefloats.sty
-Package: morefloats 2011/02/01 v1.0d Increase limit of unprocessed floats (HMM; DH)
- (/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/morefloats/morefloats.sty
+Package: morefloats 2011/02/01 v1.0d Increase limit of unprocessed floats (HMM;
+ DH)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
- (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
- (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
- (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -522,7 +573,8 @@ File: lettrine.sty 2007/08/08 v1.62 (Daniel Flipo)
 \LettrineWidth=\dimen151
 
 Loading lettrine.cfg
-(/usr/local/texlive/2011/texmf-dist/tex/latex/lettrine/lettrine.cfg)) (/usr/local/texlive/2011/texmf-dist/tex/latex/amscls/amsthm.sty
+(/usr/local/texlive/2011/texmf-dist/tex/latex/lettrine/lettrine.cfg))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2009/07/02 v2.20.1
 \thm@style=\toks24
 \thm@bodyfont=\toks25
@@ -533,11 +585,14 @@ Package: amsthm 2009/07/02 v2.20.1
 \thm@postskip=\skip58
 \thm@headsep=\skip59
 \dth@everypar=\toks29
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/hyperref.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2011/04/17 v6.82g Hypertext links for LaTeX
- (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
- (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -572,13 +627,15 @@ Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
 \@linkdim=\dimen152
 \Hy@linkcounter=\count120
 \Hy@pagecounter=\count121
- (/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/pd1enc.def
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2011/04/17 v6.82g Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count122
- (/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4026.
@@ -589,7 +646,8 @@ Package hyperref Info: Backreferencing OFF on input line 4046.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4264.
 \c@Hy@tempcnt=\count123
- (/usr/local/texlive/2011/texmf-dist/tex/latex/url/url.sty
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
@@ -617,12 +675,15 @@ Package hyperref Message: Driver (autodetected): hpdftex.
 File: hpdftex.def 2011/04/17 v6.82g Hyperref driver for pdfTeX
 \Fld@listcount=\count128
 \c@bookmark@seq@number=\count129
- (/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
 )
 \Hy@SectionHShift=\skip60
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/listing/listing.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/listing/listing.sty
 Package: listing 1999/05/25
 
 Package `listing', V1.2, <1999/05/25>
@@ -630,23 +691,29 @@ Package `listing', V1.2, <1999/05/25>
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks30
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/algorithms/algorithm.sty
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
- (/usr/local/texlive/2011/texmf-dist/tex/latex/float/float.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count131
 \float@exts=\toks31
 \float@box=\box31
 \@float@everytoks=\toks32
 \@floatcapt=\box32
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/base/ifthen.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks33
 \c@algorithm=\count132
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
- (/usr/local/texlive/2011/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
@@ -664,9 +731,8 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
 LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 38.
-
-No file TSWLatexianTemp_000007.aux.
-\openout1 = `TSWLatexianTemp_000007.aux'.
+ (./report_tesi_upd.aux)
+\openout1 = `report_tesi_upd.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
@@ -683,6 +749,7 @@ LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 47.
+
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -735,13 +802,267 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \everyMPtoPDFconversion=\toks35
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
- (/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/grfext.sty
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
- (/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
 ))
-Package caption Info: Begin \AtBegin
+Package caption Info: Begin \AtBeginDocument code.
+Package caption3 Info: subfig package 1.2 or 1.3 is loaded.
+LaTeX Info: Redefining \subref on input line 47.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box34
+Package hyperref Info: Link coloring OFF on input line 47.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count146
+)
+LaTeX Info: Redefining \ref on input line 47.
+LaTeX Info: Redefining \pageref on input line 47.
+LaTeX Info: Redefining \nameref on input line 47.
+
+(./report_tesi_upd.out) (./report_tesi_upd.out)
+\@outlinefile=\write3
+\openout3 = `report_tesi_upd.out'.
+
+
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 49.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 49.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 50.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 58
+.
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 58
+.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 58
+.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 58
+.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 58.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 58.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 58.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 58.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 64.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 69.
+ [1
+
+
+{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<images/ht.jpeg, id=116, 512.91624pt x 384.43625pt>
+File: images/ht.jpeg Graphic file (type jpg)
+ <use images/ht.jpeg>
+Package pdftex.def Info: images/ht.jpeg used on input line 114.
+(pdftex.def)             Requested size: 174.12701pt x 130.50714pt.
+
+<images/dht.jpeg, id=117, 540.0175pt x 417.56pt>
+File: images/dht.jpeg Graphic file (type jpg)
+ <use images/dht.jpeg>
+Package pdftex.def Info: images/dht.jpeg used on input line 120.
+(pdftex.def)             Requested size: 174.12701pt x 134.63498pt.
+ [2 <./images/ht.jpeg> <./images/dht.jpeg>]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 172.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 199.
+
+<images/robocup_robot_positions.jpeg, id=135, 703.62875pt x 407.5225pt>
+File: images/robocup_robot_positions.jpeg Graphic file (type jpg)
+
+<use images/robocup_robot_positions.jpeg>
+Package pdftex.def Info: images/robocup_robot_positions.jpeg used on input line
+ 218.
+(pdftex.def)             Requested size: 435.32422pt x 252.12656pt.
+ [3] [4 <./images/robocup_robot_positions.jpeg>] <images/robocup_alg_module.jpe
+g, id=152, 714.67pt x 317.185pt>
+File: images/robocup_alg_module.jpeg Graphic file (type jpg)
+
+<use images/robocup_alg_module.jpeg>
+Package pdftex.def Info: images/robocup_alg_module.jpeg used on input line 233.
+
+(pdftex.def)             Requested size: 435.32422pt x 193.20668pt.
+ [5 <./images/robocup_alg_module.jpeg>]
+<images/features_original_image.jpeg, id=163, 501.875pt x 335.2525pt>
+File: images/features_original_image.jpeg Graphic file (type jpg)
+
+<use images/features_original_image.jpeg>
+Package pdftex.def Info: images/features_original_image.jpeg used on input line
+ 316.
+(pdftex.def)             Requested size: 290.21367pt x 193.87364pt.
+
+<images/features_extracted_features.jpeg, id=164, 501.875pt x 331.2375pt>
+File: images/features_extracted_features.jpeg Graphic file (type jpg)
+
+<use images/features_extracted_features.jpeg>
+Package pdftex.def Info: images/features_extracted_features.jpeg used on input 
+line 322.
+(pdftex.def)             Requested size: 290.21367pt x 191.55179pt.
+ [6pdfTeX warning (ext4): destination with the same identifier (name{equation.1
+.3.23}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.329 \chapter
+              {Basic concepts}pdfTeX warning (ext4): destination with the same 
+identifier (name{equation.1.3.26}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.329 \chapter
+              {Basic concepts}] [7 <./images/features_original_image.jpeg> <./i
+mages/features_extracted_features.jpeg>]
+Chapter 2.
+[8
+
+] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 429--432
+
+ []
+
+<images/ellipses.jpeg, id=193, 778.91pt x 305.14pt>
+File: images/ellipses.jpeg Graphic file (type jpg)
+ <use images/ellipses.jpeg>
+Package pdftex.def Info: images/ellipses.jpeg used on input line 458.
+(pdftex.def)             Requested size: 435.32422pt x 170.53732pt.
+
+[10]
+<images/unidirectional_nominal_path.jpeg, id=202, 456.70625pt x 362.35374pt>
+File: images/unidirectional_nominal_path.jpeg Graphic file (type jpg)
+
+<use images/unidirectional_nominal_path.jpeg>
+Package pdftex.def Info: images/unidirectional_nominal_path.jpeg used on input 
+line 501.
+(pdftex.def)             Requested size: 241.84843pt x 191.88069pt.
+ [11 <./images/ellipses.jpeg>]
+[12 <./images/unidirectional_nominal_path.jpeg>] [13]pdfTeX warning (ext4): des
+tination with the same identifier (name{equation.2.5.12}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.573 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.2.5.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.573 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.2.5.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.573 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.2.5.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.573 \begin{equation}
+                       [14] [15]
+Chapter 3.
+<images/rho_theta.jpeg, id=241, 725.71124pt x 619.31375pt>
+File: images/rho_theta.jpeg Graphic file (type jpg)
+
+<use images/rho_theta.jpeg>
+Package pdftex.def Info: images/rho_theta.jpeg used on input line 662.
+(pdftex.def)             Requested size: 241.84843pt x 206.38701pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 663.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 663.
+ [16
+
+] [17 <./images/rho_theta.jpeg>] [18]
+<images/iterative_process.jpg, id=273, 1011.78pt x 433.62pt>
+File: images/iterative_process.jpg Graphic file (type jpg)
+
+<use images/iterative_process.jpg>
+Package pdftex.def Info: images/iterative_process.jpg used on input line 764.
+(pdftex.def)             Requested size: 435.32422pt x 186.57205pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 768.
+ [19 <./images/iterative_process.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 768.
+
+(./report_tesi_upd.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 768.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 768.
+Package rerunfilecheck Info: File `report_tesi_upd.out' has not changed.
+(rerunfilecheck)             Checksum: 142707B452057A9C5CF197D113CB43A3;1771.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.55997pt have occurred.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 768.
+ ) 
+Here is how much of TeX's memory you used:
+ 9813 strings out of 493633
+ 144743 string characters out of 3143378
+ 259802 words of memory out of 3000000
+ 12764 multiletter control sequences out of 15000+200000
+ 96734 words of font info for 149 fonts, out of 3000000 for 9000
+ 831 hyphenation exceptions out of 8191
+ 36i,17n,38p,1041b,409s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/t
+exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/loc
+al/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/loca
+l/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local
+/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
+exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2011/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loca
+l/texlive/2011/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2
+011/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2011/texmf-d
+ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/
+type1/urw/times/utmr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/
+times/utmri8a.pfb>
+Output written on report_tesi_upd.pdf (19 pages, 613469 bytes).
+PDF statistics:
+ 350 PDF objects out of 1000 (max. 8388607)
+ 303 compressed objects within 4 object streams
+ 121 named destinations out of 1000 (max. 500000)
+ 243 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -24,13 +24,21 @@
 \usepackage{enumerate}
 \usepackage{algorithm}
 \usepackage{caption}
+\usepackage{fancyhdr}
 %\usepackage{algorithmic}
 \usepackage[noend]{algpseudocode}
 
 
 % text style
 \geometry{top=2cm, left=2cm, right=2cm, bottom=3cm}
-%\renewcommand*\thesubsection{\alph{subsection}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[EL]{\nouppercase\leftmark}
+\fancyhead[OR]{\nouppercase\rightmark}
+\fancyhead[ER,OL]{\thepage}
+
+
 \titlespacing{\title}{0pt}{*5}{*0}
 \titlespacing{\section}{0pt}{*4}{*0}
 \titlespacing{\subsection}{0pt}{*1}{*0}
@@ -744,25 +752,25 @@ and obtain a new value $T_{\mbox{new}}$ for the current estimate of transformati
 
 \subsection{Determining associations between features}
 All what has been explained in previous section, can be inserted in an iteration process that tends to reduce progressively the error in alignment between two frames, while trying to find the transformation $T$ to map one into the other. \\
-Let's suppose to have two scans $i$ and $j$ and that we need to find the transformation $T$ from $j$ to $i$; let's suppose, moreover, to have chosen an initial value for $T$ and a maximun number of iterations $N$. The steps of iteration process are summarized in the following.
+Let's suppose to have two scans $i$ and $j$ and that we need to find the transformation $T$ from $j$ to $i$; let's suppose, moreover, to have chosen an initial value for $T$ and a maximum number of iterations $N$. The steps of iteration process are summarised in the following.
 
 \textbf{Applying current transformation $\Delta T$}. The first action is applying $\Delta T$ to all the lines in $j$, in order to map them into reference frame $i$. As underlined previously, we can have an initial guess or an identity matrix as transformation, at first iteration of the process. Subsequently, we will apply, at iteration $k$, the transformation we obtained at $k-1$.
 
-\textbf{Data association}. The lines that have just been transformed need to be associated to lines in $i$. First, we try to form associated couples comparing each transformed lined with the ones in $i$ and finding the closest one comparing the normals. In particular, given the normals $n_i$ and $n_j$ of line $l_i$ and trasformed line $l_j$, respectively, we compute the dot product
+\textbf{Data association}. The lines that have just been transformed need to be associated to lines in $i$. First, we try to form associated couples comparing each transformed lined with the ones in $i$ and finding the closest one comparing the normals. In particular, given the normals $n_i$ and $n_j$ of line $l_i$ and transformed line $l_j$, respectively, we compute the dot product
 \begin{equation}
 	p_{ij} = n_i^Tn_j
 \end{equation}
 Then, we add to a set the couple of associated indeces $(i, j)$ if $p_{ij}$ is greater than a properly chosen threshold. This gives us a set of putative associations that needs to be pruned. \\
-Lately, for each couple of indeces, we evaluate the difference between the values of $\theta_i$ and $\theta_j$ of associated lines, along with the Euclidean distance between their middlepoints. Both are requested two stay below two specific thresholds. All the couples of indeces, whose associated lines don't satisfy these last two conditions, are deleted from putative set. 
+Lately, for each couple of indexes, we evaluate the difference between the values of $\theta_i$ and $\theta_j$ of associated lines, along with the Euclidean distance between their midpoints. Both are requested two stay below two specific thresholds. All the couples of indexes, whose associated lines don't satisfy these last two conditions, are deleted from putative set. 
 
-\textbf{Computing local and global matrices}. Once we have a set of reliable couples of indeces (lines), for each couple we can compute the error $e_{ij}$ as expressed in Equation (3.9); this allows us to determine the local matrices $H_{ij}$ e $b_{ij}$ (Equations from 3.9 to 3.14), for each couple of associated lines. Once all local matrices have beeen computed, we can derive global matrices $H_{ij}$ and $b_{ij}$ (Equations 3.15).
+\textbf{Computing local and global matrices}. Once we have a set of reliable couples of indexes (lines), for each couple we can compute the error $e_{ij}$ as expressed in Equation (3.9); this allows us to determine the local matrices $H_{ij}$ e $b_{ij}$ (Equations from 3.9 to 3.14), for each couple of associated lines. Once all local matrices have been computed, we can derive global matrices $H$ and $b$ (Equations 3.15).
 
 \textbf{Solving linear system and updating current estimate of $\Delta T$}. Once the global matrices have been computed, it is possible to prepare linear system in (3.16). Its resolution gives us the new estimate of transformation matrix between scans $i$ and $j$.  This transformation matrix can be used for a new iteration of algorithm or can be directly returned if the maximum number of iterations has been reached. A block representation of a single iteration can be found in Figure 3.2.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.90\textwidth]{images/iterative_process.jpg}
-\caption{caption}
+\caption{Block representation of a single iteration in $\Delta T$ estimation}
 \end{figure}
 
 \end{document}
