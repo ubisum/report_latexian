@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  18 MAY 2016 12:54
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  18 MAY 2016 13:04
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/università/tesi/report_latexian/TSWLatexianTemp_000161.tex
-(/università/tesi/report_latexian/TSWLatexianTemp_000161.tex
+**/università/tesi/report_latexian/TSWLatexianTemp_000165.tex
+(/università/tesi/report_latexian/TSWLatexianTemp_000165.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, german-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabic, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnish, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji, lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, polish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/report.cls
@@ -335,58 +335,65 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
+) (/usr/local/texlive/2011/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen114
+\extrarowheight=\dimen115
+\NC@list=\toks18
+\extratabsurround=\skip43
+\backup@length=\skip44
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2007/08/12 v2.8 Sectioning titles
 \ttl@box=\box26
-\beforetitleunit=\skip43
-\aftertitleunit=\skip44
-\ttl@plus=\dimen114
-\ttl@minus=\dimen115
-\ttl@toksa=\toks18
-\titlewidth=\dimen116
-\titlewidthlast=\dimen117
-\titlewidthfirst=\dimen118
+\beforetitleunit=\skip45
+\aftertitleunit=\skip46
+\ttl@plus=\dimen116
+\ttl@minus=\dimen117
+\ttl@toksa=\toks19
+\titlewidth=\dimen118
+\titlewidthlast=\dimen119
+\titlewidthfirst=\dimen120
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2010/01/09 v3.1m Customizing captions (AR)
  (/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
-\captionmargin=\dimen119
-\captionmargin@=\dimen120
-\captionwidth=\dimen121
-\caption@indent=\dimen122
-\caption@parindent=\dimen123
-\caption@hangindent=\dimen124
+\captionmargin=\dimen121
+\captionmargin@=\dimen122
+\captionwidth=\dimen123
+\caption@indent=\dimen124
+\caption@parindent=\dimen125
+\caption@hangindent=\dimen126
 )
 \c@ContinuedFloat=\count93
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 \c@KVtest=\count94
-\sf@farskip=\skip45
-\sf@captopadj=\dimen125
-\sf@capskip=\skip46
-\sf@nearskip=\skip47
+\sf@farskip=\skip47
+\sf@captopadj=\dimen127
+\sf@capskip=\skip48
+\sf@nearskip=\skip49
 \c@subfigure=\count95
 \c@subfigure@save=\count96
 \c@lofdepth=\count97
 \c@subtable=\count98
 \c@subtable@save=\count99
 \c@lotdepth=\count100
-\sf@top=\skip48
-\sf@bottom=\skip49
+\sf@top=\skip50
+\sf@bottom=\skip51
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
-\@mathmargin=\skip50
+\@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
  (/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks19
-\ex@=\dimen126
+\@emptytoks=\toks20
+\ex@=\dimen128
 )) (/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen127
+\pmbraise@=\dimen129
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
@@ -402,7 +409,7 @@ LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box27
 \strutbox@=\box28
-\big@size=\dimen128
+\big@size=\dimen130
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \macc@depth=\count106
@@ -410,21 +417,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \dotsspace@=\muskip10
 \c@parentequation=\count108
 \dspbrk@lvl=\count109
-\tag@help=\toks20
+\tag@help=\toks21
 \row@=\count110
 \column@=\count111
 \maxfields@=\count112
-\andhelp@=\toks21
-\eqnshift@=\dimen129
-\alignsep@=\dimen130
-\tagshift@=\dimen131
-\tagwidth@=\dimen132
-\totwidth@=\dimen133
-\lineht@=\dimen134
-\@envbody=\toks22
-\multlinegap=\skip51
-\multlinetaggap=\skip52
-\mathdisplay@stack=\toks23
+\andhelp@=\toks22
+\eqnshift@=\dimen131
+\alignsep@=\dimen132
+\tagshift@=\dimen133
+\tagwidth@=\dimen134
+\totwidth@=\dimen135
+\lineht@=\dimen136
+\@envbody=\toks23
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -439,22 +446,22 @@ Package: mathtools 2011/02/12 v1.10 mathematical typesetting tools
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count113
 \calc@Bcount=\count114
-\calc@Adimen=\dimen135
-\calc@Bdimen=\dimen136
-\calc@Askip=\skip53
-\calc@Bskip=\skip54
+\calc@Adimen=\dimen137
+\calc@Bdimen=\dimen138
+\calc@Askip=\skip55
+\calc@Bskip=\skip56
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count115
-\calc@Cskip=\skip55
+\calc@Cskip=\skip57
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/mh/mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
 \g_MT_multlinerow_int=\count116
-\l_MT_multwidth_dim=\dimen137
-\origjot=\skip56
-\l_MT_shortvdotswithinadjustabove_dim=\dimen138
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen139
+\l_MT_multwidth_dim=\dimen139
+\origjot=\skip58
+\l_MT_shortvdotswithinadjustabove_dim=\dimen140
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen141
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 LaTeX Info: Redefining \bm on input line 204.
@@ -505,34 +512,34 @@ Package maxfloats Warning:
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/lettrine/lettrine.sty
 File: lettrine.sty 2007/08/08 v1.62 (Daniel Flipo)
 \c@DefaultLines=\count118
-\DefaultFindent=\dimen140
-\DefaultNindent=\dimen141
-\DefaultSlope=\dimen142
+\DefaultFindent=\dimen142
+\DefaultNindent=\dimen143
+\DefaultSlope=\dimen144
 \L@lbox=\box29
 \L@tbox=\box30
 \c@L@lines=\count119
-\L@Pindent=\dimen143
-\L@Findent=\dimen144
-\L@Nindent=\dimen145
-\L@lraise=\dimen146
-\L@first=\dimen147
-\L@next=\dimen148
-\L@slope=\dimen149
-\L@height=\dimen150
-\LettrineWidth=\dimen151
+\L@Pindent=\dimen145
+\L@Findent=\dimen146
+\L@Nindent=\dimen147
+\L@lraise=\dimen148
+\L@first=\dimen149
+\L@next=\dimen150
+\L@slope=\dimen151
+\L@height=\dimen152
+\LettrineWidth=\dimen153
 
 Loading lettrine.cfg
 (/usr/local/texlive/2011/texmf-dist/tex/latex/lettrine/lettrine.cfg)) (/usr/local/texlive/2011/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2009/07/02 v2.20.1
-\thm@style=\toks24
-\thm@bodyfont=\toks25
-\thm@headfont=\toks26
-\thm@notefont=\toks27
-\thm@headpunct=\toks28
-\thm@preskip=\skip57
-\thm@postskip=\skip58
-\thm@headsep=\skip59
-\dth@everypar=\toks29
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip59
+\thm@postskip=\skip60
+\thm@headsep=\skip61
+\dth@everypar=\toks30
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2011/04/17 v6.82g Hypertext links for LaTeX
  (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
@@ -569,7 +576,7 @@ Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
 Package: refcount 2010/12/01 v3.2 Data extraction from references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
 )
-\@linkdim=\dimen152
+\@linkdim=\dimen154
 \Hy@linkcounter=\count120
 \Hy@pagecounter=\count121
  (/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -595,8 +602,8 @@ Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4617.
 \Fld@menulength=\count124
-\Field@Width=\dimen153
-\Fld@charsize=\dimen154
+\Field@Width=\dimen155
+\Fld@charsize=\dimen156
 Package hyperref Info: Hyper figures OFF on input line 5701.
 Package hyperref Info: Link nesting OFF on input line 5706.
 Package hyperref Info: Hyper index ON on input line 5709.
@@ -621,7 +628,7 @@ File: hpdftex.def 2011/04/17 v6.82g Hyperref driver for pdfTeX
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
 )
-\Hy@SectionHShift=\skip60
+\Hy@SectionHShift=\skip62
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/listing/listing.sty
 Package: listing 1999/05/25
 
@@ -629,31 +636,31 @@ Package `listing', V1.2, <1999/05/25>
 \c@listing=\count130
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
-\@enLab=\toks30
+\@enLab=\toks31
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
  (/usr/local/texlive/2011/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count131
-\float@exts=\toks31
+\float@exts=\toks32
 \float@box=\box31
-\@float@everytoks=\toks32
+\@float@everytoks=\toks33
 \@floatcapt=\box32
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\@float@every@algorithm=\toks33
+\@float@every@algorithm=\toks34
 \c@algorithm=\count132
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip61
-\f@ncyO@elh=\skip62
-\f@ncyO@erh=\skip63
-\f@ncyO@olh=\skip64
-\f@ncyO@orh=\skip65
-\f@ncyO@elf=\skip66
-\f@ncyO@erf=\skip67
-\f@ncyO@olf=\skip68
-\f@ncyO@orf=\skip69
+\fancy@headwidth=\skip63
+\f@ncyO@elh=\skip64
+\f@ncyO@erh=\skip65
+\f@ncyO@olh=\skip66
+\f@ncyO@orh=\skip67
+\f@ncyO@elf=\skip68
+\f@ncyO@erf=\skip69
+\f@ncyO@olf=\skip70
+\f@ncyO@orf=\skip71
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
  (/usr/local/texlive/2011/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
@@ -663,41 +670,41 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@line=\count133
 \c@ALG@rem=\count134
 \c@ALG@nested=\count135
-\ALG@tlm=\skip70
-\ALG@thistlm=\skip71
+\ALG@tlm=\skip72
+\ALG@thistlm=\skip73
 \c@ALG@Lnr=\count136
 \c@ALG@blocknr=\count137
 \c@ALG@storecount=\count138
 \c@ALG@tmpcounter=\count139
-\ALG@tmplength=\skip72
+\ALG@tmplength=\skip74
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
 
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 37.
-
-
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 39.
 
-LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 46.
-No file TSWLatexianTemp_000161.aux.
-\openout1 = `TSWLatexianTemp_000161.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 55.
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 41.
+
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 48.
+No file TSWLatexianTemp_000165.aux.
+\openout1 = `TSWLatexianTemp_000165.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 57.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -738,16 +745,16 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 (/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count140
-\scratchdimen=\dimen155
+\scratchdimen=\dimen157
 \scratchbox=\box33
 \nofMPsegments=\count141
 \nofMParguments=\count142
-\everyMPshowfont=\toks34
+\everyMPshowfont=\toks35
 \MPscratchCnt=\count143
-\MPscratchDim=\dimen156
+\MPscratchDim=\dimen158
 \MPnumerator=\count144
 \makeMPintoPDFobject=\count145
-\everyMPtoPDFconversion=\toks35
+\everyMPtoPDFconversion=\toks36
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
  (/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -761,12 +768,12 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption3 Info: subfig package 1.2 or 1.3 is loaded.
-LaTeX Info: Redefining \subref on input line 55.
+LaTeX Info: Redefining \subref on input line 57.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 55.
+Package hyperref Info: Link coloring OFF on input line 57.
  (/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
  (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -774,16 +781,16 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count146
 )
-LaTeX Info: Redefining \ref on input line 55.
-LaTeX Info: Redefining \pageref on input line 55.
-LaTeX Info: Redefining \nameref on input line 55.
+LaTeX Info: Redefining \ref on input line 57.
+LaTeX Info: Redefining \pageref on input line 57.
+LaTeX Info: Redefining \nameref on input line 57.
 \@outlinefile=\write3
-\openout3 = `TSWLatexianTemp_000161.out'.
+\openout3 = `TSWLatexianTemp_000165.out'.
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 57.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 59.
 \tf@toc=\write4
-\openout4 = `TSWLatexianTemp_000161.toc'.
+\openout4 = `TSWLatexianTemp_000165.toc'.
 
  [1
 
@@ -791,124 +798,124 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 {/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 60.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 62.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 61.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 69.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 63.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 71.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 69.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 71.
  (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 69.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 71.
  (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 69.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 71.
  (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 69.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 71.
  (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 71.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 71.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 75.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 71.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 77.
  (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 77.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 80.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 82.
  [2
 
 ] <images/ht.jpeg, id=29, 512.91624pt x 384.43625pt>
 File: images/ht.jpeg Graphic file (type jpg)
  <use images/ht.jpeg>
-Package pdftex.def Info: images/ht.jpeg used on input line 125.
+Package pdftex.def Info: images/ht.jpeg used on input line 127.
 (pdftex.def)             Requested size: 174.12701pt x 130.50714pt.
  <images/dht.jpeg, id=30, 540.0175pt x 417.56pt>
 File: images/dht.jpeg Graphic file (type jpg)
  <use images/dht.jpeg>
-Package pdftex.def Info: images/dht.jpeg used on input line 131.
+Package pdftex.def Info: images/dht.jpeg used on input line 133.
 (pdftex.def)             Requested size: 174.12701pt x 134.63498pt.
  [3 <./images/ht.jpeg> <./images/dht.jpeg>]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 183.
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 210.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 185.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 212.
  <images/robocup_robot_positions.jpeg, id=48, 703.62875pt x 407.5225pt>
 File: images/robocup_robot_positions.jpeg Graphic file (type jpg)
  <use images/robocup_robot_positions.jpeg>
-Package pdftex.def Info: images/robocup_robot_positions.jpeg used on input line 229.
+Package pdftex.def Info: images/robocup_robot_positions.jpeg used on input line 231.
 (pdftex.def)             Requested size: 435.32422pt x 252.12656pt.
  [4] [5 <./images/robocup_robot_positions.jpeg>] <images/robocup_alg_module.jpeg, id=66, 714.67pt x 317.185pt>
 File: images/robocup_alg_module.jpeg Graphic file (type jpg)
  <use images/robocup_alg_module.jpeg>
-Package pdftex.def Info: images/robocup_alg_module.jpeg used on input line 244.
+Package pdftex.def Info: images/robocup_alg_module.jpeg used on input line 246.
 (pdftex.def)             Requested size: 435.32422pt x 193.20668pt.
  [6 <./images/robocup_alg_module.jpeg>] <images/features_original_image.jpeg, id=78, 501.875pt x 335.2525pt>
 File: images/features_original_image.jpeg Graphic file (type jpg)
  <use images/features_original_image.jpeg>
-Package pdftex.def Info: images/features_original_image.jpeg used on input line 327.
+Package pdftex.def Info: images/features_original_image.jpeg used on input line 329.
 (pdftex.def)             Requested size: 290.21367pt x 193.87364pt.
  <images/features_extracted_features.jpeg, id=79, 501.875pt x 331.2375pt>
 File: images/features_extracted_features.jpeg Graphic file (type jpg)
  <use images/features_extracted_features.jpeg>
-Package pdftex.def Info: images/features_extracted_features.jpeg used on input line 333.
+Package pdftex.def Info: images/features_extracted_features.jpeg used on input line 335.
 (pdftex.def)             Requested size: 290.21367pt x 191.55179pt.
  [7pdfTeX warning (ext4): destination with the same identifier (name{equation.1.3.23}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.340 \chapter
+l.342 \chapter
               {Basic concepts}pdfTeX warning (ext4): destination with the same identifier (name{equation.1.3.26}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.340 \chapter
+l.342 \chapter
               {Basic concepts}] [8 <./images/features_original_image.jpeg> <./images/features_extracted_features.jpeg>]
 Chapter 2.
 [9
 
 ] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 440--443
+Underfull \hbox (badness 10000) in paragraph at lines 442--445
 
  []
 
 <images/ellipses.jpeg, id=112, 778.91pt x 305.14pt>
 File: images/ellipses.jpeg Graphic file (type jpg)
  <use images/ellipses.jpeg>
-Package pdftex.def Info: images/ellipses.jpeg used on input line 469.
+Package pdftex.def Info: images/ellipses.jpeg used on input line 471.
 (pdftex.def)             Requested size: 435.32422pt x 170.53732pt.
  [11] <images/unidirectional_nominal_path.jpeg, id=122, 456.70625pt x 362.35374pt>
 File: images/unidirectional_nominal_path.jpeg Graphic file (type jpg)
  <use images/unidirectional_nominal_path.jpeg>
-Package pdftex.def Info: images/unidirectional_nominal_path.jpeg used on input line 512.
+Package pdftex.def Info: images/unidirectional_nominal_path.jpeg used on input line 514.
 (pdftex.def)             Requested size: 241.84843pt x 191.88069pt.
  [12 <./images/ellipses.jpeg>] [13 <./images/unidirectional_nominal_path.jpeg>] [14]pdfTeX warning (ext4): destination with the same identifier (name{equation.2.5.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.584 \begin{equation}
+l.586 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifier (name{equation.2.5.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.584 \begin{equation}
+l.586 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifier (name{equation.2.5.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.584 \begin{equation}
+l.586 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifier (name{equation.2.5.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.584 \begin{equation}
+l.586 \begin{equation}
                        [15] [16]
 Chapter 3.
 [17
@@ -916,30 +923,36 @@ Chapter 3.
 ] <images/rho_theta.jpeg, id=176, 725.71124pt x 619.31375pt>
 File: images/rho_theta.jpeg Graphic file (type jpg)
  <use images/rho_theta.jpeg>
-Package pdftex.def Info: images/rho_theta.jpeg used on input line 677.
+Package pdftex.def Info: images/rho_theta.jpeg used on input line 679.
 (pdftex.def)             Requested size: 241.84843pt x 206.38701pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 678.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 680.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 678.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 680.
  [18 <./images/rho_theta.jpeg>] [19] <images/iterative_process.jpg, id=202, 1011.78pt x 433.62pt>
 File: images/iterative_process.jpg Graphic file (type jpg)
  <use images/iterative_process.jpg>
-Package pdftex.def Info: images/iterative_process.jpg used on input line 779.
+Package pdftex.def Info: images/iterative_process.jpg used on input line 781.
 (pdftex.def)             Requested size: 435.32422pt x 186.57205pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 783.
  [20] [21 <./images/iterative_process.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 783.
- (./TSWLatexianTemp_000161.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 783.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 783.
+\tf@lof=\write5
+\openout5 = `TSWLatexianTemp_000165.lof'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 787.
+ [22
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 787.
+ (./TSWLatexianTemp_000165.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 787.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 787.
 
 
-Package rerunfilecheck Warning: File `TSWLatexianTemp_000161.out' has changed.
+Package rerunfilecheck Warning: File `TSWLatexianTemp_000165.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `TSWLatexianTemp_000161.out':
+Package rerunfilecheck Info: Checksums for `TSWLatexianTemp_000165.out':
 (rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  142707B452057A9C5CF197D113CB43A3;1771.
 
@@ -949,21 +962,21 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 783.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 787.
  ) 
 Here is how much of TeX's memory you used:
- 9909 strings out of 493633
- 145776 string characters out of 3143378
- 262570 words of memory out of 3000000
- 12859 multiletter control sequences out of 15000+200000
+ 9954 strings out of 493633
+ 146299 string characters out of 3143378
+ 263283 words of memory out of 3000000
+ 12899 multiletter control sequences out of 15000+200000
  97748 words of font info for 148 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 36i,17n,43p,1083b,409s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,17n,43p,1083b,410s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TSWLatexianTemp_000161.pdf (21 pages, 613700 bytes).
+Output written on TSWLatexianTemp_000165.pdf (22 pages, 613980 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 237 compressed objects within 3 object streams
- 124 named destinations out of 1000 (max. 500000)
+ 290 PDF objects out of 1000 (max. 8388607)
+ 241 compressed objects within 3 object streams
+ 126 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
