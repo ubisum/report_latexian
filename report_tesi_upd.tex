@@ -32,7 +32,7 @@
 
 
 % text style
-\geometry{top=2cm, left=2cm, right=2cm, bottom=3cm}
+\geometry{top=2cm, left=5cm, right=5cm, bottom=3cm}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -55,6 +55,8 @@
 %\renewcommand{\labelitemii}{$\bullet$}
 
 \begin{document}
+\large
+\sloppy
 
 \tableofcontents
 \newpage
@@ -341,7 +343,7 @@ An example of how textures may be extracted and accepted according to condition 
 %--------------------------------------------------------------------------
 \chapter{Basic concepts}
 \section{Introduction}
-This chapter introduces to the main concepts on which this thesis is based. 
+This chapter introduces to the main concepts on which this thesis is based.  \\
 First of all, we will concentrate ourselves on describing the concept of sensors and their importance in self-perception of robots. Sensors, indeed, are very useful to allow a robot to localize itself and have an idea of surrounding environment; anyway, to make all this possible, it is necessary to design them in such a way to satisfy a series of requirements. Sensors, although their immense utility, furnish noisy measurements with which localization algorithms must deal.
 In this chapter, we will describe one particular kind of sensors, the ones based on the \emph{time of flight (TOF)} method.
 
@@ -683,7 +685,11 @@ where $\epsilon_{\sigma_r^2}$, $\epsilon_{\sigma_\phi^2}$ and $\epsilon_{\sigma_
 \subsection{Extraction and model of features}
 When working with 2D landmarks, line segments represent a good choice for determining a reliable set of features, since they are simple geometric primitives but, at the same time, furnish a good amount of information to be used during localisation phases. The easiest way to represent a segment is by its endpoints; in some circumstances (for instance, the cases in which a robot scans an environment in which different corridors share a wall), the endpoints' information may be misleading, but the distance that can be measured between them is, at the least, a lower bound on the actual length of the segment they delimit.
 
-Given a scan from laser, the \emph{Split and merge} algorithm described in Section 2.4.1 can be used to extract segments, which can be characterised by their endpoints. When segments appear to be collinear and their extremes are close enough, they can be melted or joined, obtaining what is known as a \emph{polyline structure}. Segments that could not be joined and whose length falls below a determined threshold, can be deleted, since they represent a useless source of noise. It is, moreover, possible to gain a polar representation of segments, using the aforementioned equation $x\cos \theta + y\sin\theta = \rho$, where $\rho$ is the distance of line from the origin and $\theta$ is its orientation, in terms of its slope with respect to $x$ axis. Both quantities are expressed in robot's reference frame.
+Given a scan from laser, the \emph{Split and merge} algorithm described in Section 2.4.1 can be used to extract segments, which can be characterised by their endpoints. When segments appear to be collinear and their extremes are close enough, they can be melted or joined, obtaining what is known as a \emph{polyline structure}. Segments that could not be joined and whose length falls below a determined threshold, can be deleted, since they represent a useless source of noise. It is, moreover, possible to gain a polar representation of segments, using the aforementioned equation 
+\begin{equation}
+	x\cos \theta + y\sin\theta = \rho, \notag 
+\end{equation}
+where $\rho$ is the distance of line from the origin and $\theta$ is its orientation, in terms of its slope with respect to $x$ axis. Both quantities are expressed in robot's reference frame.
 
 \section{Matching features}
 If we consider two scans $i$ and $j$ returned by robot's laser, according to previous section, we are able to extract lines from each of them, elaborate them and obtain a polyline structure formed by extracted segments. \\
