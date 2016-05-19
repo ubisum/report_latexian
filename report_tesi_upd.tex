@@ -788,6 +788,52 @@ Lately, for each couple of indexes, we evaluate the difference between the value
 \caption{Block representation of a single iteration in $T$ estimation}
 \end{figure}
 
-\listoffigures
+\chapter{Experiments}
+\section{Introduction}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies dictum neque et aliquet. In faucibus vitae justo vitae molestie. Cras posuere turpis eu sapien dictum ornare. Pellentesque posuere lacinia tortor quis congue. Mauris in arcu hendrerit, feugiat arcu eu, molestie felis. Integer velit ante, blandit vel placerat quis, accumsan sed eros. Nunc tincidunt leo ut elit bibendum finibus. Suspendisse ut sapien consectetur, dictum ex et, tempor eros. Duis lacinia sapien a massa elementum, rutrum tempus odio venenatis. Integer eu pharetra augue. Aliquam et justo non orci sodales mollis. Curabitur dolor mi, porttitor ac purus et, elementum pellentesque risus. Morbi id imperdiet nisl. Donec varius convallis diam, sed rutrum risus porta tincidunt. 
 
+\section{Robot Operating System}
+According to Willow Garage, the research laboratory that developed it in 2007, the \textbf{Robot Operating System} (\textbf{ROS}) can be defined as a \emph{flexible framework for writing robot software}. Actually, ROS can be thought of as a collection of frameworks that can be exploited for the development of robot's software; such collection, furnishes all the typical functionalities of an operating system,  along with robot-oriented capabilities. Here is a short list:
+\begin{itemize}
+	\item{hardware abstraction}
+	\item{low-lovel device control}
+	\item{exchange and recording (in \emph{bag files}) of messages between processes}
+	\item{robot-specific features: pose estimation, localisation, mapping, navigation (Figure 4.1)}
+	\item{diagnostics, to produce, collect and aggregate data about robot, to control its state and produce an effective strategy to resolve incoming issues}
+	\item{tools for debugging, plotting, and visualizing the state of the system under development (Figure 4.2)}
+	\item{package management}
+\end{itemize}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.90\textwidth]{images/tf.jpeg}
+\caption{An example of robot-specific features: the \emph{tf} library, which tracks the position of different elements of robot (sensors, links) in the robot's reference frame}
+\end{figure}
+
+Mainly, ROS' aim is simplifying the task of designing robot's behaviour across different platforms. It has been built in a collaborative mood, since it is open source and counts on the work of different developers and institutions to enrich the basic functionalities.\\
+ROS-based applications are organised in a graph structure composed of \emph{nodes}, in which processes are executed and can receive or post messages regarding sensors, control, state, planning, actuators and so on. Even if a certain low latency is required in prevailing robotics, ROS is not a real time operating system, but it can be integrated with realtime code. 
+\begin{figure}[htb]
+\centering
+\begin{minipage}[c]{.40\textwidth}
+\centering\setlength{\captionmargin}{0pt}%
+\centerline{\includegraphics[width=1.5\textwidth]{images/rviz.jpeg}}
+(a)
+\end{minipage} \\
+\vspace{10mm}%
+\begin{minipage}[c]{.40\textwidth}
+\centering\setlength{\captionmargin}{0pt}%
+\centerline{\includegraphics[width=1.5\textwidth]{images/rqt_bag.jpeg}}
+(b)
+\end{minipage}
+\caption{Two examples of ROS tools. The \emph{rviz} tool (a) visualizes many common messages provided in ROS, such as laser scans, three-dimensional point clouds and camera images. It also uses information from the \emph{tf} library to show sensor data in a chosen coordinate frame, along with a three-dimensional rendering of robot. The \emph{ rqt\_bag} tool (b) records data to bags and can display their content.}
+\end{figure}
+There are, essentially, three kinds of softwares inside ROS:
+\begin{itemize}
+	\item{language and platform independent tools for ROS distribution and building, under BSD licence}
+	\item{client library implementations (\emph{roscpp, rospy, roslisp}), under BSD licence}
+	\item{custom code using client libraries, which is sometimes commercial and is released under various open source licenses}
+\end{itemize}
+The last category in previous list contains packages usually implemented for hardware drivers, robot models, perception, simultaneous localisation and mapping (SLAM).
+
+\listoffigures
 \end{document}
