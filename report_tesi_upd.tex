@@ -27,6 +27,7 @@
 \usepackage{algorithm}
 \usepackage{caption}
 \usepackage{fancyhdr}
+\usepackage{listings}
 %\usepackage{algorithmic}
 \usepackage[noend]{algpseudocode}
 
@@ -829,11 +830,62 @@ ROS-based applications are organised in a graph structure composed of \emph{node
 \end{figure}
 There are, essentially, three kinds of softwares inside ROS:
 \begin{itemize}
-	\item{language and platform independent tools for ROS distribution and building, under BSD licence}
+	\item{language and platform independent tools for ROS distribution and building, under BSD licence\footnote{The Berkeley Software Distribution (BSD) licence was originally created in 1990 to define the rules by which open source code can be used and distributed. The BSD licence requires the name of the code's developer to be always reported, even in documentation, along with a disclaimer specifying that code is released "as it is", without any garantee about its performance. The identities of contributors can't be used to endorse derived software, particularly for commercial purposes.}}
 	\item{client library implementations (\emph{roscpp, rospy, roslisp}), under BSD licence}
 	\item{custom code using client libraries, which is sometimes commercial and is released under various open source licenses}
 \end{itemize}
 The last category in previous list contains packages usually implemented for hardware drivers, robot models, perception, simultaneous localisation and mapping (SLAM).
 
+\section{The ROS Stage Simulator}
+In order to test the line extraction, the least square estimation and the data association between lines in different scans, it is necessary to generate real data by simulating the robot behaviour (scanning comprised) in a realistic environment. \\
+When a real robot is not at the disposal, it is possible to simulate and make it move through the use of \emph{Stage} simulator, which provides a virtual world populated with other mobile robots, sensors and objects that robot can sense and manipulate. \emph{Stage} can be used as a stand-alone program or can be embedded inside a larger library or framework (we will use its embedded version inside a ROS node).\\
+\emph{Stage} itself provides the models of a series of actuators and sensors (sonar, infrared rangers, scanning laser rangefinder, bumpers, grippers); it provides even the model of a variety of mobile robot bases with odometric or global localisation. 
+
+To generate an accurate simulation in \emph{Stage}, two elements are strictly necessary:
+\begin{itemize}
+	\item{a map (\emph{world}) in which robot needs to move}
+	\item{a player making robot move in simulated environment}
+\end{itemize}
+
+With regards to maps, \emph{Stage} furnishes a certain number of them that can be used to start learning how a simulation in its environment works. Anyway, for more specific uses it could be required to create the map of a specific ambient in which robot has to move and sense. The definition of a map requires the creation of three objects:
+\begin{itemize}
+	\item{a \emph{.png} file representing the shape of environment, created with the use of a laser rangefinder or by graphics editors (Figure 4.3)}
+	\item{a \emph{.world} file, containing the description of ambient (dimension of map, robots' initial positions and colors). An example relative to Figure 4.3 is showm in Figure 4.4}
+	\item{a \emph{.yaml} file, containing information, for instance, regarding the position of origin of axes on \emph{.png} file, that will be used as a reference to track robot's position along its trajectory (Figure 4.5)}
+\end{itemize}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{images/mappa_dis/dis-B1-2011-09-27.png}
+\caption{A \emph{.png} file created for the definition of a map in \emph{Stage}, depicting the first floor of DIAG department}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\fbox{
+\includegraphics[width=1\textwidth]{images/mappa_dis/world_file.jpg}}
+\caption{A \emph{.world} file relative to Figure 4.3}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\fbox{
+\includegraphics[width=1\textwidth]{images/mappa_dis/yaml_file.jpg}}
+\caption{A \emph{.yaml} file relative to Figure 4.3}
+\end{figure}
+
+Each robot on the map is usually represented as a small square with a different color; to make it move forward (along X or Y axes) or rotate, it is necessary to use another external library contained in another ROS node. \\
+There is not a unique option, but a good choice is \emph{teleop\_base}; such node exploits the system for messages exchange described in previous section. \emph{Teleop\_base} receives commands from keyboard and generates a message about which movement robot on map has to perform (either a straight progression or a rotation) and sends it to \emph{Stage} simulator, which moves square associated to robot accordingly on the map.
+\begin{figure}[htbp]
+\centering
+\fbox{
+\includegraphics[width=1\textwidth]{images/mappa_dis/teleop_base.jpg}}
+\caption{Keyboard commands used by \emph{teleop\_base} controller}
+\end{figure}\\
+\emph{Stage} itself is able to generate two kinds of messages:
+\begin{itemize}
+	\item{\emph{geometry\_msgs} which contain information about robot's position}
+	\item{\emph{nav\_msgs} which contain information about data acquired by robot during its trajectory (usually in the form of couples $(\rho, \theta)$, describing the polar coordinates of points returned by range finder)}  
+\end{itemize}
+Such messages can be recorded in a \emph{bag file}, a kind of container that intercepts and stores messages of specified types; recorded messages can me played back and received by new addresses. The message system requires a sort of DNS server that knows sender and receiver of each message; \emph{roscore}, which can be executed from another ROS node, is the most natural choice for this purpose.
 \listoffigures
 \end{document}
