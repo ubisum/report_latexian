@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  30 MAY 2016 19:51
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  30 MAY 2016 20:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/università/tesi/report_latexian/TSWLatexianTemp_000650.tex
-(/università/tesi/report_latexian/TSWLatexianTemp_000650.tex
+**/università/tesi/report_latexian/TSWLatexianTemp_000713.tex
+(/università/tesi/report_latexian/TSWLatexianTemp_000713.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, german-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabic, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnish, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji, lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, polish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/report.cls
@@ -709,8 +709,8 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is usel
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 42.
 
 LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 49.
-No file TSWLatexianTemp_000650.aux.
-\openout1 = `TSWLatexianTemp_000650.aux'.
+No file TSWLatexianTemp_000713.aux.
+\openout1 = `TSWLatexianTemp_000713.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
@@ -808,13 +808,13 @@ LaTeX Info: Redefining \ref on input line 58.
 LaTeX Info: Redefining \pageref on input line 58.
 LaTeX Info: Redefining \nameref on input line 58.
 \@outlinefile=\write3
-\openout3 = `TSWLatexianTemp_000650.out'.
+\openout3 = `TSWLatexianTemp_000713.out'.
 
 \c@lstlisting=\count155
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 62.
 \tf@toc=\write4
-\openout4 = `TSWLatexianTemp_000650.toc'.
+\openout4 = `TSWLatexianTemp_000713.toc'.
 
  [1
 
@@ -950,200 +950,179 @@ File: images/rho_theta.jpeg Graphic file (type jpg)
  <use images/rho_theta.jpeg>
 Package pdftex.def Info: images/rho_theta.jpeg used on input line 682.
 (pdftex.def)             Requested size: 156.49016pt x 133.54675pt.
- [23] [24 <./images/rho_theta.jpeg>] [25] [26] <images/iterative_process.jpg, id=236, 1011.78pt x 433.62pt>
+ [23] [24 <./images/rho_theta.jpeg>] [25] [26] <images/iterative_process.jpg, id=236, 1026.83624pt x 480.79625pt>
 File: images/iterative_process.jpg Graphic file (type jpg)
  <use images/iterative_process.jpg>
-Package pdftex.def Info: images/iterative_process.jpg used on input line 788.
-(pdftex.def)             Requested size: 281.68037pt x 120.71803pt.
+Package pdftex.def Info: images/iterative_process.jpg used on input line 789.
+(pdftex.def)             Requested size: 312.98032pt x 146.5436pt.
  [27 <./images/iterative_process.jpg>]
 Chapter 4.
 <images/tf.jpeg, id=243, 605.26125pt x 487.8225pt>
 File: images/tf.jpeg Graphic file (type jpg)
  <use images/tf.jpeg>
-Package pdftex.def Info: images/tf.jpeg used on input line 810.
+Package pdftex.def Info: images/tf.jpeg used on input line 813.
 (pdftex.def)             Requested size: 281.68037pt x 227.02864pt.
- [28
-
-] <images/rviz.jpeg, id=251, 536.0025pt x 308.15125pt>
+ <images/rviz.jpeg, id=244, 536.0025pt x 308.15125pt>
 File: images/rviz.jpeg Graphic file (type jpg)
  <use images/rviz.jpeg>
-Package pdftex.def Info: images/rviz.jpeg used on input line 820.
+Package pdftex.def Info: images/rviz.jpeg used on input line 823.
 (pdftex.def)             Requested size: 281.68512pt x 161.94168pt.
- <images/rqt_bag.jpeg, id=252, 473.77pt x 266.9975pt>
+ <images/rqt_bag.jpeg, id=245, 473.77pt x 266.9975pt>
 File: images/rqt_bag.jpeg Graphic file (type jpg)
  <use images/rqt_bag.jpeg>
-Package pdftex.def Info: images/rqt_bag.jpeg used on input line 826.
+Package pdftex.def Info: images/rqt_bag.jpeg used on input line 829.
 (pdftex.def)             Requested size: 281.68512pt x 158.74936pt.
+ [28
+
+]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 833.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 836.
  [29 <./images/tf.jpeg>] [30 <./images/rviz.jpeg> <./images/rqt_bag.jpeg>] <images/mappa_dis/dis-B1-2011-09-27.png, id=267, 1013.7875pt x 1074.0125pt>
 File: images/mappa_dis/dis-B1-2011-09-27.png Graphic file (type png)
  <use images/mappa_dis/dis-B1-2011-09-27.png>
-Package pdftex.def Info: images/mappa_dis/dis-B1-2011-09-27.png used on input line 858.
+Package pdftex.def Info: images/mappa_dis/dis-B1-2011-09-27.png used on input line 861.
 (pdftex.def)             Requested size: 312.98032pt x 331.56383pt.
  <images/mappa_dis/world_file.jpg, id=268, 661.47125pt x 780.9175pt>
 File: images/mappa_dis/world_file.jpg Graphic file (type jpg)
  <use images/mappa_dis/world_file.jpg>
-Package pdftex.def Info: images/mappa_dis/world_file.jpg used on input line 865.
+Package pdftex.def Info: images/mappa_dis/world_file.jpg used on input line 868.
 (pdftex.def)             Requested size: 312.98032pt x 369.48593pt.
 
-Overfull \hbox (9.29999pt too wide) in paragraph at lines 865--866
+Overfull \hbox (9.29999pt too wide) in paragraph at lines 868--869
  [][] 
  []
 
 <images/mappa_dis/yaml_file.jpg, id=269, 641.39626pt x 130.4875pt>
 File: images/mappa_dis/yaml_file.jpg Graphic file (type jpg)
  <use images/mappa_dis/yaml_file.jpg>
-Package pdftex.def Info: images/mappa_dis/yaml_file.jpg used on input line 872.
+Package pdftex.def Info: images/mappa_dis/yaml_file.jpg used on input line 875.
 (pdftex.def)             Requested size: 312.98032pt x 63.6746pt.
 
-Overfull \hbox (9.29999pt too wide) in paragraph at lines 872--873
+Overfull \hbox (9.29999pt too wide) in paragraph at lines 875--876
  [][] 
  []
 
 <images/mappa_dis/teleop_base.jpg, id=270, 657.45625pt x 258.9675pt>
 File: images/mappa_dis/teleop_base.jpg Graphic file (type jpg)
  <use images/mappa_dis/teleop_base.jpg>
-Package pdftex.def Info: images/mappa_dis/teleop_base.jpg used on input line 881.
+Package pdftex.def Info: images/mappa_dis/teleop_base.jpg used on input line 884.
 (pdftex.def)             Requested size: 312.98032pt x 123.28348pt.
 
-Overfull \hbox (9.29999pt too wide) in paragraph at lines 881--882
+Overfull \hbox (9.29999pt too wide) in paragraph at lines 884--885
  [][] 
  []
 
-[31] [32 <./images/mappa_dis/dis-B1-2011-09-27.png>] [33 <./images/mappa_dis/world_file.jpg> <./images/mappa_dis/yaml_file.jpg> <./images/mappa_dis/teleop_base.jpg>] <images/one_frame/P_PTO_before_LS_T.png, id=288, 1321.93875pt x 693.59125pt>
+[31 <./images/mappa_dis/dis-B1-2011-09-27.png>] [32 <./images/mappa_dis/world_file.jpg> <./images/mappa_dis/yaml_file.jpg>] [33 <./images/mappa_dis/teleop_base.jpg>] <images/one_frame/P_PTO_before_LS_T.png, id=290, 1321.93875pt x 693.59125pt>
 File: images/one_frame/P_PTO_before_LS_T.png Graphic file (type png)
  <use images/one_frame/P_PTO_before_LS_T.png>
-Package pdftex.def Info: images/one_frame/P_PTO_before_LS_T.png used on input line 918.
+Package pdftex.def Info: images/one_frame/P_PTO_before_LS_T.png used on input line 921.
 (pdftex.def)             Requested size: 250.3852pt x 131.37096pt.
+ <images/one_frame/P_PTO_PT_after_LS_T.png, id=292, 1324.95pt x 690.58pt>
+File: images/one_frame/P_PTO_PT_after_LS_T.png Graphic file (type png)
+ <use images/one_frame/P_PTO_PT_after_LS_T.png>
+Package pdftex.def Info: images/one_frame/P_PTO_PT_after_LS_T.png used on input line 928.
+(pdftex.def)             Requested size: 250.3852pt x 130.49501pt.
  [34pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.921 
-      ] <images/one_frame/P_PTO_PT_after_LS_T.png, id=298, 1324.95pt x 690.58pt>
-File: images/one_frame/P_PTO_PT_after_LS_T.png Graphic file (type png)
- <use images/one_frame/P_PTO_PT_after_LS_T.png>
-Package pdftex.def Info: images/one_frame/P_PTO_PT_after_LS_T.png used on input line 925.
-(pdftex.def)             Requested size: 250.3852pt x 130.49501pt.
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.930 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.930 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.930 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.930 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.934 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.934 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.934 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.934 \begin{equation}
-                       <images/one_frame/P_PTO_before_LS_RT.png, id=299, 1328.965pt x 740.7675pt>
+l.939 \end{equation}
+                    pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.939 \end{equation}
+                    ] [35 <./images/one_frame/P_PTO_before_LS_T.png> <./images/one_frame/P_PTO_PT_after_LS_T.png>] <images/one_frame/P_PTO_before_LS_RT.png, id=307, 1328.965pt x 740.7675pt>
 File: images/one_frame/P_PTO_before_LS_RT.png Graphic file (type png)
  <use images/one_frame/P_PTO_before_LS_RT.png>
-Package pdftex.def Info: images/one_frame/P_PTO_before_LS_RT.png used on input line 941.
+Package pdftex.def Info: images/one_frame/P_PTO_before_LS_RT.png used on input line 944.
 (pdftex.def)             Requested size: 250.3852pt x 139.56044pt.
- <images/one_frame/P_PTO_PT_after_LS_RT.png, id=300, 1302.8675pt x 671.50874pt>
+ <images/one_frame/P_PTO_PT_after_LS_RT.png, id=308, 1302.8675pt x 671.50874pt>
 File: images/one_frame/P_PTO_PT_after_LS_RT.png Graphic file (type png)
  <use images/one_frame/P_PTO_PT_after_LS_RT.png>
-Package pdftex.def Info: images/one_frame/P_PTO_PT_after_LS_RT.png used on input line 948.
+Package pdftex.def Info: images/one_frame/P_PTO_PT_after_LS_RT.png used on input line 951.
 (pdftex.def)             Requested size: 250.3852pt x 129.04297pt.
- [35 <./images/one_frame/P_PTO_before_LS_T.png> <./images/one_frame/P_PTO_PT_after_LS_T.png>] [36 <./images/one_frame/P_PTO_before_LS_RT.png> <./images/one_frame/P_PTO_PT_after_LS_RT.png>]
-Underfull \hbox (badness 1838) in paragraph at lines 960--962
+ [36pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.959 
+       <./images/one_frame/P_PTO_before_LS_RT.png> <./images/one_frame/P_PTO_PT_after_LS_RT.png>]
+Underfull \hbox (badness 1838) in paragraph at lines 963--965
 []\T1/ptm/m/n/12 A pu-ta-tive cou-ple is kept in set to be re-turned if the
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 960--962
+Underfull \hbox (badness 1087) in paragraph at lines 963--965
 \T1/ptm/m/n/12 dis-tance be-tween mid-points of in-volved lines is lesser than
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 960--962
+Underfull \hbox (badness 1038) in paragraph at lines 963--965
 \OML/ztmcm/m/it/12 MP[]THRESHOLD \OT1/ztmcm/m/n/12 = 0\OML/ztmcm/m/it/12 :\OT1/ztmcm/m/n/12 1[]$ \T1/ptm/m/n/12 and the dif-fer-ence be-tween their
  []
 
-<images/two_frames/P_PTP_PT_after_LS.png, id=317, 1325.95375pt x 692.5875pt>
+<images/two_frames/P_PTP_PT_after_LS.png, id=318, 1325.95375pt x 692.5875pt>
 File: images/two_frames/P_PTP_PT_after_LS.png Graphic file (type png)
  <use images/two_frames/P_PTP_PT_after_LS.png>
-Package pdftex.def Info: images/two_frames/P_PTP_PT_after_LS.png used on input line 965.
+Package pdftex.def Info: images/two_frames/P_PTP_PT_after_LS.png used on input line 968.
 (pdftex.def)             Requested size: 312.98032pt x 163.4767pt.
- <images/two_frames/data_association_no_eval.png, id=318, 1333.98375pt x 699.61375pt>
+ <images/two_frames/data_association_no_eval.png, id=319, 1333.98375pt x 699.61375pt>
 File: images/two_frames/data_association_no_eval.png Graphic file (type png)
  <use images/two_frames/data_association_no_eval.png>
-Package pdftex.def Info: images/two_frames/data_association_no_eval.png used on input line 970.
+Package pdftex.def Info: images/two_frames/data_association_no_eval.png used on input line 973.
 (pdftex.def)             Requested size: 312.98032pt x 164.14236pt.
- <images/two_frames/data_association.png, id=319, 1329.96875pt x 699.61375pt>
+ <images/two_frames/data_association.png, id=320, 1329.96875pt x 699.61375pt>
 File: images/two_frames/data_association.png Graphic file (type png)
  <use images/two_frames/data_association.png>
-Package pdftex.def Info: images/two_frames/data_association.png used on input line 975.
+Package pdftex.def Info: images/two_frames/data_association.png used on input line 978.
 (pdftex.def)             Requested size: 312.98032pt x 164.63342pt.
- [37] [38 <./images/two_frames/P_PTP_PT_after_LS.png> <./images/two_frames/data_association_no_eval.png> <./images/two_frames/data_association.png>]pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
+ [37 <./images/two_frames/P_PTP_PT_after_LS.png>] [38 <./images/two_frames/data_association_no_eval.png> <./images/two_frames/data_association.png>]pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.980 \begin{equation}
+l.983 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.980 \begin{equation}
+l.983 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.980 \begin{equation}
+l.983 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.980 \begin{equation}
+l.983 \begin{equation}
                        <images/chi.jpeg, id=336, 642.4pt x 450.68375pt>
 File: images/chi.jpeg Graphic file (type jpg)
  <use images/chi.jpeg>
-Package pdftex.def Info: images/chi.jpeg used on input line 996.
+Package pdftex.def Info: images/chi.jpeg used on input line 999.
 (pdftex.def)             Requested size: 312.98032pt x 219.57849pt.
  [39 <./images/chi.jpeg>]
 \tf@lof=\write5
-\openout5 = `TSWLatexianTemp_000650.lof'.
+\openout5 = `TSWLatexianTemp_000713.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1002.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1005.
  [40
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1002.
- (./TSWLatexianTemp_000650.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1002.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1002.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1005.
+ (./TSWLatexianTemp_000713.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1005.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1005.
 
 
-Package rerunfilecheck Warning: File `TSWLatexianTemp_000650.out' has changed.
+Package rerunfilecheck Warning: File `TSWLatexianTemp_000713.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `TSWLatexianTemp_000650.out':
+Package rerunfilecheck Info: Checksums for `TSWLatexianTemp_000713.out':
 (rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  6F273C9FC59980BA140880D96D232F45;2308.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1002.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1005.
  ) 
 Here is how much of TeX's memory you used:
  11399 strings out of 493633
@@ -1154,7 +1133,7 @@ Here is how much of TeX's memory you used:
  831 hyphenation exceptions out of 8191
  36i,17n,43p,1083b,409s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TSWLatexianTemp_000650.pdf (40 pages, 1623014 bytes).
+Output written on TSWLatexianTemp_000713.pdf (40 pages, 1630335 bytes).
 PDF statistics:
  428 PDF objects out of 1000 (max. 8388607)
  338 compressed objects within 4 object streams

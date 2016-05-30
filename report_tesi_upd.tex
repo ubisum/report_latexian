@@ -761,10 +761,11 @@ Using global matrices, we can solve system
 and obtain a new value $T_{\mbox{new}}$ for the current estimate of transformation, according to
 \begin{equation}
 	\begin{aligned}
-		T_{\mbox{new}} &= \Delta T^\star \cdot T \\
+		T_{\mbox{new}} &= \mbox{toMatrix}(\Delta T)^\star \cdot T \\
 		T  &\leftarrow  T_{\mbox{new}} 
 	\end{aligned}
 \end{equation}
+where \emph{toMatrix} is a function that builds a transformation matrix, starting from vector $\Delta T$, containing displacements along axes and rotation value.
 
 \subsection{Determining associations between features}
 All what has been explained in previous section, can be inserted in an iteration process that tends to reduce progressively the error in alignment between two frames, while trying to find the transformation $T$ to map one into the other. \\
@@ -785,14 +786,16 @@ Lately, for each couple of indexes, we evaluate the difference between the value
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=.90\textwidth]{images/iterative_process.jpg}
+\includegraphics[width=1\textwidth]{images/iterative_process.jpg}
 \caption{Block representation of a single iteration in $T$ estimation}
 \end{figure}
 
 \chapter{Experiments}
 \section{Introduction}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies dictum neque et aliquet. In faucibus vitae justo vitae molestie. Cras posuere turpis eu sapien dictum ornare. Pellentesque posuere lacinia tortor quis congue. Mauris in arcu hendrerit, feugiat arcu eu, molestie felis. Integer velit ante, blandit vel placerat quis, accumsan sed eros. Nunc tincidunt leo ut elit bibendum finibus. Suspendisse ut sapien consectetur, dictum ex et, tempor eros. Duis lacinia sapien a massa elementum, rutrum tempus odio venenatis. Integer eu pharetra augue. Aliquam et justo non orci sodales mollis. Curabitur dolor mi, porttitor ac purus et, elementum pellentesque risus. Morbi id imperdiet nisl. Donec varius convallis diam, sed rutrum risus porta tincidunt. 
+This chapter deals with some tests designed to evaluate two of the parts composing thesis: the least square estimation (LSE) module and the one performing data association. For each test, results will be shown, along with input values given to each module.
+Before going into deep of tests, the reader will be introduced to the main means used for evaluation: the Robot Operating System and its embedded module \emph{Stage}, used to generate data and simulations.
 
+ 
 \section{Robot Operating System}
 According to Willow Garage, the research laboratory that developed it in 2007, the \textbf{Robot Operating System} (\textbf{ROS}) can be defined as a \emph{flexible framework for writing robot software}. Actually, ROS can be thought of as a collection of frameworks that can be exploited for the development of robot's software; such collection, furnishes all the typical functionalities of an operating system,  along with robot-oriented capabilities. Here is a short list:
 \begin{itemize}
