@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  30 MAY 2016 18:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  30 MAY 2016 19:51
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/università/tesi/report_latexian/TSWLatexianTemp_000426.tex
-(/università/tesi/report_latexian/TSWLatexianTemp_000426.tex
+**/università/tesi/report_latexian/TSWLatexianTemp_000650.tex
+(/università/tesi/report_latexian/TSWLatexianTemp_000650.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, german-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabic, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnish, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji, lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, polish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/report.cls
@@ -709,8 +709,8 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is usel
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 42.
 
 LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 49.
-No file TSWLatexianTemp_000426.aux.
-\openout1 = `TSWLatexianTemp_000426.aux'.
+No file TSWLatexianTemp_000650.aux.
+\openout1 = `TSWLatexianTemp_000650.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
@@ -808,13 +808,13 @@ LaTeX Info: Redefining \ref on input line 58.
 LaTeX Info: Redefining \pageref on input line 58.
 LaTeX Info: Redefining \nameref on input line 58.
 \@outlinefile=\write3
-\openout3 = `TSWLatexianTemp_000426.out'.
+\openout3 = `TSWLatexianTemp_000650.out'.
 
 \c@lstlisting=\count155
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 62.
 \tf@toc=\write4
-\openout4 = `TSWLatexianTemp_000426.toc'.
+\openout4 = `TSWLatexianTemp_000650.toc'.
 
  [1
 
@@ -1086,57 +1086,78 @@ Underfull \hbox (badness 1038) in paragraph at lines 960--962
 <images/two_frames/P_PTP_PT_after_LS.png, id=317, 1325.95375pt x 692.5875pt>
 File: images/two_frames/P_PTP_PT_after_LS.png Graphic file (type png)
  <use images/two_frames/P_PTP_PT_after_LS.png>
-Package pdftex.def Info: images/two_frames/P_PTP_PT_after_LS.png used on input line 967.
+Package pdftex.def Info: images/two_frames/P_PTP_PT_after_LS.png used on input line 965.
 (pdftex.def)             Requested size: 312.98032pt x 163.4767pt.
  <images/two_frames/data_association_no_eval.png, id=318, 1333.98375pt x 699.61375pt>
 File: images/two_frames/data_association_no_eval.png Graphic file (type png)
  <use images/two_frames/data_association_no_eval.png>
-Package pdftex.def Info: images/two_frames/data_association_no_eval.png used on input line 972.
+Package pdftex.def Info: images/two_frames/data_association_no_eval.png used on input line 970.
 (pdftex.def)             Requested size: 312.98032pt x 164.14236pt.
  <images/two_frames/data_association.png, id=319, 1329.96875pt x 699.61375pt>
 File: images/two_frames/data_association.png Graphic file (type png)
  <use images/two_frames/data_association.png>
-Package pdftex.def Info: images/two_frames/data_association.png used on input line 977.
+Package pdftex.def Info: images/two_frames/data_association.png used on input line 975.
 (pdftex.def)             Requested size: 312.98032pt x 164.63342pt.
- [37] [38 <./images/two_frames/P_PTP_PT_after_LS.png> <./images/two_frames/data_association_no_eval.png> <./images/two_frames/data_association.png>]
+ [37] [38 <./images/two_frames/P_PTP_PT_after_LS.png> <./images/two_frames/data_association_no_eval.png> <./images/two_frames/data_association.png>]pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.980 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.980 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.980 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.980 \begin{equation}
+                       <images/chi.jpeg, id=336, 642.4pt x 450.68375pt>
+File: images/chi.jpeg Graphic file (type jpg)
+ <use images/chi.jpeg>
+Package pdftex.def Info: images/chi.jpeg used on input line 996.
+(pdftex.def)             Requested size: 312.98032pt x 219.57849pt.
+ [39 <./images/chi.jpeg>]
 \tf@lof=\write5
-\openout5 = `TSWLatexianTemp_000426.lof'.
+\openout5 = `TSWLatexianTemp_000650.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 982.
- [39
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1002.
+ [40
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 982.
- (./TSWLatexianTemp_000426.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 982.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 982.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1002.
+ (./TSWLatexianTemp_000650.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1002.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1002.
 
 
-Package rerunfilecheck Warning: File `TSWLatexianTemp_000426.out' has changed.
+Package rerunfilecheck Warning: File `TSWLatexianTemp_000650.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `TSWLatexianTemp_000426.out':
+Package rerunfilecheck Info: Checksums for `TSWLatexianTemp_000650.out':
 (rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  6F273C9FC59980BA140880D96D232F45;2308.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 982.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1002.
  ) 
 Here is how much of TeX's memory you used:
- 11391 strings out of 493633
- 167793 string characters out of 3143378
+ 11399 strings out of 493633
+ 167928 string characters out of 3143378
  276791 words of memory out of 3000000
- 14256 multiletter control sequences out of 15000+200000
+ 14260 multiletter control sequences out of 15000+200000
  97353 words of font info for 156 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  36i,17n,43p,1083b,409s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TSWLatexianTemp_000426.pdf (39 pages, 1597967 bytes).
+Output written on TSWLatexianTemp_000650.pdf (40 pages, 1623014 bytes).
 PDF statistics:
- 418 PDF objects out of 1000 (max. 8388607)
- 331 compressed objects within 4 object streams
- 167 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 428 PDF objects out of 1000 (max. 8388607)
+ 338 compressed objects within 4 object streams
+ 171 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

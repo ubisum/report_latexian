@@ -980,17 +980,12 @@ A good question to answer is about a good number of iterations for data associat
 \begin{equation}
 	e_{ij}\Omega_{ij}e_{ij}^T
 \end{equation}
-The quantities in (4.1) computed at $i$-th iteration of LSE can be summed, an error measurement $\chi_i$. Thus, after $N$ iterations, LSE return a total local error
-\begin{equation}
-	\chi = \sum_i^N \chi_i
-\end{equation}
-
+The errors $e_{ij}$ computed at $i$-th iteration of LSE can be summed, obtaining a total local error $\chi_i$. \\
 So, at $j$-th execution of data association module, we obtain a global error measurement
 \begin{equation}
-	E_j = \frac{\chi_{j}}{a_j}
+	E_j = \frac{\sum_i^N \chi_i}{a_j}
 \end{equation}
-where $a_j$ is the number of associations found at iteration $j$ and $\chi_{j}$ is the local error of LSE module at the $j$-th iteration of data association module. \\
-Figure 4.14 shows that, after remaining constant up to 50th iteration, error $E_j$ almost falls down to zero and doesn't vary even after many other iterations. So, 50 proved to be a good choice when deciding how many times data association needs to be executed. 
+where $a_j$ is the number of associations found at iteration $j$.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=1.0\textwidth]{images/chi.jpeg}

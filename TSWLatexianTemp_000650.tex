@@ -958,9 +958,7 @@ So it is clear that LSE module needs to be integrated with some other sort of mo
 As explained in 3.3.2, a first set of putative couples is formed by comparing the normals of lines candidate to be associated: if the dot product exceeds a given threshold, the two lines form a temporarily accepted couple. For our test, we used a threshold $NORM\_THRESHOLD = 0.8$.
 
 A putative couple is kept in set to be returned if the distance between midpoints of involved lines is lesser than $MP\_THRESHOLD = 0.1^2$ and the difference between their slopes falls below $ANGLE\_THRESHOLD = \frac{5\pi}{180}$. \\
-A shown in Figure 4.12, now the full system composed by LSE and data association is able to return a transformation $T_{21}$ that allows to optimally align $p_1$'s and $p_2$'s frames. In particular, Figure 4.13 shown the associations between lines obtained using the last $T_{21}$ returned. It is evident that even the data association process 
-
-
+A shown in Figure 4.12, now the full system composed by LSE and data association is able to return a transformation $T_{21}$ that allows to optimally align $p_1$'s and $p_2$'s frames. In particular, Figure 4.13 shown the associations between lines obtained using the last $T_{21}$ returned. It is evident that even the data association process benefits of the coupling of the modules.
 
 \begin{figure}[htbp]
 \centering
@@ -977,6 +975,28 @@ A shown in Figure 4.12, now the full system composed by LSE and data association
 \includegraphics[width=1.0\textwidth]{images/two_frames/data_association.png}
 \caption{Associations between lines seen from $p_1$ (red) and $p_2$'s transformed lines (green). Associations are shown in blue}
 \end{figure}
+
+A good question to answer is about a good number of iterations for data association module, i.e. how many times LSE module has to be called and how many times its output needs to be corrected. As explained before, LSE works with an initial set of lines couples; for each of them, it is possible to calculate the error $e_{ij}$ and covariance matrix $\Omega_{ij}$, according to equations 3.8 and 3.11. So, for each couple, an error measure is given by 
+\begin{equation}
+	e_{ij}\Omega_{ij}e_{ij}^T
+\end{equation}
+The quantities in (4.1) computed at $i$-th iteration of LSE can be summed, an error measurement $\chi_i$. Thus, after $N$ iterations, LSE return a total local error
+\begin{equation}
+	\chi = \sum_i^N \chi_i
+\end{equation}
+
+So, at $j$-th execution of data association module, we obtain a global error measurement
+\begin{equation}
+	E_j = \frac{\chi_{j}}{a_j}
+\end{equation}
+where $a_j$ is the number of associations found at iteration $j$ and $\chi_{j}$ is the local error of LSE module at the $j$-th iteration of data association module. \\
+Figure 4.14 shows that, after remaining constant up to 50th iteration, error $E_j$ almost falls down to zero and doesn't vary even after many other iterations. So, 50 proved to be a good choice when deciding how many times data association needs to be executed. 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1.0\textwidth]{images/chi.jpeg}
+\caption{Number of iterations of data association module (X axis) and values of $E_j$ (Y axis)}
+\end{figure}
+
 
 \listoffigures
 \end{document}

@@ -25,3 +25,4 @@
 \contentsline {figure}{\numberline {4.11}{\ignorespaces The lines extracted from $p_1$(red), the ones extracted from $p_2$ (green) and the ones obtained after applying $T_{21}$ to lines in $p_2$ (blue)\relax }}{38}{figure.caption.20}
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Lines acquired fron $p_1$ (red) and the ones seen from $p_2$ (green), after applying transformation $T_{21}$ returned by the couples of modules made by LSE and data association\relax }}{38}{figure.caption.21}
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Associations between lines seen from $p_1$ (red) and $p_2$'s transformed lines (green). Associations are shown in blue\relax }}{38}{figure.caption.22}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Number of iterations of data association module (X axis) and values of $E_j$ (Y axis)\relax }}{39}{figure.caption.23}
