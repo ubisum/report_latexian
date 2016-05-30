@@ -903,7 +903,7 @@ The testing part was inserted in a separate ROS node; the node first loaded all 
 
 \subsection{Testing least squares estimation (LSE)}
 The first and easiest test that can be performed on LSE module requires to take the lines extracted from a scan of robot (at a given pose), to apply them a chosen transformation and to verify whether the LSE can reconstruct the applied transformation, without knowing it a priori.
-Let's start with a transformation that causes line to translate, without introducing any rotation. For instance, let's consider the following matrix:
+Let's start with a transformation that causes lines to translate, without introducing any rotation. For instance, let's consider the following matrix:
 \begin{equation}
 	T_t = \left(\begin{matrix}1 && 0 && 5 \\ 0 && 1 && 7 \\ 0 && 0 && 1\end{matrix} \right) \notag
 \end{equation}
@@ -950,6 +950,33 @@ and its inverse
 \end{figure}
 As shown in Figures 4.9 and 4.10, even in this case the original lines (red) coincide with the ones obtained by applying to transformed lines the transformation returned by LSE. In this case, too, we have transformed original lines using $T_{rt}^{-1}$ and asked LSE to guess that $T_{rt}$ is the right matrix to bring transformed lines to their original form.
 
+\subsection{Testing data association}
+After verifying that simple tests executed in previous section gave good results, it was necessary to stress the system and prove its performance in a tougher case. Instead of creating a fictitious scan, whose extracted lines are obtained by applying an initial chosen transformation, let's consider two close robot poses $p_1$ and $p_2$, that differ in terms of odometric measurements. This means that, from these poses and scans acquired from them, we will certainly extract different lines or the same lines with different length and slope. \\ 
+We asked LSE to compute the transformation $T_{21}$ that should map lines extracted in $p_2$'s reference frame to $p_1$'s. We then applied $T_{21}$ to $p_2$'s lines. The result is shown in Figure 4.11. As it is evident, LSE by itself is not able to furnish a good transformation to map correctly lines seen from $p_2$ to $p_1$'s reference frame, since even lines that are evidently the same are far from each other and differently rotated. 
+
+So it is clear that LSE module needs to be integrated with some other sort of module to improve its performances; that is why, as shown in Figure 3.2, we coupled LSE with a data association module; the latter recalls iteratively LSE (which has an iterative nature of its own) correcting every time the set of initial couples with which LSE works. Such correction is made using last transformation $T_{21}$ returned by LSE at last iteration (at first launch of LSE it is possible to use an identity matrix). We move lines seen from $p_2$ to $p_1$'s frame and try to form couples of associations between the set of transformed lines and the ones in $p_1$'s frame. \\
+As explained in 3.3.2, a first set of putative couples is formed by comparing the normals of lines candidate to be associated: if the dot product exceeds a given threshold, the two lines form a temporarily accepted couple. For our test, we used a threshold $NORM\_THRESHOLD = 0.8$.
+
+A putative couple is kept in set to be returned if the distance between midpoints of involved lines is lesser than $MP\_THRESHOLD = 0.1^2$ and the difference between their slopes falls below $ANGLE\_THRESHOLD = \frac{5\pi}{180}$. \\
+A shown in Figure 4.12, now the full system composed by LSE and data association is able to return a transformation $T_{21}$ that allows to optimally align $p_1$'s and $p_2$'s frames. In particular, Figure 4.13 shown the associations between lines obtained using the last $T_{21}$ returned. It is evident that even the data association process 
+
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1.0\textwidth]{images/two_frames/P_PTP_PT_after_LS.png}
+\caption{The lines extracted from $p_1$(red), the ones extracted from $p_2$ (green) and the ones obtained after applying $T_{21}$ to lines in $p_2$ (blue)}
+\end{figure}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1.0\textwidth]{images/two_frames/data_association_no_eval.png}
+\caption{Lines acquired fron $p_1$	(red) and the ones seen from $p_2$ (green), after applying transformation $T_{21}$ returned by the couples of modules made by LSE and data association}
+\end{figure}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1.0\textwidth]{images/two_frames/data_association.png}
+\caption{Associations between lines seen from $p_1$ (red) and $p_2$'s transformed lines (green). Associations are shown in blue}
+\end{figure}
 
 \listoffigures
 \end{document}
