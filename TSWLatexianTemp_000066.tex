@@ -62,9 +62,13 @@
 \tableofcontents
 \newpage
 
+\chapter{Introduction}
+\tab Nowadays, mobile robots are employed for a great variety of uses: rescue operations, elder's assistance, find and relocate objects in a manufacturing environment. In these situations, the people to care about or the objects to handle may be located in any place, thus robot needs to have a perfect idea of the ambient it is moving in, to navigate and search the area in an autonomous way. \\
+The capability to obtain a reliable perception of surrounding world passes, in the first instance, through the use of specific sensors, whose choice depends on the task to accomplish and required dependability.
+
 \chapter{Related work}
 \section{Introduction}
-Self localization of robot inside a unknow environment passes through the extraction of relevant patterns from data acquired by sensors on-board. Such patterns, usually called \emph{features}, must be chosen carefully and tested, in order to realize whether their are suitable for the task to be accomplished. \\
+Self localisation of robot inside a unknown environment passes through the extraction of relevant patterns from data acquired by sensors on-board. Such patterns, usually called \emph{features}, must be chosen carefully and tested, in order to realize whether their are suitable for the task to be accomplished. \\
 In this chapter, we will describe a procedure to estimate how much a certain features is useful, by exploiting the concept of \emph{dissimilarity}, i.e. a measure of how much a sensor's perception (an image taken by a camera, for instance) changes with respect to a reference one.
 
 The same importance must be given to the way we choose to represent a feature, in order to be able to individuate it when it figures out in different scans of robot. In this thesis, we decided to use lines as features; we will describe, then, in the beginning of this chapter, how the polar representation of a line was exploited in Hough domain, to individuate an algorithm able to solve the so called \emph{scan matching} problem. \\ 

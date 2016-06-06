@@ -56,22 +56,15 @@
 %\renewcommand{\labelitemii}{$\bullet$}
 
 \begin{document}
-\Large
+\large
 \sloppy
 
 \tableofcontents
 \newpage
 
 \chapter{Introduction}
-Nowadays, mobile robots are employed for a great variety of uses: rescue operations, elder's assistance, find and relocate objects in a manufacturing environment. In these situations, the people to care about or the objects to handle may be located in any place, thus robot needs to have a perfect idea of the ambient it is moving in, to navigate and search the area in an autonomous way. \\
-The capability to obtain a reliable perception of surrounding world passes, in the first instance, through the use of specific sensors, whose choice depends on the task to accomplish and required dependability. Sensors allow robot to measure walked distance and perceive obstacles in its surroundings, in order to avoid them and use them to construct a map, in which a safe path can be planned. in particular, sensors mounted on wheels allow robot to estimate its position and orientation in relation to a starting pose, through the accumulation of small single perceived translations and/or rotations, using the so called \emph{odometry equations}.
-
-Anyway, it can't be ignored that sensors, whatever their nature and the purpose they are meant for, introduce different kinds of errors; in the case of odometry, causes of errors may lie in robot's construction (for instance, wheels of different size or misaligned) or to elements encountered in the ambient, which may cause slippages or jerks. These kinds of errors can be estimated in all cases and kept into account for a best definition of pose, implementing a standard procedure.
-
-A reliable knowledge of environment is not made only of a good estimation of robot's pose, but it comprises even a good awareness of walls and items, since their size and position affect the definition of map in which robot needs to move. \\
-Range-finder laser scanners are one of the best sensors to take a look at the surrounding, since it furnishes distance and position in space of points revealed by a laser beam. The amount of data returned by range-finder needs to be elaborated, since, as it is, it is unfeasible to manage. Thus, a good idea is extracting from data only a significative part, which is representative of data itself and reduce, then, computation to a small subset of information. \\
-The elements of interest in a single perception of ambient are often called \emph{features}; they are requested to be not only representative of data but of great significance if compared to previously extracted information. An effective discriminating factor consists in measuring how much a feature embodies a relevant part of \emph{dissimilarity} between last laser scan and previous ones. \\
-An example of features that can be extracted from a scan is given by lines; the algorithms for extraction are numerous and there is not a definitive choice, since they differ in terms of computation heaviness and performance; when requirements are not excessively demanding, \emph{split and merge} algorithm represents a good trade off between produced results and computing requests. It uses a \emph{divide et impera} approach and returns line by their extremes. In any case, alternative representation are possible for line, considering, for instance, their distance from origin of a chosen reference frame and their slope.
+\>Nowadays, mobile robots are employed for a great variety of uses: rescue operations, elder's assistance, find and relocate objects in a manufacturing environment. In these situations, the people to care about or the objects to handle may be located in any place, thus robot needs to have a perfect idea of the ambient it is moving in, to navigate and search the area in an autonomous way. \\
+The capability to obtain a reliable perception of surrounding world passes, in the first instance, through the use of specific sensors, whose choice depends on the task to accomplish and required dependability.
 
 \chapter{Related work}
 \section{Introduction}
