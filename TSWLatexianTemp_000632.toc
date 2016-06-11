@@ -1,0 +1,34 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
+\contentsline {chapter}{\numberline {2}Related work}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Related work in scan matching}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Scan matching using the Hough transform}{5}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Scan matching in polygonal environments}{8}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Selecting features to track}{10}{section.2.3}
+\contentsline {chapter}{\numberline {3}Basic concepts}{14}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{14}{section.3.1}
+\contentsline {section}{\numberline {3.2}Robot sensors}{14}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Range sensors}{15}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Odometry}{16}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Systematic and Non-Systematic errors in odometry}{18}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Measuring Systematic errors}{19}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Measuring non-Systematic errors}{20}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Extracting features}{21}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Extracting lines as features}{22}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.5}Least squares estimation}{23}{section.3.5}
+\contentsline {chapter}{\numberline {4}Fast Position Tracking: overall approach}{26}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{26}{section.4.1}
+\contentsline {section}{\numberline {4.2}Landmarks and features}{26}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Extraction and model of features}{27}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Matching features}{28}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Solving matching problem using least squares estimation}{29}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Determining associations between features}{31}{subsection.4.3.2}
+\contentsline {chapter}{\numberline {5}Experiments}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{33}{section.5.1}
+\contentsline {section}{\numberline {5.2}Robot Operating System}{33}{section.5.2}
+\contentsline {section}{\numberline {5.3}The ROS Stage Simulator}{35}{section.5.3}
+\contentsline {section}{\numberline {5.4}Results}{36}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Preliminaries}{36}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Testing least squares estimation (LSE)}{37}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Testing data association}{39}{subsection.5.4.3}

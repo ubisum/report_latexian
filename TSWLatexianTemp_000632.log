@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  11 JUN 2016 17:30
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  11 JUN 2016 18:58
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/università/tesi/report_latexian/TSWLatexianTemp_000480.tex
-(/università/tesi/report_latexian/TSWLatexianTemp_000480.tex
+**/università/tesi/report_latexian/TSWLatexianTemp_000632.tex
+(/università/tesi/report_latexian/TSWLatexianTemp_000632.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, german-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabic, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnish, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji, lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, polish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/report.cls
@@ -718,8 +718,8 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is usel
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 44.
 
 LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 51.
-No file TSWLatexianTemp_000480.aux.
-\openout1 = `TSWLatexianTemp_000480.aux'.
+No file TSWLatexianTemp_000632.aux.
+\openout1 = `TSWLatexianTemp_000632.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
@@ -747,14 +747,14 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(142.26378pt, 312.98032pt, 142.26378pt)
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
 * v-part:(T,H,B)=(56.9055pt, 702.78308pt, 85.35826pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=312.98032pt
+* \textwidth=426.79135pt
 * \textheight=702.78308pt
-* \oddsidemargin=69.99379pt
-* \evensidemargin=69.99379pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -817,13 +817,13 @@ LaTeX Info: Redefining \ref on input line 60.
 LaTeX Info: Redefining \pageref on input line 60.
 LaTeX Info: Redefining \nameref on input line 60.
 \@outlinefile=\write3
-\openout3 = `TSWLatexianTemp_000480.out'.
+\openout3 = `TSWLatexianTemp_000632.out'.
 
 \c@lstlisting=\count156
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 64.
 \tf@toc=\write4
-\openout4 = `TSWLatexianTemp_000480.toc'.
+\openout4 = `TSWLatexianTemp_000632.toc'.
 
  [1
 
@@ -875,272 +875,296 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <14.4> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 98.
- [5] <images/ht.jpeg, id=38, 512.91624pt x 384.43625pt>
+ [5] <images/ht.jpeg, id=45, 512.91624pt x 384.43625pt>
 File: images/ht.jpeg Graphic file (type jpg)
  <use images/ht.jpeg>
 Package pdftex.def Info: images/ht.jpeg used on input line 143.
-(pdftex.def)             Requested size: 112.67043pt x 84.44717pt.
+(pdftex.def)             Requested size: 153.64148pt x 115.15578pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 145.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 145.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 145.
- <images/dht.jpeg, id=39, 540.0175pt x 417.56pt>
+ <images/dht.jpeg, id=46, 540.0175pt x 417.56pt>
 File: images/dht.jpeg Graphic file (type jpg)
  <use images/dht.jpeg>
 Package pdftex.def Info: images/dht.jpeg used on input line 149.
-(pdftex.def)             Requested size: 112.67043pt x 87.11674pt.
- [6] [7 <./images/ht.jpeg> <./images/dht.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 183--186
-\T1/ptm/m/n/14.4 By cor-re-lat-ing the columns of $[][]$ and
- []
-
-
-Underfull \hbox (badness 1122) in paragraph at lines 183--186
-[][]$\T1/ptm/m/n/14.4 , the pro-jec-tion of $\OML/ztmcm/m/it/14.4 T$ \T1/ptm/m/n/14.4 onto the di-rec-tion $[]$,
- []
-
-[8]
+(pdftex.def)             Requested size: 153.64148pt x 118.79556pt.
+ [6 <./images/ht.jpeg> <./images/dht.jpeg>] [7] [8]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 228.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 228.
- <images/robocup_robot_positions.jpeg, id=74, 703.62875pt x 407.5225pt>
+ <images/robocup_robot_positions.jpeg, id=76, 703.62875pt x 407.5225pt>
 File: images/robocup_robot_positions.jpeg Graphic file (type jpg)
  <use images/robocup_robot_positions.jpeg>
 Package pdftex.def Info: images/robocup_robot_positions.jpeg used on input line 247.
-(pdftex.def)             Requested size: 281.68037pt x 163.13669pt.
- [9] [10] <images/robocup_alg_module.jpeg, id=86, 714.67pt x 317.185pt>
+(pdftex.def)             Requested size: 384.1096pt x 222.46535pt.
+ <images/robocup_alg_module.jpeg, id=77, 714.67pt x 317.185pt>
 File: images/robocup_alg_module.jpeg Graphic file (type jpg)
  <use images/robocup_alg_module.jpeg>
 Package pdftex.def Info: images/robocup_alg_module.jpeg used on input line 262.
-(pdftex.def)             Requested size: 281.68037pt x 125.01323pt.
- [11 <./images/robocup_robot_positions.jpeg> <./images/robocup_alg_module.jpeg>] [12pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.23}) has been already used, duplicate ignored
+(pdftex.def)             Requested size: 384.1096pt x 170.47392pt.
+ [9] [10 <./images/robocup_robot_positions.jpeg> <./images/robocup_alg_module.jpeg>] [11pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.23}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.296 
-      ] [13pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.26}) has been already used, duplicate ignored
+l.308 \end{equation}
+                    ] [12pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.26}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.328 \begin{equation}
-                      ] <images/features_original_image.jpeg, id=113, 501.875pt x 335.2525pt>
+l.336 \begin{equation}
+                      ] <images/features_original_image.jpeg, id=109, 501.875pt x 335.2525pt>
 File: images/features_original_image.jpeg Graphic file (type jpg)
  <use images/features_original_image.jpeg>
 Package pdftex.def Info: images/features_original_image.jpeg used on input line 345.
-(pdftex.def)             Requested size: 187.78532pt x 125.44313pt.
- <images/features_extracted_features.jpeg, id=114, 501.875pt x 331.2375pt>
+(pdftex.def)             Requested size: 256.07089pt x 171.06348pt.
+ <images/features_extracted_features.jpeg, id=110, 501.875pt x 331.2375pt>
 File: images/features_extracted_features.jpeg Graphic file (type jpg)
  <use images/features_extracted_features.jpeg>
 Package pdftex.def Info: images/features_extracted_features.jpeg used on input line 351.
-(pdftex.def)             Requested size: 187.78532pt x 123.94081pt.
- [14] [15 <./images/features_original_image.jpeg> <./images/features_extracted_features.jpeg>]
+(pdftex.def)             Requested size: 256.07089pt x 169.0148pt.
+ [13 <./images/features_original_image.jpeg> <./images/features_extracted_features.jpeg>]
 Chapter 3.
-[16
+[14
 
-] [17] [18] [19]
-Underfull \hbox (badness 1337) in paragraph at lines 458--461
-[]\T1/ptm/m/n/14.4 As ex-plained pre-vi-ously, the odom-e-try ex-ploits
- []
-
-
+] [15] [16]
 Underfull \hbox (badness 10000) in paragraph at lines 458--461
 
  []
 
-[20] [21] <images/ellipses.jpeg, id=164, 778.91pt x 305.14pt>
+[17] [18] <images/ellipses.jpeg, id=151, 778.91pt x 305.14pt>
 File: images/ellipses.jpeg Graphic file (type jpg)
  <use images/ellipses.jpeg>
 Package pdftex.def Info: images/ellipses.jpeg used on input line 487.
-(pdftex.def)             Requested size: 281.68037pt x 110.3485pt.
- [22 <./images/ellipses.jpeg>] <images/unidirectional_nominal_path.jpeg, id=172, 456.70625pt x 362.35374pt>
+(pdftex.def)             Requested size: 384.1096pt x 150.47438pt.
+ [19 <./images/ellipses.jpeg>] <images/unidirectional_nominal_path.jpeg, id=160, 456.70625pt x 362.35374pt>
 File: images/unidirectional_nominal_path.jpeg Graphic file (type jpg)
  <use images/unidirectional_nominal_path.jpeg>
 Package pdftex.def Info: images/unidirectional_nominal_path.jpeg used on input line 530.
-(pdftex.def)             Requested size: 156.49016pt x 124.16069pt.
- [23]
-Overfull \hbox (9.93277pt too wide) detected at line 538
-[][]\OML/ztmcm/m/it/14.4 ^^O[] \OT1/ztmcm/m/n/14.4 = [] [] \OMS/ztmcm/m/n/14.4 j\OML/ztmcm/m/it/14.4 ^^O[] \OMS/ztmcm/m/n/14.4 ^^@ \OML/ztmcm/m/it/14.4 ^^O[]\OMS/ztmcm/m/n/14.4 j \OT1/ztmcm/m/n/14.4 + [] [] \OMS/ztmcm/m/n/14.4 j\OML/ztmcm/m/it/14.4 ^^O[] \OMS/ztmcm/m/n/14.4 ^^@ \OML/ztmcm/m/it/14.4 ^^O[]\OMS/ztmcm/m/n/14.4 j
- []
-
-[24 <./images/unidirectional_nominal_path.jpeg>] [25] [26] [27] [28pdfTeX warning (ext4): destination with the same identifier (name{equation.3.5.12}) has been already used, duplicate ignored
+(pdftex.def)             Requested size: 213.39568pt x 169.30551pt.
+ [20 <./images/unidirectional_nominal_path.jpeg>] [21] [22] [23] [24pdfTeX warning (ext4): destination with the same identifier (name{equation.3.5.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.630 \begin{align}
-                   ] [29]
+l.635 \end{align}
+                 ] [25]
 Chapter 4.
-[30
+[26
 
-] [31] <images/rho_theta.jpeg, id=235, 725.71124pt x 619.31375pt>
+] <images/rho_theta.jpeg, id=212, 725.71124pt x 619.31375pt>
 File: images/rho_theta.jpeg Graphic file (type jpg)
  <use images/rho_theta.jpeg>
 Package pdftex.def Info: images/rho_theta.jpeg used on input line 695.
-(pdftex.def)             Requested size: 156.49016pt x 133.54675pt.
+(pdftex.def)             Requested size: 213.39568pt x 182.11008pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 696.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 696.
- [32 <./images/rho_theta.jpeg>] [33] [34] [35] [36] <images/iterative_process.jpg, id=279, 1026.83624pt x 480.79625pt>
+ [27] [28 <./images/rho_theta.jpeg>] [29] [30] [31] <images/iterative_process.jpg, id=258, 1026.83624pt x 480.79625pt>
 File: images/iterative_process.jpg Graphic file (type jpg)
  <use images/iterative_process.jpg>
 Package pdftex.def Info: images/iterative_process.jpg used on input line 802.
-(pdftex.def)             Requested size: 312.98032pt x 146.5436pt.
- [37 <./images/iterative_process.jpg>]
+(pdftex.def)             Requested size: 426.79135pt x 199.83484pt.
+ [32 <./images/iterative_process.jpg>]
 Chapter 5.
-[38
+[33
 
-] <images/tf.jpeg, id=293, 605.26125pt x 487.8225pt>
+] <images/tf.jpeg, id=272, 605.26125pt x 487.8225pt>
 File: images/tf.jpeg Graphic file (type jpg)
  <use images/tf.jpeg>
 Package pdftex.def Info: images/tf.jpeg used on input line 826.
-(pdftex.def)             Requested size: 281.68037pt x 227.02864pt.
- <images/rviz.jpeg, id=294, 536.0025pt x 308.15125pt>
+(pdftex.def)             Requested size: 384.1096pt x 309.58519pt.
+ <images/rviz.jpeg, id=273, 536.0025pt x 308.15125pt>
 File: images/rviz.jpeg Graphic file (type jpg)
  <use images/rviz.jpeg>
 Package pdftex.def Info: images/rviz.jpeg used on input line 836.
-(pdftex.def)             Requested size: 281.68512pt x 161.94168pt.
- <images/rqt_bag.jpeg, id=295, 473.77pt x 266.9975pt>
+(pdftex.def)             Requested size: 384.1161pt x 220.82957pt.
+ <images/rqt_bag.jpeg, id=274, 473.77pt x 266.9975pt>
 File: images/rqt_bag.jpeg Graphic file (type jpg)
  <use images/rqt_bag.jpeg>
 Package pdftex.def Info: images/rqt_bag.jpeg used on input line 842.
-(pdftex.def)             Requested size: 281.68512pt x 158.74936pt.
-
-Underfull \hbox (badness 2293) in paragraph at lines 850--851
-[]\T1/ptm/m/n/14.4 client li-brary im-ple-men-ta-tions (\T1/ptm/m/it/14.4 roscpp, rospy,
- []
-
-[39 <./images/tf.jpeg>] [40 <./images/rviz.jpeg> <./images/rqt_bag.jpeg>] [41] <images/mappa_dis/dis-B1-2011-09-27.png, id=313, 1013.7875pt x 1074.0125pt>
+(pdftex.def)             Requested size: 384.1161pt x 216.47862pt.
+ [34 <./images/tf.jpeg>] [35] <images/mappa_dis/dis-B1-2011-09-27.png, id=287, 1013.7875pt x 1074.0125pt>
 File: images/mappa_dis/dis-B1-2011-09-27.png Graphic file (type png)
  <use images/mappa_dis/dis-B1-2011-09-27.png>
 Package pdftex.def Info: images/mappa_dis/dis-B1-2011-09-27.png used on input line 874.
-(pdftex.def)             Requested size: 312.98032pt x 331.56383pt.
- <images/mappa_dis/world_file.jpg, id=314, 661.47125pt x 780.9175pt>
+(pdftex.def)             Requested size: 426.79135pt x 452.13101pt.
+ <images/mappa_dis/world_file.jpg, id=288, 661.47125pt x 780.9175pt>
 File: images/mappa_dis/world_file.jpg Graphic file (type jpg)
  <use images/mappa_dis/world_file.jpg>
 Package pdftex.def Info: images/mappa_dis/world_file.jpg used on input line 881.
-(pdftex.def)             Requested size: 312.98032pt x 369.48593pt.
+(pdftex.def)             Requested size: 426.79135pt x 503.84879pt.
 
 Overfull \hbox (9.29999pt too wide) in paragraph at lines 881--882
  [][] 
  []
 
-<images/mappa_dis/yaml_file.jpg, id=315, 641.39626pt x 130.4875pt>
+<images/mappa_dis/yaml_file.jpg, id=289, 641.39626pt x 130.4875pt>
 File: images/mappa_dis/yaml_file.jpg Graphic file (type jpg)
  <use images/mappa_dis/yaml_file.jpg>
 Package pdftex.def Info: images/mappa_dis/yaml_file.jpg used on input line 888.
-(pdftex.def)             Requested size: 312.98032pt x 63.6746pt.
+(pdftex.def)             Requested size: 426.79135pt x 86.82883pt.
 
 Overfull \hbox (9.29999pt too wide) in paragraph at lines 888--889
  [][] 
  []
 
-<images/mappa_dis/teleop_base.jpg, id=316, 657.45625pt x 258.9675pt>
+<images/mappa_dis/teleop_base.jpg, id=290, 657.45625pt x 258.9675pt>
 File: images/mappa_dis/teleop_base.jpg Graphic file (type jpg)
  <use images/mappa_dis/teleop_base.jpg>
 Package pdftex.def Info: images/mappa_dis/teleop_base.jpg used on input line 897.
-(pdftex.def)             Requested size: 312.98032pt x 123.28348pt.
+(pdftex.def)             Requested size: 426.79135pt x 168.11348pt.
 
 Overfull \hbox (9.29999pt too wide) in paragraph at lines 897--898
  [][] 
  []
 
-
-Underfull \hbox (badness 1460) in paragraph at lines 892--901
-\T1/ptm/m/n/14.4 mes-sages ex-change de-scribed in pre-vi-ous sec-tion.
- []
-
-[42 <./images/mappa_dis/dis-B1-2011-09-27.png>] [43 <./images/mappa_dis/world_file.jpg> <./images/mappa_dis/yaml_file.jpg>] [44 <./images/mappa_dis/teleop_base.jpg>] [45] [46pdfTeX warning (ext4): destination with the same identifier (name{equation.5.4.1}) has been already used, duplicate ignored
+[36] [37pdfTeX warning (ext4): destination with the same identifier (name{equation.5.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.964 \end{equation}
-                    ]
-
-LaTeX Warning: File `images/foto_test/-5_-0.3_-4.7124/-5_-0.3_-4.7124_chi.jpg' not found on input line 972.
-
-
-/università/tesi/report_latexian/TSWLatexianTemp_000480.tex:972: LaTeX Error: Unknown graphics extension: .3_-4.7124_chi.jpg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.972 .../-5_-0.3_-4.7124/-5_-0.3_-4.7124_chi.jpg}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[47]
-Underfull \hbox (badness 4416) in paragraph at lines 985--987
-[]\T1/ptm/m/n/14.4 A pu-ta-tive cou-ple is kept in set to be re-
- []
-
-
-Underfull \hbox (badness 2426) in paragraph at lines 985--987
-\T1/ptm/m/n/14.4 turned if the dis-tance be-tween mid-points of in-
- []
-
-<images/two_frames/P_PTP_PT_after_LS.png, id=356, 1325.95375pt x 692.5875pt>
+l.941 
+      ] <images/foto_test/-5_-0.3_-4.7124/plot.jpeg, id=305, 640.3925pt x 384.43625pt>
+File: images/foto_test/-5_-0.3_-4.7124/plot.jpeg Graphic file (type jpg)
+ <use images/foto_test/-5_-0.3_-4.7124/plot.jpeg>
+Package pdftex.def Info: images/foto_test/-5_-0.3_-4.7124/plot.jpeg used on input line 973.
+(pdftex.def)             Requested size: 426.79135pt x 256.21002pt.
+ <images/foto_test/-5_-0.3_-4.7124/chi.jpeg, id=306, 643.40375pt x 391.4625pt>
+File: images/foto_test/-5_-0.3_-4.7124/chi.jpeg Graphic file (type jpg)
+ <use images/foto_test/-5_-0.3_-4.7124/chi.jpeg>
+Package pdftex.def Info: images/foto_test/-5_-0.3_-4.7124/chi.jpeg used on input line 974.
+(pdftex.def)             Requested size: 426.79135pt x 259.68015pt.
+ <images/foto_test/-5_-0.3_0.5236/plot.jpeg, id=307, 644.4075pt x 385.44pt>
+File: images/foto_test/-5_-0.3_0.5236/plot.jpeg Graphic file (type jpg)
+ <use images/foto_test/-5_-0.3_0.5236/plot.jpeg>
+Package pdftex.def Info: images/foto_test/-5_-0.3_0.5236/plot.jpeg used on input line 980.
+(pdftex.def)             Requested size: 426.79135pt x 255.28514pt.
+ <images/foto_test/-5_-0.3_0.5236/chi.jpeg, id=308, 638.385pt x 386.44376pt>
+File: images/foto_test/-5_-0.3_0.5236/chi.jpeg Graphic file (type jpg)
+ <use images/foto_test/-5_-0.3_0.5236/chi.jpeg>
+Package pdftex.def Info: images/foto_test/-5_-0.3_0.5236/chi.jpeg used on input line 981.
+(pdftex.def)             Requested size: 426.79135pt x 258.35579pt.
+ <images/foto_test/-5_7_-4.7124/plot.jpeg, id=309, 642.4pt x 386.44376pt>
+File: images/foto_test/-5_7_-4.7124/plot.jpeg Graphic file (type jpg)
+ <use images/foto_test/-5_7_-4.7124/plot.jpeg>
+Package pdftex.def Info: images/foto_test/-5_7_-4.7124/plot.jpeg used on input line 987.
+(pdftex.def)             Requested size: 426.79135pt x 256.746pt.
+ <images/foto_test/-5_7_-4.7124/chi.jpeg, id=310, 639.38875pt x 382.42876pt>
+File: images/foto_test/-5_7_-4.7124/chi.jpeg Graphic file (type jpg)
+ <use images/foto_test/-5_7_-4.7124/chi.jpeg>
+Package pdftex.def Info: images/foto_test/-5_7_-4.7124/chi.jpeg used on input line 988.
+(pdftex.def)             Requested size: 426.79135pt x 255.27477pt.
+ <images/foto_test/-5_7_0.5236/plot.jpeg, id=311, 641.39626pt x 413.545pt>
+File: images/foto_test/-5_7_0.5236/plot.jpeg Graphic file (type jpg)
+ <use images/foto_test/-5_7_0.5236/plot.jpeg>
+Package pdftex.def Info: images/foto_test/-5_7_0.5236/plot.jpeg used on input line 994.
+(pdftex.def)             Requested size: 426.79135pt x 275.18065pt.
+ <images/foto_test/-5_7_0.5236/chi.jpeg, id=312, 642.4pt x 385.44pt>
+File: images/foto_test/-5_7_0.5236/chi.jpeg Graphic file (type jpg)
+ <use images/foto_test/-5_7_0.5236/chi.jpeg>
+Package pdftex.def Info: images/foto_test/-5_7_0.5236/chi.jpeg used on input line 995.
+(pdftex.def)             Requested size: 426.79135pt x 256.07912pt.
+ <images/foto_test/0.5_-0.3_-4.7124/plot.jpeg, id=313, 641.39626pt x 389.455pt>
+File: images/foto_test/0.5_-0.3_-4.7124/plot.jpeg Graphic file (type jpg)
+ <use images/foto_test/0.5_-0.3_-4.7124/plot.jpeg>
+Package pdftex.def Info: images/foto_test/0.5_-0.3_-4.7124/plot.jpeg used on input line 1001.
+(pdftex.def)             Requested size: 426.79135pt x 259.15071pt.
+ <images/foto_test/0.5_-0.3_-4.7124/chi.jpeg, id=314, 645.41125pt x 381.425pt>
+File: images/foto_test/0.5_-0.3_-4.7124/chi.jpeg Graphic file (type jpg)
+ <use images/foto_test/0.5_-0.3_-4.7124/chi.jpeg>
+Package pdftex.def Info: images/foto_test/0.5_-0.3_-4.7124/chi.jpeg used on input line 1002.
+(pdftex.def)             Requested size: 426.79135pt x 252.22433pt.
+ <images/foto_test/0.5_-0.3_0.5236/plot.jpeg, id=315, 640.3925pt x 387.4475pt>
+File: images/foto_test/0.5_-0.3_0.5236/plot.jpeg Graphic file (type jpg)
+ <use images/foto_test/0.5_-0.3_0.5236/plot.jpeg>
+Package pdftex.def Info: images/foto_test/0.5_-0.3_0.5236/plot.jpeg used on input line 1008.
+(pdftex.def)             Requested size: 426.79135pt x 258.21689pt.
+ <images/foto_test/0.5_-0.3_0.5236/chi.jpeg, id=316, 643.40375pt x 388.45125pt>
+File: images/foto_test/0.5_-0.3_0.5236/chi.jpeg Graphic file (type jpg)
+ <use images/foto_test/0.5_-0.3_0.5236/chi.jpeg>
+Package pdftex.def Info: images/foto_test/0.5_-0.3_0.5236/chi.jpeg used on input line 1009.
+(pdftex.def)             Requested size: 426.79135pt x 257.6826pt.
+ <images/foto_test/0.5_7_-4.7124/plot.jpeg, id=317, 644.4075pt x 389.455pt>
+File: images/foto_test/0.5_7_-4.7124/plot.jpeg Graphic file (type jpg)
+ <use images/foto_test/0.5_7_-4.7124/plot.jpeg>
+Package pdftex.def Info: images/foto_test/0.5_7_-4.7124/plot.jpeg used on input line 1015.
+(pdftex.def)             Requested size: 426.79135pt x 257.94437pt.
+ <images/foto_test/0.5_7_-4.7124/chi.jpeg, id=318, 643.40375pt x 387.4475pt>
+File: images/foto_test/0.5_7_-4.7124/chi.jpeg Graphic file (type jpg)
+ <use images/foto_test/0.5_7_-4.7124/chi.jpeg>
+Package pdftex.def Info: images/foto_test/0.5_7_-4.7124/chi.jpeg used on input line 1016.
+(pdftex.def)             Requested size: 426.79135pt x 257.01677pt.
+ <images/foto_test/0.5_7_0.5236/plot.jpeg, id=319, 642.4pt x 389.455pt>
+File: images/foto_test/0.5_7_0.5236/plot.jpeg Graphic file (type jpg)
+ <use images/foto_test/0.5_7_0.5236/plot.jpeg>
+Package pdftex.def Info: images/foto_test/0.5_7_0.5236/plot.jpeg used on input line 1022.
+(pdftex.def)             Requested size: 426.79135pt x 258.74661pt.
+ <images/foto_test/0.5_7_0.5236/chi.jpeg, id=320, 643.40375pt x 387.4475pt>
+File: images/foto_test/0.5_7_0.5236/chi.jpeg Graphic file (type jpg)
+ <use images/foto_test/0.5_7_0.5236/chi.jpeg>
+Package pdftex.def Info: images/foto_test/0.5_7_0.5236/chi.jpeg used on input line 1023.
+(pdftex.def)             Requested size: 426.79135pt x 257.01677pt.
+ [38] <images/two_frames/P_PTP_PT_after_LS.png, id=328, 1325.95375pt x 692.5875pt>
 File: images/two_frames/P_PTP_PT_after_LS.png Graphic file (type png)
  <use images/two_frames/P_PTP_PT_after_LS.png>
-Package pdftex.def Info: images/two_frames/P_PTP_PT_after_LS.png used on input line 990.
-(pdftex.def)             Requested size: 312.98032pt x 163.4767pt.
- <images/two_frames/data_association_no_eval.png, id=358, 1333.98375pt x 699.61375pt>
+Package pdftex.def Info: images/two_frames/P_PTP_PT_after_LS.png used on input line 1039.
+(pdftex.def)             Requested size: 426.79135pt x 222.92181pt.
+ <images/two_frames/data_association_no_eval.png, id=330, 1333.98375pt x 699.61375pt>
 File: images/two_frames/data_association_no_eval.png Graphic file (type png)
  <use images/two_frames/data_association_no_eval.png>
-Package pdftex.def Info: images/two_frames/data_association_no_eval.png used on input line 995.
-(pdftex.def)             Requested size: 312.98032pt x 164.14236pt.
- <images/two_frames/data_association.png, id=359, 1329.96875pt x 699.61375pt>
+Package pdftex.def Info: images/two_frames/data_association_no_eval.png used on input line 1044.
+(pdftex.def)             Requested size: 426.79135pt x 223.82759pt.
+ <images/two_frames/data_association.png, id=331, 1329.96875pt x 699.61375pt>
 File: images/two_frames/data_association.png Graphic file (type png)
  <use images/two_frames/data_association.png>
-Package pdftex.def Info: images/two_frames/data_association.png used on input line 1000.
-(pdftex.def)             Requested size: 312.98032pt x 164.63342pt.
- [48] [49 <./images/two_frames/P_PTP_PT_after_LS.png> <./images/two_frames/data_association_no_eval.png> <./images/two_frames/data_association.png>] <images/chi.jpeg, id=375, 642.4pt x 450.68375pt>
+Package pdftex.def Info: images/two_frames/data_association.png used on input line 1049.
+(pdftex.def)             Requested size: 426.79135pt x 224.5108pt.
+ [39] <images/chi.jpeg, id=337, 642.4pt x 450.68375pt>
 File: images/chi.jpeg Graphic file (type jpg)
  <use images/chi.jpeg>
-Package pdftex.def Info: images/chi.jpeg used on input line 1013.
-(pdftex.def)             Requested size: 312.98032pt x 219.57849pt.
- [50 <./images/chi.jpeg>]
+Package pdftex.def Info: images/chi.jpeg used on input line 1062.
+(pdftex.def)             Requested size: 426.79135pt x 299.42584pt.
+ [40] [41 <./images/rviz.jpeg> <./images/rqt_bag.jpeg>] [42 <./images/mappa_dis/dis-B1-2011-09-27.png>] [43 <./images/mappa_dis/world_file.jpg> <./images/mappa_dis/yaml_file.jpg>] [44 <./images/mappa_dis/teleop_base.jpg>] [45 <./images/foto_test/-5_-0.3_-4.7124/plot.jpeg> <./images/foto_test/-5_-0.3_-4.7124/chi.jpeg>] [46 <./images/foto_test/-5_-0.3_0.5236/plot.jpeg> <./images/foto_test/-5_-0.3_0.5236/chi.jpeg>] [47 <./images/foto_test/-5_7_-4.7124/plot.jpeg> <./images/foto_test/-5_7_-4.7124/chi.jpeg>] [48 <./images/foto_test/-5_7_0.5236/plot.jpeg> <./images/foto_test/-5_7_0.5236/chi.jpeg>] [49 <./images/foto_test/0.5_-0.3_-4.7124/plot.jpeg> <./images/foto_test/0.5_-0.3_-4.7124/chi.jpeg>] [50 <./images/foto_test/0.5_-0.3_0.5236/plot.jpeg> <./images/foto_test/0.5_-0.3_0.5236/chi.jpeg>] [51 <./images/foto_test/0.5_7_-4.7124/plot.jpeg> <./images/foto_test/0.5_7_-4.7124/chi.jpeg>] [52 <./images/foto_test/0.5_7_0.5236/plot.jpeg> <./images/foto_test/0.5_7_0.5236/chi.jpeg>] [53 <./images/two_frames/P_PTP_PT_after_LS.png> <./images/two_frames/data_association_no_eval.png>] [54 <./images/two_frames/data_association.png> <./images/chi.jpeg>]
 \tf@lof=\write5
-\openout5 = `TSWLatexianTemp_000480.lof'.
+\openout5 = `TSWLatexianTemp_000632.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1019.
- [51
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1068.
+ [55
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1019.
- (./TSWLatexianTemp_000480.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1019.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1019.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1068.
+ (./TSWLatexianTemp_000632.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1068.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1068.
 
 
-Package rerunfilecheck Warning: File `TSWLatexianTemp_000480.out' has changed.
+Package rerunfilecheck Warning: File `TSWLatexianTemp_000632.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `TSWLatexianTemp_000480.out':
+Package rerunfilecheck Info: Checksums for `TSWLatexianTemp_000632.out':
 (rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  5E12DDE8EC2A786E97AE1AF02FEC1B21;2356.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1019.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1068.
  ) 
 Here is how much of TeX's memory you used:
- 11463 strings out of 493633
- 168184 string characters out of 3143378
- 275777 words of memory out of 3000000
- 14302 multiletter control sequences out of 15000+200000
+ 11543 strings out of 493633
+ 171395 string characters out of 3143378
+ 278775 words of memory out of 3000000
+ 14365 multiletter control sequences out of 15000+200000
  109570 words of font info for 176 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  36i,17n,43p,1085b,416s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TSWLatexianTemp_000480.pdf (51 pages, 1572939 bytes).
+Output written on TSWLatexianTemp_000632.pdf (55 pages, 2002223 bytes).
 PDF statistics:
- 466 PDF objects out of 1000 (max. 8388607)
- 374 compressed objects within 4 object streams
- 183 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 508 PDF objects out of 1000 (max. 8388607)
+ 396 compressed objects within 4 object streams
+ 194 named destinations out of 1000 (max. 500000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 

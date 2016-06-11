@@ -35,7 +35,7 @@
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 
 % text style
-\geometry{top=2cm, left=5cm, right=5cm, bottom=3cm}
+\geometry{top=2cm, left=3cm, right=3cm, bottom=3cm}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -65,8 +65,8 @@
 \newpage
 
 \chapter{Introduction}
-Nowadays, mobile robots are employed for a great variety of uses: rescue operations, elder's assistance, find and relocate objects in a manufacturing environment. In these situations, the people to care about or the objects to handle may be located in any place, thus robot needs to have a perfect idea of the ambient it is moving in, to navigate and search the area in an autonomous way. \\
-The capability to obtain a reliable perception of surrounding world passes, in the first instance, through the use of specific sensors, whose choice depends on the task to accomplish and required dependability. Sensors allow robot to measure walked distance and perceive obstacles in its surroundings, in order to avoid them and use them to construct a map, in which a safe path can be planned. in particular, sensors mounted on wheels allow robot to estimate its position and orientation in relation to a starting pose, through the accumulation of small single perceived translations and/or rotations, using the so called \emph{odometry equations}.
+Nowadays, mobile robots are employed for a great variety of uses: rescue operations, elder's assistance, finding and relocating objects in a manufacturing environment. In these situations, the people to care about or the objects to handle may be located in any place, thus robot needs to have a perfect idea of the ambient it is moving in, to navigate and search the area in an autonomous way. \\
+The capability to obtain a reliable perception of surrounding world passes, in the first instance, through the use of specific sensors, whose choice depends on the task to accomplish and required dependability. Sensors allow robot to measure walked distance and perceive obstacles in its surroundings, in order to avoid them and use them to construct a map, in which a safe path can be planned. In particular, sensors mounted on wheels allow robot to estimate its position and orientation in relation to a starting pose, through the accumulation of small single perceived translations and/or rotations, using the so called \emph{odometry equations}.
 
 Anyway, it can't be ignored that sensors, whatever their nature and the purpose they are meant for, introduce different kinds of errors; in the case of odometry, causes of errors may lie in robot's construction (for instance, wheels of different size or misaligned) or to elements encountered in the ambient, which may cause slippages or jerks. These kinds of errors can be estimated in all cases and kept into account for a best definition of pose, implementing a standard procedure.
 
@@ -281,9 +281,9 @@ with
 \begin{equation}
 	D = \left(\begin{matrix}d_{xx} & d_{xy} \\ d_{yx} & d_{yy}\end{matrix}\right)
 \end{equation}
-a deformation matrix; $\boldsymbol{d}$ is the traslation of a feature window's center. \\ 
+a deformation matrix; $\boldsymbol{d}$ is the translation of a feature window's center. \\ 
 By measuring the coordinates $\boldsymbol{x}$ with respect to the center of window, we get that a point $\boldsymbol{x}$ in the first image $I$ moves to a point $A\boldsymbol{x} + d$ in second image $J$, with $A=\boldsymbol{1} + \emph{D}$ and $\boldsymbol{1}$ a $2 \times 2$ identity matrix. \\
-Thus, the tracking problem between two images $I$ and $J$ can be formulated in terms of finding the six parameters contained in $D$ and $\boldsymbol{d}$. A model that uses small windows is preferable, since it causes less problems in terms of deph discontinuity; in such condition, the matrix $D$, that is harder to estimate because of the small variation of motion, can be assumed equal to zero, so
+Thus, the tracking problem between two images $I$ and $J$ can be formulated in terms of finding the six parameters contained in $D$ and $\boldsymbol{d}$. A model that uses small windows is preferable, since it causes less problems in terms of depth discontinuity; in such condition, the matrix $D$, that is harder to estimate because of the small variation of motion, can be assumed equal to zero, so
 \begin{equation}
 	\delta = \boldsymbol{d}. \notag
 \end{equation}
@@ -939,51 +939,100 @@ given by all the possible combinations of three elements that can be obtained by
 Our test of LSE module consists in taking a single scan, apply to all its lines the transformation $T^{-1}$ and verify whether LSE is able to return matrix $T$ as the one to bring converted lines to their original form. For each possible roto-translation, we showed lines before applying $T^{-1}$ (bold red), after its application (bold black) and after applying the resulting transformation matrix returned by LSE (yellow). We generated eight figures; Table 1 shows, for each figure, which combination, among the ones generically described in (5.1), was used for testing and produce plot. \\
 What is evident is that LSE is always able to return a result very close to $T$; so, when LSE's returned matrix is applied to lines transformed with $T^{-1}$, we obtain, in practice, original scan's lines.
 
+A measure of how fine are LSE's performances, can be retrieved by remembering that LSE works with an initial set of lines couples; for each of them, it is possible to calculate the error $e_{ij}$ and covariance matrix $\Omega_{ij}$, according to equations 4.8 and 4.11. So, for each couple, an error measure is given by 
+\begin{equation}
+	e_{ij}\Omega_{ij}e_{ij}^T
+\end{equation}
+The quantities in (5.3) computed at $i$-th iteration of LSE can be summed, an error measurement $\chi_i$. Thus, after $N$ iterations, LSE returns a total local error
+\begin{equation}
+	\chi = \sum_i^N \chi_i
+\end{equation}
+For each figure listed in Table 5.1, we have shown how $\chi$ varies at each iteration of LSE (all the times, we executed LSE one hundred times). It is clear that $\chi$, although starting from high values, falls quickly to zero after a few iterations and maintains such value up to the end of LSE's execution, demonstrating its good performances. 
+
 \begin{center}
 \begin{table}
     \begin{tabularx}{\textwidth}{@{}lYYYYY@{}}
   \hline
 \textbf{\#Figure} & \textbf{$x_i$} & \textbf{$y_j$} & \textbf{$\theta_k$}\\ \hline
-\textbf{1} & -5 & -0.3 & $-3\pi/2$ \\ \hline
-\textbf{2} & -5 & -0.3 & $\pi/6$ \\ \hline
-\textbf{3} & -5 & 7 & $-3\pi/2$ \\ \hline
-\textbf{4} & -5 & 7 & $\pi/6$ \\ \hline
-\textbf{5} & 0.5 & -0.3 & $-3\pi/2$ \\ \hline
-\textbf{6} & 0.5 & -0.3 & $\pi/6$ \\ \hline
-\textbf{7} & 0.5 & 7 & $-3\pi/2$ \\ \hline
-\textbf{8} & 0.5 & 7 & $\pi/6$ \\ \hline
+\textbf{5.7} & -5 & -0.3 & $-3\pi/2$ \\ \hline
+\textbf{5.8} & -5 & -0.3 & $\pi/6$ \\ \hline
+\textbf{5.9} & -5 & 7 & $-3\pi/2$ \\ \hline
+\textbf{5.10} & -5 & 7 & $\pi/6$ \\ \hline
+\textbf{5.11} & 0.5 & -0.3 & $-3\pi/2$ \\ \hline
+\textbf{5.12} & 0.5 & -0.3 & $\pi/6$ \\ \hline
+\textbf{5.13} & 0.5 & 7 & $-3\pi/2$ \\ \hline
+\textbf{5.14} & 0.5 & 7 & $\pi/6$ \\ \hline
    \hline
     \end{tabularx}
 \caption{Roto-translation used for testing LSE and relative number of Figure}
 \end{table}
 \end{center}
 
-A measure of how fine are LSE's performances, can be retrieved by remembering that LSE works with an initial set of lines couples; for each of them, it is possible to calculate the error $e_{ij}$ and covariance matrix $\Omega_{ij}$, according to equations 4.8 and 4.11. So, for each couple, an error measure is given by 
-\begin{equation}
-	e_{ij}\Omega_{ij}e_{ij}^T
-\end{equation}
-The quantities in (4.1) computed at $i$-th iteration of LSE can be summed, an error measurement $\chi_i$. Thus, after $N$ iterations, LSE returns a total local error
-\begin{equation}
-	\chi = \sum_i^N \chi_i
-\end{equation}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1.0\textwidth]{images/foto_test/-5_-0.3_-4.7124/plot.jpeg}
+\includegraphics[width=1.0\textwidth]{images/foto_test/-5_-0.3_-4.7124/chi.jpeg}
+\caption{LSE test 1}
+\end{figure}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=1.0\textwidth]{images/foto_test/-5_-0.3_-4.7124/-5_-0.3_-4.7124_chi.jpg}
+\includegraphics[width=1.0\textwidth]{images/foto_test/-5_-0.3_0.5236/plot.jpeg}
+\includegraphics[width=1.0\textwidth]{images/foto_test/-5_-0.3_0.5236/chi.jpeg}
+\caption{LSE test 2}
 \end{figure}
 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1.0\textwidth]{images/foto_test/-5_7_-4.7124/plot.jpeg}
+\includegraphics[width=1.0\textwidth]{images/foto_test/-5_7_-4.7124/chi.jpeg}
+\caption{LSE test 3}
+\end{figure}
 
-As shown in Figures 4.9 and 4.10, even in this case the original lines (red) coincide with the ones obtained by applying to transformed lines the transformation returned by LSE. In this case, too, we have transformed original lines using $T_{rt}^{-1}$ and asked LSE to guess that $T_{rt}$ is the right matrix to bring transformed lines to their original form.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1.0\textwidth]{images/foto_test/-5_7_0.5236/plot.jpeg}
+\includegraphics[width=1.0\textwidth]{images/foto_test/-5_7_0.5236/chi.jpeg}
+\caption{LSE test 4}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1.0\textwidth]{images/foto_test/0.5_-0.3_-4.7124/plot.jpeg}
+\includegraphics[width=1.0\textwidth]{images/foto_test/0.5_-0.3_-4.7124/chi.jpeg}
+\caption{LSE test 5}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1.0\textwidth]{images/foto_test/0.5_-0.3_0.5236/plot.jpeg}
+\includegraphics[width=1.0\textwidth]{images/foto_test/0.5_-0.3_0.5236/chi.jpeg}
+\caption{LSE test 6}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1.0\textwidth]{images/foto_test/0.5_7_-4.7124/plot.jpeg}
+\includegraphics[width=1.0\textwidth]{images/foto_test/0.5_7_-4.7124/chi.jpeg}
+\caption{LSE test 7}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1.0\textwidth]{images/foto_test/0.5_7_0.5236/plot.jpeg}
+\includegraphics[width=1.0\textwidth]{images/foto_test/0.5_7_0.5236/chi.jpeg}
+\caption{LSE test 8}
+\end{figure}
 
 \subsection{Testing data association}
 After verifying that simple tests executed in previous section gave good results, it was necessary to stress the system and prove its performance in a tougher case. Instead of creating a fictitious scan, whose extracted lines are obtained by applying an initial chosen transformation, let's consider two close robot poses $p_1$ and $p_2$, that differ in terms of odometric measurements. This means that, from these poses and scans acquired from them, we will certainly extract different lines or the same lines with different length and slope. \\ 
-We asked LSE to compute the transformation $T_{21}$ that should map lines extracted in $p_2$'s reference frame to $p_1$'s. We then applied $T_{21}$ to $p_2$'s lines. The result is shown in Figure 4.11. As it is evident, LSE by itself is not able to furnish a good transformation to map correctly lines seen from $p_2$ to $p_1$'s reference frame, since even lines that are evidently the same are far from each other and differently rotated. 
+We asked LSE to compute the transformation $T_{21}$ that should map lines extracted in $p_2$'s reference frame to $p_1$'s. We then applied $T_{21}$ to $p_2$'s lines. The result is shown in Figure 5.15. As it is evident, LSE by itself is not able to furnish a good transformation to map correctly lines seen from $p_2$ to $p_1$'s reference frame, since even lines that are evidently the same are far from each other and differently rotated. 
 
-So it is clear that LSE module needs to be integrated with some other sort of module to improve its performances; that is why, as shown in Figure 3.2, we coupled LSE with a data association module; the latter recalls iteratively LSE (which has an iterative nature of its own) correcting every time the set of initial couples with which LSE works. Such correction is made using last transformation $T_{21}$ returned by LSE at last iteration (at first launch of LSE it is possible to use an identity matrix). We move lines seen from $p_2$ to $p_1$'s frame and try to form couples of associations between the set of transformed lines and the ones in $p_1$'s frame. \\
-As explained in 3.3.2, a first set of putative couples is formed by comparing the normals of lines candidate to be associated: if the dot product exceeds a given threshold, the two lines form a temporarily accepted couple. For our test, we used a threshold $NORM\_THRESHOLD = 0.8$.
+So it is clear that LSE module needs to be integrated with some other sort of module to improve its performances; that is why, as shown in Figure 4.2, we coupled LSE with a data association module; the latter recalls iteratively LSE (which has an iterative nature of its own) correcting every time the set of initial couples with which LSE works. Such correction is made using last transformation $T_{21}$ returned by LSE at last iteration (at first launch of LSE it is possible to use an identity matrix). We move lines seen from $p_2$ to $p_1$'s frame and try to form couples of associations between the set of transformed lines and the ones in $p_1$'s frame. \\
+As explained in 4.3.2, a first set of putative couples is formed by comparing the normals of lines candidate to be associated: if the dot product exceeds a given threshold, the two lines form a temporarily accepted couple. For our test, we used a threshold $NORM\_THRESHOLD = 0.8$.
 
 A putative couple is kept in set to be returned if the distance between midpoints of involved lines is lesser than $MP\_THRESHOLD = 0.1^2$ and the difference between their slopes falls below $ANGLE\_THRESHOLD = \frac{5\pi}{180}$. \\
-A shown in Figure 4.12, now the full system composed by LSE and data association is able to return a transformation $T_{21}$ that allows to optimally align $p_1$'s and $p_2$'s frames. In particular, Figure 4.13 shown the associations between lines obtained using the last $T_{21}$ returned. It is evident that even the data association process benefits of the coupling of the modules.
+A shown in Figure 5.16, now the full system composed by LSE and data association is able to return a transformation $T_{21}$ that allows to optimally align $p_1$'s and $p_2$'s frames. In particular, Figure 5.17 shown the associations between lines obtained using the last $T_{21}$ returned. It is evident that even the data association process benefits of the coupling of the modules.
 
 \begin{figure}[htbp]
 \centering
@@ -1007,7 +1056,7 @@ Recalling 5.4, at $j$-th execution of data association module, we obtain a globa
 	E_j = \frac{\chi_{j}}{a_j}
 \end{equation}
 where $a_j$ is the number of associations found at iteration $j$ and $\chi_{j}$ is the local error of LSE module at the $j$-th iteration of data association module. \\
-Figure 4.14 shows that, after remaining constant up to 50th iteration, error $E_j$ almost falls down to zero and doesn't vary even after many other iterations. So, 50 proved to be a good choice when deciding how many times data association needs to be executed. 
+Figure 5.18 shows that, after remaining constant up to 50th iteration, error $E_j$ almost falls down to zero and doesn't vary even after many other iterations. So, 50 proved to be a good choice when deciding how many times data association needs to be executed. 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=1.0\textwidth]{images/chi.jpeg}
