@@ -1,0 +1,25 @@
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Hough transform\relax }}{7}{figure.caption.2}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Discrete Hough transform\relax }}{7}{figure.caption.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of two possible position hypotheses returned by LINEMATCH\relax }}{11}{figure.caption.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Modular representation of full algorithm\relax }}{11}{figure.caption.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Original image (a) and extracted features (b), using an acceptance criterion for windows, as explained in 1.30\relax }}{15}{figure.caption.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Ellipses, depicting robot's position error, grow as odometry uncertainty increases\relax }}{22}{figure.caption.6}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The 4x4 meter square path for Borenstein and Koren's method\relax }}{24}{figure.caption.7}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The range $\rho $ and the bearing $\theta $, relative to a landmark (line), expressed in robot's reference frame\relax }}{32}{figure.caption.8}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Block representation of a single iteration in $T$ estimation\relax }}{37}{figure.caption.9}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces An example of robot-specific features: the \emph {tf} library, which tracks the position of different elements of robot (sensors, links) in the robot's reference frame\relax }}{39}{figure.caption.10}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Two examples of ROS tools. The \emph {rviz} tool (a) visualizes many common messages provided in ROS, such as laser scans, three-dimensional point clouds and camera images. It also uses information from the \emph {tf} library to show sensor data in a chosen coordinate frame, along with a three-dimensional rendering of robot. The \emph { rqt\_bag} tool (b) records data to bags and can display their content.\relax }}{40}{figure.caption.11}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces A \emph {.png} file created for the definition of a map in \emph {Stage}, depicting the first floor of DIAG department\relax }}{42}{figure.caption.12}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces A \emph {.world} file relative to Figure 4.3\relax }}{43}{figure.caption.13}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces A \emph {.yaml} file relative to Figure 4.3\relax }}{43}{figure.caption.14}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Keyboard commands used by \emph {teleop\_base} controller\relax }}{44}{figure.caption.15}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces The lines extracted from $p_1$(red), the ones extracted from $p_2$ (green) and the ones obtained after applying $T_{21}$ to lines in $p_2$ (blue)\relax }}{49}{figure.caption.18}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Lines acquired fron $p_1$ (red) and the ones seen from $p_2$ (green), after applying transformation $T_{21}$ returned by the couples of modules made by LSE and data association\relax }}{49}{figure.caption.19}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Associations between lines seen from $p_1$ (red) and $p_2$'s transformed lines (green). Associations are shown in blue\relax }}{49}{figure.caption.20}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Number of iterations of data association module (X axis) and values of $E_j$ (Y axis)\relax }}{50}{figure.caption.21}
