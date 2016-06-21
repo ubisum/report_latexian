@@ -806,10 +806,8 @@ Lately, for each couple of indexes, we evaluate the difference between the value
 
 \chapter{Experiments}
 \section{Introduction}
-This chapter deals with some tests designed to evaluate two of the parts composing thesis: the least square estimation (LSE) module and the one performing data association. For each test, results will be shown, along with input values given to each module.
-Before going into deep of tests, the reader will be introduced to the main means used for evaluation: the Robot Operating System and its embedded module \emph{Stage}, used to generate data and simulations.
+This chapter deals with some tests designed to evaluate two of the parts composing thesis: the least square estimation (LSE) module and the one performing data association. Before going into deep of tests, the reader will be introduced to the main means used for evaluation: the Robot Operating System and its embedded module \emph{Stage}, used to generate data and simulations.
 
- 
 \section{Robot Operating System}
 According to Willow Garage, the research laboratory that developed it in 2007, the \textbf{Robot Operating System} (\textbf{ROS}) can be defined as a \emph{flexible framework for writing robot software}. Actually, ROS can be thought of as a collection of frameworks that can be exploited for the development of robot's software; such collection, furnishes all the typical functionalities of an operating system,  along with robot-oriented capabilities. Here is a short list:
 \begin{itemize}
@@ -938,7 +936,7 @@ given by all the possible combinations of three elements that can be obtained by
 	T = \left(\begin{matrix}\cos\theta_k && \sin\theta_k && x_i \\ -\sin\theta_k && \cos\theta_k && y_j \\ 0 && 0 && 1\end{matrix}\right)
 \end{equation}
 Our test of LSE module consists in taking a single scan, apply to all its lines the transformation $T^{-1}$ and verify whether LSE is able to return matrix $T$ as the one to bring converted lines to their original form. For each possible roto-translation, we showed lines before applying $T^{-1}$ (bold red), after its application (bold black) and after applying the resulting transformation matrix returned by LSE (yellow). We generated eight figures; Table 1 shows, for each figure, which combination, among the ones generically described in (5.1), was used for testing and produce plot. \\
-What is evident is that LSE is always able to return a result very close to $T$; so, when LSE's returned matrix is applied to lines transformed with $T^{-1}$, we obtain, in practice, original scan's lines.
+What is evident is that LSE is always able to return a result very close to $T$; so, when LSE's returned matrix is applied to lines transformed with $T^{-1}$, we obtain, in practice, original scan's lines. This means that LSE algorithm always converges to a correct solution and it is always possible to retrieve the correct transformation to map lines from one transformed scan to original one.
 
 A measure of how fine are LSE's performances, can be retrieved by remembering that LSE works with an initial set of lines couples; for each of them, it is possible to calculate the error $e_{ij}$ and covariance matrix $\Omega_{ij}$, according to equations 4.8 and 4.11. So, for each couple, an error measure is given by 
 \begin{equation}
@@ -949,6 +947,7 @@ The quantities in (5.3) computed at $i$-th iteration of LSE can be summed, an er
 	\chi = \sum_i^N \chi_i
 \end{equation}
 For each figure listed in Table 5.1, we have shown how $\chi$ varies at each iteration of LSE (all the times, we executed LSE one hundred times). It is clear that $\chi$, although starting from high values, falls quickly to zero after a few iterations and maintains such value up to the end of LSE's execution, demonstrating its good performances. 
+
 
 \begin{center}
 \begin{table}
@@ -1060,7 +1059,7 @@ So it is clear that LSE module needs to be integrated with some other sort of mo
 As explained in 4.3.2, a first set of putative couples is formed by comparing the normals of lines candidate to be associated: if the dot product exceeds a given threshold, the two lines form a temporarily accepted couple. For our test, we used a threshold $NORM\_THRESHOLD = 0.8$.
 
 A putative couple is kept in set to be returned if the distance between midpoints of involved lines is lesser than $MP\_THRESHOLD = 0.1^2$ and the difference between their slopes falls below $ANGLE\_THRESHOLD = \frac{5\pi}{180}$. \\
-A shown in Figure 5.16, now the full system composed by LSE and data association is able to return a transformation $T_{21}$ that allows to optimally align $p_1$'s and $p_2$'s frames. In particular, Figure 5.17 shown the associations between lines obtained using the last $T_{21}$ returned. It is evident that even the data association process benefits of the coupling of the modules.
+A shown in Figure 5.16, now the full system composed by LSE and data association is able to return a transformation $T_{21}$ that allows to optimally align $p_1$'s and $p_2$'s frames. In particular, Figure 5.17 shown the associations between lines obtained using the last $T_{21}$ returned. It is evident that even the data association process benefits of the coupling of the modules. By visual inspection, it can be noticed that the couple formed by LSE and data association manages to align two different frames, minimising the error during process.
 
 \begin{figure}[htbp]
 \centering
