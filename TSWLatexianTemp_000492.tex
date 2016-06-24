@@ -66,15 +66,62 @@
 \newpage
 
 \chapter{Introduction}
-Nowadays, mobile robots are employed for a great variety of uses: rescue operations, elder's assistance, finding and relocating objects in a manufacturing environment. In these situations, the people to care about or the objects to handle may be located in any place, thus robot needs to have a perfect idea of the ambient it is moving in, to navigate and search the area in an autonomous way. \\
-The capability to obtain a reliable perception of surrounding world passes, in the first instance, through the use of specific sensors, whose choice depends on the task to accomplish and required dependability. Sensors allow robot to measure walked distance and perceive obstacles in its surroundings, in order to avoid them and use them to construct a map, in which a safe path can be planned. In particular, sensors mounted on wheels allow robot to estimate its position and orientation in relation to a starting pose, through the accumulation of small single perceived translations and/or rotations, using the so called \emph{odometry equations}.
+Within the wide field of robotics, mobile robots gained much attention in recent years, because of the great ambit in which they can be involved in. Just to mention some of the areas of interest in which mobile robots are requested to operate, consider animation of digital characters, space exploration, mapping of and navigation in unknown and/or changing environments. \\
+For accomplishing the greatest part of aforementioned tasks, a robot is often required to plan a path and a series of actions, avoiding obstacles and trying not to hurt itself and the humans potentially at its reach. Path planning and actions can be surely managed via an accurate melting of control theory, mechanics and geometry, but all the process can't disregard an exhaustive knowledge of ambient. That is why mobile robots are equipped with a series of sensors (sonars, laser scanners, ...) which allow to perceive elements in the surroundings that are useful to derive a reliable structure of environment.
 
-Anyway, it can't be ignored that sensors, whatever their nature and the purpose they are meant for, introduce different kinds of errors; in the case of odometry, causes of errors may lie in robot's construction (for instance, wheels of different size or misaligned) or to elements encountered in the ambient, which may cause slippages or jerks. These kinds of errors can be estimated in all cases and kept into account for a best definition of pose, implementing a standard procedure.
+%\begin{figure}[htbp]
+%\centering
+%\includegraphics[width=1.0\textwidth]{images/foto_test/-5_-0.3_-4.7124/plot.jpeg}
+%\includegraphics[width=1.0\textwidth]{images/foto_test/-5_-0.3_-4.7124/chi.jpeg}
+%\includegraphics[width=0.4\textwidth]{images/nao.jpg}\\
+%\includegraphics[width=0.4\textwidth]{images/rescue.jpg}\\
+%\includegraphics[width=0.4\textwidth]{images/quadrotor.jpg}
 
-A reliable knowledge of environment is not made only of a good estimation of robot's pose, but it comprises even a good awareness of walls and items, since their size and position affect the definition of map in which robot needs to move. \\
-Range-finder laser scanners are one of the best sensors to take a look at the surrounding, since it furnishes distance and position in space of points revealed by a laser beam. The amount of data returned by range-finder needs to be elaborated, since, as it is, it is unfeasible to manage. Thus, a good idea is extracting from data only a significative part, which is representative of data itself and reduce, then, computation to a small subset of information. \\
-The elements of interest in a single perception of ambient are often called \emph{features}; they are requested to be not only representative of data but of great significance if compared to previously extracted information. An effective discriminating factor consists in measuring how much a feature embodies a relevant part of \emph{dissimilarity} between last laser scan and previous ones. \\
-An example of features that can be extracted from a scan is given by lines; the algorithms for extraction are numerous and there is not a definitive choice, since they differ in terms of computation heaviness and performance; when requirements are not excessively demanding, \emph{split and merge} algorithm represents a good trade off between produced results and computing requests. It uses a \emph{divide et impera} approach and returns line by their extremes. In any case, alternative representation are possible for line, considering, for instance, their distance from origin of a chosen reference frame and their slope.
+%\caption{LSE test 1}
+%\end{figure}
+
+\begin{figure}[htb]
+\centering
+\begin{minipage}[c]{0.9\textwidth}
+\centering\setlength{\captionmargin}{0pt}%
+\centerline{\includegraphics[width=0.4\textwidth]{images/rescue.jpg}}
+(a)
+\end{minipage} \\
+\vspace{10mm}%
+\begin{minipage}[c]{0.9\textwidth}
+\centering\setlength{\captionmargin}{0pt}%
+\centerline{\includegraphics[width=0.9\textwidth]{images/quadrotor.jpg}}
+(b)
+\vspace{10mm}%
+\begin{minipage}[c]{0.9\textwidth}
+\centering\setlength{\captionmargin}{0pt}%
+\centerline{\includegraphics[width=0.9\textwidth]{images/quadrotor.jpg}}
+(c)
+\end{minipage}
+\caption{Original image (a) and extracted features (b), using an acceptance criterion for windows, as explained in 1.30}
+\end{figure}
+
+
+
+Deriving the shape of ambient is not the only result that can be obtained by analysing measurements returned by sensors; indeed, such data, can be exploited to reconstruct the set of poses assumed by robot in all the spots where it used sensors to inspect environment; this furnishes a track of robot and sensors (in terms of position in space and orientation) in time. \\
+Tracking a robot along its path is a building block of many modern robotics applications, such as \emph{localisation} (which allows a robot to estimate its own position inside an ambient) and \emph{simultaneous localisation and mappig} or \emph{SLAM}, the process of constructing a map of ambient in which a self-localisation procedure is executed.
+
+A lot of research has been done in last decades to perform robot tracking and environment mapping by maximising the outcome of sensors' acquisitions. In particular, we can mention two specific fields that particularly took advantage from research in tracking and mapping procedures: \\
+\begin{itemize}
+ 	\item{\textbf{visual SLAM (VSLAM)}, i.e. the problem of building a sparse or dense 3D model of a scene while traversing it, determining, at the same time, the trajectory of robot's platform and of a camera mounted on it}
+	\item{\textbf{scan matching}, the process of computing the rigid transformation that best aligns two laser scans or maps}
+\end{itemize}
+In any case, all the algorithms that mean to deal with tracking and mapping tasks are required to be fast and robust, in order to reduce error to minimum and construct a reliable estimation of robot's track in real time.
+
+In this thesis we will introduce a new method to solve scan matching issue, presenting it, in an innovative fashion, as a least squadre estimation problem. The performances of the algorithm we will present will show that chosen approach reveals to be very fast and effective, as confirmed by the convergence analysis reported in last chapter. Moreover, after testing on real data, we will determine that presented algorithm compares favourably with state of the art approaches in contexts for which it was designed.
+
+The outline of thesis can be summarised in the following list:
+\begin{itemize}
+	\item{\emph{Chapter 2} shows some state of the art approaches for the resolution of problems regarding scan matching and features selection}
+	\item{\emph{Chapter 3} introduces the basic concepts on which thesis is based, such as sensors, odometry and feature extraction. The theory at the basis of implemented least square approach is presented}
+	\item{\emph{Chapter 4} exposes the algorithm for scan matching resolution, by explaining each of its parts and how all them work together}
+	\item{\emph{Chapter 5}, finally, shows the results obtained by testing separately the modules composing our algorithm and by testing the system as a whole}
+\end{itemize}
 
 \chapter{Related work}
 \section{Introduction}
@@ -85,10 +132,10 @@ The same importance must be given to the way we choose to represent a feature, i
 We will introduce, moreover, an other procedure that takes advantage of the geometric structure of environment and updates a list of plausible matches between lines in different scans. The output of procedure is melted with data from odometry, in order to update current robot's pose, through the use of Kalman filters.
 
 \section{Related work in scan matching}
-Given two sets of 2D data, the \emph{scan matching} problem consists in finding a traslation $T$ and a rotation $R_\phi$ that maximize the overlapping between the two sets. The scan matching algorithms usually work using data furnished by 2D range sensors and differ in their behaviour depending on the availability of an initial guess of solution. \\
+Given two sets of 2D data, the \emph{scan matching} problem consists in finding a translation $T$ and a rotation $R_\phi$ that maximize the overlapping between the two sets. The scan matching algorithms usually work using data furnished by 2D range sensors and differ in their behaviour depending on the availability of an initial guess of solution. \\
 A further classification of scan matching algorithms can be made on the basis of their assumption about the presence of noise in sensor's measurements and of features in surrounding environment. Feature-based algorithms, in particular, gained a great success because of their computational effectiveness, but it must be underlined that the extraction of features may produce a loss of information. 
 
-When ambient contains features that are invariant to rotation and traslation, they can be easily extracted from scans and can be used to find a solution in a linear time. \\
+When ambient contains features that are invariant to rotation and translation, they can be easily extracted from scans and can be used to find a solution in a linear time. \\
 If the extraction of features is not simple because of the structure of environment, then it is possible to use algorithms belonging to ICP family, which base their operation on a two step procedure:
 \begin{itemize}
 	\item{find an initial heuristic set of correspondences between points in two scans}
@@ -806,10 +853,8 @@ Lately, for each couple of indexes, we evaluate the difference between the value
 
 \chapter{Experiments}
 \section{Introduction}
-This chapter deals with some tests designed to evaluate two of the parts composing thesis: the least square estimation (LSE) module and the one performing data association. For each test, results will be shown, along with input values given to each module.
-Before going into deep of tests, the reader will be introduced to the main means used for evaluation: the Robot Operating System and its embedded module \emph{Stage}, used to generate data and simulations.
+This chapter deals with some tests designed to evaluate two of the parts composing thesis: the least square estimation (LSE) module and the one performing data association. Before going into deep of tests, the reader will be introduced to the main means used for evaluation: the Robot Operating System and its embedded module \emph{Stage}, used to generate data and simulations.
 
- 
 \section{Robot Operating System}
 According to Willow Garage, the research laboratory that developed it in 2007, the \textbf{Robot Operating System} (\textbf{ROS}) can be defined as a \emph{flexible framework for writing robot software}. Actually, ROS can be thought of as a collection of frameworks that can be exploited for the development of robot's software; such collection, furnishes all the typical functionalities of an operating system,  along with robot-oriented capabilities. Here is a short list:
 \begin{itemize}
@@ -938,7 +983,7 @@ given by all the possible combinations of three elements that can be obtained by
 	T = \left(\begin{matrix}\cos\theta_k && \sin\theta_k && x_i \\ -\sin\theta_k && \cos\theta_k && y_j \\ 0 && 0 && 1\end{matrix}\right)
 \end{equation}
 Our test of LSE module consists in taking a single scan, apply to all its lines the transformation $T^{-1}$ and verify whether LSE is able to return matrix $T$ as the one to bring converted lines to their original form. For each possible roto-translation, we showed lines before applying $T^{-1}$ (bold red), after its application (bold black) and after applying the resulting transformation matrix returned by LSE (yellow). We generated eight figures; Table 1 shows, for each figure, which combination, among the ones generically described in (5.1), was used for testing and produce plot. \\
-What is evident is that LSE is always able to return a result very close to $T$; so, when LSE's returned matrix is applied to lines transformed with $T^{-1}$, we obtain, in practice, original scan's lines.
+What is evident is that LSE is always able to return a result very close to $T$; so, when LSE's returned matrix is applied to lines transformed with $T^{-1}$, we obtain, in practice, original scan's lines. This means that LSE algorithm always converges to a correct solution and it is always possible to retrieve the correct transformation to map lines from one transformed scan to original one.
 
 A measure of how fine are LSE's performances, can be retrieved by remembering that LSE works with an initial set of lines couples; for each of them, it is possible to calculate the error $e_{ij}$ and covariance matrix $\Omega_{ij}$, according to equations 4.8 and 4.11. So, for each couple, an error measure is given by 
 \begin{equation}
@@ -949,6 +994,7 @@ The quantities in (5.3) computed at $i$-th iteration of LSE can be summed, an er
 	\chi = \sum_i^N \chi_i
 \end{equation}
 For each figure listed in Table 5.1, we have shown how $\chi$ varies at each iteration of LSE (all the times, we executed LSE one hundred times). It is clear that $\chi$, although starting from high values, falls quickly to zero after a few iterations and maintains such value up to the end of LSE's execution, demonstrating its good performances. 
+
 
 \begin{center}
 \begin{table}
@@ -1060,7 +1106,7 @@ So it is clear that LSE module needs to be integrated with some other sort of mo
 As explained in 4.3.2, a first set of putative couples is formed by comparing the normals of lines candidate to be associated: if the dot product exceeds a given threshold, the two lines form a temporarily accepted couple. For our test, we used a threshold $NORM\_THRESHOLD = 0.8$.
 
 A putative couple is kept in set to be returned if the distance between midpoints of involved lines is lesser than $MP\_THRESHOLD = 0.1^2$ and the difference between their slopes falls below $ANGLE\_THRESHOLD = \frac{5\pi}{180}$. \\
-A shown in Figure 5.16, now the full system composed by LSE and data association is able to return a transformation $T_{21}$ that allows to optimally align $p_1$'s and $p_2$'s frames. In particular, Figure 5.17 shown the associations between lines obtained using the last $T_{21}$ returned. It is evident that even the data association process benefits of the coupling of the modules.
+A shown in Figure 5.16, now the full system composed by LSE and data association is able to return a transformation $T_{21}$ that allows to optimally align $p_1$'s and $p_2$'s frames. In particular, Figure 5.17 shown the associations between lines obtained using the last $T_{21}$ returned. It is evident that even the data association process benefits of the coupling of the modules. By visual inspection, it can be noticed that the couple formed by LSE and data association manages to align two different frames, minimising the error during process.
 
 \begin{figure}[htbp]
 \centering
@@ -1093,4 +1139,5 @@ Figure 5.18 shows that, after remaining constant up to 50th iteration, error $E_
 
 
 \listoffigures
+\listoftables
 \end{document}

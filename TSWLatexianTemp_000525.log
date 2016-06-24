@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.12)  16 JUN 2016 12:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.12)  25 JUN 2016 00:00
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/università/tesi/report_latexian/TSWLatexianTemp_000097.tex
-(/università/tesi/report_latexian/TSWLatexianTemp_000097.tex
+**/università/tesi/report_latexian/TSWLatexianTemp_000525.tex
+(/università/tesi/report_latexian/TSWLatexianTemp_000525.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/report.cls
@@ -810,8 +810,8 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is usel
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 44.
 
 LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 51.
-No file TSWLatexianTemp_000097.aux.
-\openout1 = `TSWLatexianTemp_000097.aux'.
+No file TSWLatexianTemp_000525.aux.
+\openout1 = `TSWLatexianTemp_000525.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
@@ -908,13 +908,13 @@ LaTeX Info: Redefining \ref on input line 60.
 LaTeX Info: Redefining \pageref on input line 60.
 LaTeX Info: Redefining \nameref on input line 60.
 \@outlinefile=\write3
-\openout3 = `TSWLatexianTemp_000097.out'.
+\openout3 = `TSWLatexianTemp_000525.out'.
 
 \c@lstlisting=\count157
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 65.
 \tf@toc=\write4
-\openout4 = `TSWLatexianTemp_000097.toc'.
+\openout4 = `TSWLatexianTemp_000525.toc'.
 
  [1
 
@@ -923,407 +923,434 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
-[2
-
-] [3]
-Chapter 2.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 80.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 88.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+<images/nao.jpg, id=12, 752.8125pt x 501.97537pt>
+File: images/nao.jpg Graphic file (type jpg)
+ <use images/nao.jpg>
+Package pdftex.def Info: images/nao.jpg used on input line 76.
+(pdftex.def)             Requested size: 230.4681pt x 153.6729pt.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 78.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 88.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 78.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 88.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 78.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 88.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 78.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 88.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 78.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
- [4
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 78.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 78.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 78.
+ <images/rescue.jpg, id=13, 108.405pt x 80.4606pt>
+File: images/rescue.jpg Graphic file (type jpg)
+ <use images/rescue.jpg>
+Package pdftex.def Info: images/rescue.jpg used on input line 82.
+(pdftex.def)             Requested size: 230.4681pt x 171.08025pt.
+ <images/quadrotor.jpg, id=14, 226.59656pt x 157.33781pt>
+File: images/quadrotor.jpg Graphic file (type jpg)
+ <use images/quadrotor.jpg>
+Package pdftex.def Info: images/quadrotor.jpg used on input line 88.
+(pdftex.def)             Requested size: 230.4681pt x 160.02628pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+[2
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 94.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 99.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 94.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 99.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 99.
- [5] <images/ht.jpeg, id=45, 512.91624pt x 384.43625pt>
+ [3] [4 <./images/nao.jpg> <./images/rescue.jpg> <./images/quadrotor.jpg>]
+Chapter 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 123.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 123.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 123.
+[5
+
+]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 134.
+ [6] <images/ht.jpeg, id=53, 512.91624pt x 384.43625pt>
 File: images/ht.jpeg Graphic file (type jpg)
  <use images/ht.jpeg>
-Package pdftex.def Info: images/ht.jpeg used on input line 144.
+Package pdftex.def Info: images/ht.jpeg used on input line 179.
 (pdftex.def)             Requested size: 153.64148pt x 115.15578pt.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 146.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 146.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 146.
- <images/dht.jpeg, id=46, 540.0175pt x 417.56pt>
+ <images/dht.jpeg, id=54, 540.0175pt x 417.56pt>
 File: images/dht.jpeg Graphic file (type jpg)
  <use images/dht.jpeg>
-Package pdftex.def Info: images/dht.jpeg used on input line 150.
+Package pdftex.def Info: images/dht.jpeg used on input line 185.
 (pdftex.def)             Requested size: 153.64148pt x 118.79556pt.
- [6 <./images/ht.jpeg> <./images/dht.jpeg>] [7] [8]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 229.
+ [7 <./images/ht.jpeg> <./images/dht.jpeg>] [8] [9]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 264.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 229.
- <images/robocup_robot_positions.jpeg, id=76, 703.62875pt x 407.5225pt>
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 264.
+ <images/robocup_robot_positions.jpeg, id=84, 703.62875pt x 407.5225pt>
 File: images/robocup_robot_positions.jpeg Graphic file (type jpg)
  <use images/robocup_robot_positions.jpeg>
-Package pdftex.def Info: images/robocup_robot_positions.jpeg used on input line 248.
+Package pdftex.def Info: images/robocup_robot_positions.jpeg used on input line 283.
 (pdftex.def)             Requested size: 384.1096pt x 222.46535pt.
- <images/robocup_alg_module.jpeg, id=77, 714.67pt x 317.185pt>
+ <images/robocup_alg_module.jpeg, id=85, 714.67pt x 317.185pt>
 File: images/robocup_alg_module.jpeg Graphic file (type jpg)
  <use images/robocup_alg_module.jpeg>
-Package pdftex.def Info: images/robocup_alg_module.jpeg used on input line 263.
+Package pdftex.def Info: images/robocup_alg_module.jpeg used on input line 298.
 (pdftex.def)             Requested size: 384.1096pt x 170.47392pt.
- [9] [10 <./images/robocup_robot_positions.jpeg> <./images/robocup_alg_module.jpeg>] [11pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.23}) has been already used, duplicate ignored
+ [10] [11 <./images/robocup_robot_positions.jpeg> <./images/robocup_alg_module.jpeg>] [12pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.23}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.309 \end{equation}
-                    ] [12pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.26}) has been already used, duplicate ignored
+l.344 \end{equation}
+                    ] [13pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.26}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.337 \begin{equation}
-                      ] <images/features_original_image.jpeg, id=110, 501.875pt x 335.2525pt>
+l.372 \begin{equation}
+                      ] <images/features_original_image.jpeg, id=119, 501.875pt x 335.2525pt>
 File: images/features_original_image.jpeg Graphic file (type jpg)
  <use images/features_original_image.jpeg>
-Package pdftex.def Info: images/features_original_image.jpeg used on input line 346.
+Package pdftex.def Info: images/features_original_image.jpeg used on input line 381.
 (pdftex.def)             Requested size: 256.07089pt x 171.06348pt.
- <images/features_extracted_features.jpeg, id=111, 501.875pt x 331.2375pt>
+ <images/features_extracted_features.jpeg, id=120, 501.875pt x 331.2375pt>
 File: images/features_extracted_features.jpeg Graphic file (type jpg)
  <use images/features_extracted_features.jpeg>
-Package pdftex.def Info: images/features_extracted_features.jpeg used on input line 352.
+Package pdftex.def Info: images/features_extracted_features.jpeg used on input line 387.
 (pdftex.def)             Requested size: 256.07089pt x 169.0148pt.
- [13 <./images/features_original_image.jpeg> <./images/features_extracted_features.jpeg>]
+ [14 <./images/features_original_image.jpeg> <./images/features_extracted_features.jpeg>]
 Chapter 3.
-[14
+[15
 
-] [15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 459--462
+] [16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 494--497
 
  []
 
-[17] [18] <images/ellipses.jpeg, id=152, 778.91pt x 305.14pt>
+[18] [19] <images/ellipses.jpeg, id=161, 778.91pt x 305.14pt>
 File: images/ellipses.jpeg Graphic file (type jpg)
  <use images/ellipses.jpeg>
-Package pdftex.def Info: images/ellipses.jpeg used on input line 488.
+Package pdftex.def Info: images/ellipses.jpeg used on input line 523.
 (pdftex.def)             Requested size: 384.1096pt x 150.47438pt.
- [19 <./images/ellipses.jpeg>] <images/unidirectional_nominal_path.jpeg, id=161, 456.70625pt x 362.35374pt>
+ [20 <./images/ellipses.jpeg>] <images/unidirectional_nominal_path.jpeg, id=169, 456.70625pt x 362.35374pt>
 File: images/unidirectional_nominal_path.jpeg Graphic file (type jpg)
  <use images/unidirectional_nominal_path.jpeg>
-Package pdftex.def Info: images/unidirectional_nominal_path.jpeg used on input line 531.
+Package pdftex.def Info: images/unidirectional_nominal_path.jpeg used on input line 566.
 (pdftex.def)             Requested size: 213.39568pt x 169.30551pt.
- [20 <./images/unidirectional_nominal_path.jpeg>] [21] [22] [23] [24pdfTeX warning (ext4): destination with the same identifier (name{equation.3.5.12}) has been already used, duplicate ignored
+ [21 <./images/unidirectional_nominal_path.jpeg>] [22] [23] [24] [25pdfTeX warning (ext4): destination with the same identifier (name{equation.3.5.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.636 \end{align}
-                 ] [25]
+l.671 \end{align}
+                 ] [26]
 Chapter 4.
-[26
+[27
 
-] <images/rho_theta.jpeg, id=214, 725.71124pt x 619.31375pt>
+] <images/rho_theta.jpeg, id=222, 725.71124pt x 619.31375pt>
 File: images/rho_theta.jpeg Graphic file (type jpg)
  <use images/rho_theta.jpeg>
-Package pdftex.def Info: images/rho_theta.jpeg used on input line 696.
+Package pdftex.def Info: images/rho_theta.jpeg used on input line 731.
 (pdftex.def)             Requested size: 213.39568pt x 182.11008pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 697.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 732.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 697.
- [27] [28 <./images/rho_theta.jpeg>] [29] [30] [31] <images/iterative_process.jpg, id=260, 1026.83624pt x 480.79625pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 732.
+ [28] [29 <./images/rho_theta.jpeg>] [30] [31] [32] <images/iterative_process.jpg, id=269, 1026.83624pt x 480.79625pt>
 File: images/iterative_process.jpg Graphic file (type jpg)
  <use images/iterative_process.jpg>
-Package pdftex.def Info: images/iterative_process.jpg used on input line 803.
+Package pdftex.def Info: images/iterative_process.jpg used on input line 838.
 (pdftex.def)             Requested size: 426.79135pt x 199.83484pt.
- [32 <./images/iterative_process.jpg>]
+ [33 <./images/iterative_process.jpg>]
 Chapter 5.
-[33
-
-] <images/tf.jpeg, id=274, 605.26125pt x 487.8225pt>
+<images/tf.jpeg, id=275, 605.26125pt x 487.8225pt>
 File: images/tf.jpeg Graphic file (type jpg)
  <use images/tf.jpeg>
-Package pdftex.def Info: images/tf.jpeg used on input line 827.
+Package pdftex.def Info: images/tf.jpeg used on input line 860.
 (pdftex.def)             Requested size: 384.1096pt x 309.58519pt.
- <images/rviz.jpeg, id=275, 536.0025pt x 308.15125pt>
+ [34
+
+] <images/rviz.jpeg, id=283, 536.0025pt x 308.15125pt>
 File: images/rviz.jpeg Graphic file (type jpg)
  <use images/rviz.jpeg>
-Package pdftex.def Info: images/rviz.jpeg used on input line 837.
+Package pdftex.def Info: images/rviz.jpeg used on input line 870.
 (pdftex.def)             Requested size: 384.1161pt x 220.82957pt.
- <images/rqt_bag.jpeg, id=276, 473.77pt x 266.9975pt>
+ <images/rqt_bag.jpeg, id=284, 473.77pt x 266.9975pt>
 File: images/rqt_bag.jpeg Graphic file (type jpg)
  <use images/rqt_bag.jpeg>
-Package pdftex.def Info: images/rqt_bag.jpeg used on input line 843.
+Package pdftex.def Info: images/rqt_bag.jpeg used on input line 876.
 (pdftex.def)             Requested size: 384.1161pt x 216.47862pt.
- [34 <./images/tf.jpeg>] [35] <images/mappa_dis/dis-B1-2011-09-27.png, id=289, 1013.7875pt x 1074.0125pt>
+ [35 <./images/tf.jpeg>] [36] <images/mappa_dis/dis-B1-2011-09-27.png, id=297, 1013.7875pt x 1074.0125pt>
 File: images/mappa_dis/dis-B1-2011-09-27.png Graphic file (type png)
  <use images/mappa_dis/dis-B1-2011-09-27.png>
-Package pdftex.def Info: images/mappa_dis/dis-B1-2011-09-27.png used on input line 875.
+Package pdftex.def Info: images/mappa_dis/dis-B1-2011-09-27.png used on input line 908.
 (pdftex.def)             Requested size: 426.79135pt x 452.13101pt.
- <images/mappa_dis/world_file.jpg, id=290, 661.47125pt x 780.9175pt>
+ <images/mappa_dis/world_file.jpg, id=298, 661.47125pt x 780.9175pt>
 File: images/mappa_dis/world_file.jpg Graphic file (type jpg)
  <use images/mappa_dis/world_file.jpg>
-Package pdftex.def Info: images/mappa_dis/world_file.jpg used on input line 882.
+Package pdftex.def Info: images/mappa_dis/world_file.jpg used on input line 915.
 (pdftex.def)             Requested size: 426.79135pt x 503.84879pt.
 
-Overfull \hbox (9.29999pt too wide) in paragraph at lines 882--883
+Overfull \hbox (9.29999pt too wide) in paragraph at lines 915--916
  [][] 
  []
 
-<images/mappa_dis/yaml_file.jpg, id=291, 641.39626pt x 130.4875pt>
+<images/mappa_dis/yaml_file.jpg, id=299, 641.39626pt x 130.4875pt>
 File: images/mappa_dis/yaml_file.jpg Graphic file (type jpg)
  <use images/mappa_dis/yaml_file.jpg>
-Package pdftex.def Info: images/mappa_dis/yaml_file.jpg used on input line 889.
+Package pdftex.def Info: images/mappa_dis/yaml_file.jpg used on input line 922.
 (pdftex.def)             Requested size: 426.79135pt x 86.82883pt.
 
-Overfull \hbox (9.29999pt too wide) in paragraph at lines 889--890
+Overfull \hbox (9.29999pt too wide) in paragraph at lines 922--923
  [][] 
  []
 
-<images/mappa_dis/teleop_base.jpg, id=292, 657.45625pt x 258.9675pt>
+<images/mappa_dis/teleop_base.jpg, id=300, 657.45625pt x 258.9675pt>
 File: images/mappa_dis/teleop_base.jpg Graphic file (type jpg)
  <use images/mappa_dis/teleop_base.jpg>
-Package pdftex.def Info: images/mappa_dis/teleop_base.jpg used on input line 898.
+Package pdftex.def Info: images/mappa_dis/teleop_base.jpg used on input line 931.
 (pdftex.def)             Requested size: 426.79135pt x 168.11348pt.
 
-Overfull \hbox (9.29999pt too wide) in paragraph at lines 898--899
+Overfull \hbox (9.29999pt too wide) in paragraph at lines 931--932
  [][] 
  []
 
-[36] [37pdfTeX warning (ext4): destination with the same identifier (name{equation.5.4.1}) has been already used, duplicate ignored
+[37] [38pdfTeX warning (ext4): destination with the same identifier (name{equation.5.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.942 
-      ] <images/foto_test/-5_-0.3_-4.7124/before_after.png, id=307, 637.38126pt x 386.44376pt>
+l.975 
+      ] [39] <images/foto_test/-5_-0.3_-4.7124/before_after.png, id=322, 637.38126pt x 386.44376pt>
 File: images/foto_test/-5_-0.3_-4.7124/before_after.png Graphic file (type png)
  <use images/foto_test/-5_-0.3_-4.7124/before_after.png>
-Package pdftex.def Info: images/foto_test/-5_-0.3_-4.7124/before_after.png used on input line 976.
+Package pdftex.def Info: images/foto_test/-5_-0.3_-4.7124/before_after.png used on input line 1010.
 (pdftex.def)             Requested size: 384.1096pt x 232.88226pt.
- <images/foto_test/-5_-0.3_-4.7124/result.png, id=308, 642.4pt x 386.44376pt>
+ <images/foto_test/-5_-0.3_-4.7124/result.png, id=323, 642.4pt x 386.44376pt>
 File: images/foto_test/-5_-0.3_-4.7124/result.png Graphic file (type png)
  <use images/foto_test/-5_-0.3_-4.7124/result.png>
-Package pdftex.def Info: images/foto_test/-5_-0.3_-4.7124/result.png used on input line 977.
+Package pdftex.def Info: images/foto_test/-5_-0.3_-4.7124/result.png used on input line 1011.
 (pdftex.def)             Requested size: 384.1096pt x 231.07199pt.
- <images/foto_test/-5_-0.3_-4.7124/chi_new.png, id=309, 639.38875pt x 382.42876pt>
+ <images/foto_test/-5_-0.3_-4.7124/chi_new.png, id=324, 639.38875pt x 382.42876pt>
 File: images/foto_test/-5_-0.3_-4.7124/chi_new.png Graphic file (type png)
  <use images/foto_test/-5_-0.3_-4.7124/chi_new.png>
-Package pdftex.def Info: images/foto_test/-5_-0.3_-4.7124/chi_new.png used on input line 978.
+Package pdftex.def Info: images/foto_test/-5_-0.3_-4.7124/chi_new.png used on input line 1012.
 (pdftex.def)             Requested size: 384.1096pt x 229.74495pt.
 
 
-LaTeX Warning: Float too large for page by 23.91612pt on input line 981.
+LaTeX Warning: Float too large for page by 23.91612pt on input line 1015.
 
-<images/foto_test/-5_-0.3_0.5236/before_after.png, id=310, 639.38875pt x 385.44pt>
+<images/foto_test/-5_-0.3_0.5236/before_after.png, id=326, 639.38875pt x 385.44pt>
 File: images/foto_test/-5_-0.3_0.5236/before_after.png Graphic file (type png)
  <use images/foto_test/-5_-0.3_0.5236/before_after.png>
-Package pdftex.def Info: images/foto_test/-5_-0.3_0.5236/before_after.png used on input line 987.
+Package pdftex.def Info: images/foto_test/-5_-0.3_0.5236/before_after.png used on input line 1021.
 (pdftex.def)             Requested size: 384.1096pt x 231.55397pt.
- <images/foto_test/-5_-0.3_0.5236/result.png, id=311, 637.38126pt x 388.45125pt>
+ <images/foto_test/-5_-0.3_0.5236/result.png, id=327, 637.38126pt x 388.45125pt>
 File: images/foto_test/-5_-0.3_0.5236/result.png Graphic file (type png)
  <use images/foto_test/-5_-0.3_0.5236/result.png>
-Package pdftex.def Info: images/foto_test/-5_-0.3_0.5236/result.png used on input line 988.
+Package pdftex.def Info: images/foto_test/-5_-0.3_0.5236/result.png used on input line 1022.
 (pdftex.def)             Requested size: 384.1096pt x 234.09203pt.
- <images/foto_test/-5_-0.3_0.5236/chi_new.png, id=312, 637.38126pt x 386.44376pt>
+ <images/foto_test/-5_-0.3_0.5236/chi_new.png, id=328, 637.38126pt x 386.44376pt>
 File: images/foto_test/-5_-0.3_0.5236/chi_new.png Graphic file (type png)
  <use images/foto_test/-5_-0.3_0.5236/chi_new.png>
-Package pdftex.def Info: images/foto_test/-5_-0.3_0.5236/chi_new.png used on input line 989.
+Package pdftex.def Info: images/foto_test/-5_-0.3_0.5236/chi_new.png used on input line 1023.
 (pdftex.def)             Requested size: 384.1096pt x 232.88226pt.
 
 
-LaTeX Warning: Float too large for page by 28.74518pt on input line 993.
+LaTeX Warning: Float too large for page by 28.74518pt on input line 1027.
 
-<images/foto_test/-5_7_-4.7124/before_after.png, id=313, 641.39626pt x 387.4475pt>
+<images/foto_test/-5_7_-4.7124/before_after.png, id=329, 641.39626pt x 387.4475pt>
 File: images/foto_test/-5_7_-4.7124/before_after.png Graphic file (type png)
  <use images/foto_test/-5_7_-4.7124/before_after.png>
-Package pdftex.def Info: images/foto_test/-5_7_-4.7124/before_after.png used on input line 998.
+Package pdftex.def Info: images/foto_test/-5_7_-4.7124/before_after.png used on input line 1032.
 (pdftex.def)             Requested size: 384.1096pt x 232.0328pt.
- <images/foto_test/-5_7_-4.7124/result.png, id=314, 638.385pt x 388.45125pt>
+ <images/foto_test/-5_7_-4.7124/result.png, id=330, 638.385pt x 388.45125pt>
 File: images/foto_test/-5_7_-4.7124/result.png Graphic file (type png)
  <use images/foto_test/-5_7_-4.7124/result.png>
-Package pdftex.def Info: images/foto_test/-5_7_-4.7124/result.png used on input line 999.
+Package pdftex.def Info: images/foto_test/-5_7_-4.7124/result.png used on input line 1033.
 (pdftex.def)             Requested size: 384.1096pt x 233.72453pt.
- <images/foto_test/-5_7_-4.7124/chi_new.png, id=315, 641.39626pt x 387.4475pt>
+ <images/foto_test/-5_7_-4.7124/chi_new.png, id=331, 641.39626pt x 387.4475pt>
 File: images/foto_test/-5_7_-4.7124/chi_new.png Graphic file (type png)
  <use images/foto_test/-5_7_-4.7124/chi_new.png>
-Package pdftex.def Info: images/foto_test/-5_7_-4.7124/chi_new.png used on input line 1000.
+Package pdftex.def Info: images/foto_test/-5_7_-4.7124/chi_new.png used on input line 1034.
 (pdftex.def)             Requested size: 384.1096pt x 232.0328pt.
 
 
-LaTeX Warning: Float too large for page by 28.00706pt on input line 1002.
+LaTeX Warning: Float too large for page by 28.00706pt on input line 1036.
 
-<images/foto_test/-5_7_0.5236/before_after.png, id=316, 635.37375pt x 387.4475pt>
+<images/foto_test/-5_7_0.5236/before_after.png, id=332, 635.37375pt x 387.4475pt>
 File: images/foto_test/-5_7_0.5236/before_after.png Graphic file (type png)
  <use images/foto_test/-5_7_0.5236/before_after.png>
-Package pdftex.def Info: images/foto_test/-5_7_0.5236/before_after.png used on input line 1008.
+Package pdftex.def Info: images/foto_test/-5_7_0.5236/before_after.png used on input line 1042.
 (pdftex.def)             Requested size: 384.1096pt x 234.23796pt.
- <images/foto_test/-5_7_0.5236/result.png, id=317, 638.385pt x 382.42876pt>
+ <images/foto_test/-5_7_0.5236/result.png, id=333, 638.385pt x 382.42876pt>
 File: images/foto_test/-5_7_0.5236/result.png Graphic file (type png)
  <use images/foto_test/-5_7_0.5236/result.png>
-Package pdftex.def Info: images/foto_test/-5_7_0.5236/result.png used on input line 1009.
+Package pdftex.def Info: images/foto_test/-5_7_0.5236/result.png used on input line 1043.
 (pdftex.def)             Requested size: 384.1096pt x 230.1009pt.
- <images/foto_test/-5_7_0.5236/chi_new.png, id=318, 638.385pt x 386.44376pt>
+ <images/foto_test/-5_7_0.5236/chi_new.png, id=334, 638.385pt x 386.44376pt>
 File: images/foto_test/-5_7_0.5236/chi_new.png Graphic file (type png)
  <use images/foto_test/-5_7_0.5236/chi_new.png>
-Package pdftex.def Info: images/foto_test/-5_7_0.5236/chi_new.png used on input line 1010.
+Package pdftex.def Info: images/foto_test/-5_7_0.5236/chi_new.png used on input line 1044.
 (pdftex.def)             Requested size: 384.1096pt x 232.51666pt.
 
 
-LaTeX Warning: Float too large for page by 27.07245pt on input line 1013.
+LaTeX Warning: Float too large for page by 27.07245pt on input line 1047.
 
-<images/foto_test/0.5_-0.3_-4.7124/before_after.png, id=319, 865.2325pt x 487.8225pt>
+<images/foto_test/0.5_-0.3_-4.7124/before_after.png, id=335, 865.2325pt x 487.8225pt>
 File: images/foto_test/0.5_-0.3_-4.7124/before_after.png Graphic file (type png)
  <use images/foto_test/0.5_-0.3_-4.7124/before_after.png>
-Package pdftex.def Info: images/foto_test/0.5_-0.3_-4.7124/before_after.png used on input line 1019.
+Package pdftex.def Info: images/foto_test/0.5_-0.3_-4.7124/before_after.png used on input line 1053.
 (pdftex.def)             Requested size: 384.1096pt x 216.563pt.
- <images/foto_test/0.5_-0.3_-4.7124/result.png, id=320, 865.2325pt x 485.815pt>
+ <images/foto_test/0.5_-0.3_-4.7124/result.png, id=336, 865.2325pt x 485.815pt>
 File: images/foto_test/0.5_-0.3_-4.7124/result.png Graphic file (type png)
  <use images/foto_test/0.5_-0.3_-4.7124/result.png>
-Package pdftex.def Info: images/foto_test/0.5_-0.3_-4.7124/result.png used on input line 1020.
+Package pdftex.def Info: images/foto_test/0.5_-0.3_-4.7124/result.png used on input line 1054.
 (pdftex.def)             Requested size: 384.1096pt x 215.6718pt.
- <images/foto_test/0.5_-0.3_-4.7124/chi_new.png, id=321, 859.21pt x 484.81125pt>
+ <images/foto_test/0.5_-0.3_-4.7124/chi_new.png, id=337, 859.21pt x 484.81125pt>
 File: images/foto_test/0.5_-0.3_-4.7124/chi_new.png Graphic file (type png)
  <use images/foto_test/0.5_-0.3_-4.7124/chi_new.png>
-Package pdftex.def Info: images/foto_test/0.5_-0.3_-4.7124/chi_new.png used on input line 1021.
+Package pdftex.def Info: images/foto_test/0.5_-0.3_-4.7124/chi_new.png used on input line 1055.
 (pdftex.def)             Requested size: 384.1096pt x 216.7353pt.
- <images/foto_test/0.5_-0.3_0.5236/before_after.png, id=322, 786.94pt x 468.75125pt>
+ <images/foto_test/0.5_-0.3_0.5236/before_after.png, id=338, 786.94pt x 468.75125pt>
 File: images/foto_test/0.5_-0.3_0.5236/before_after.png Graphic file (type png)
  <use images/foto_test/0.5_-0.3_0.5236/before_after.png>
-Package pdftex.def Info: images/foto_test/0.5_-0.3_0.5236/before_after.png used on input line 1029.
+Package pdftex.def Info: images/foto_test/0.5_-0.3_0.5236/before_after.png used on input line 1063.
 (pdftex.def)             Requested size: 384.1096pt x 228.79604pt.
- <images/foto_test/0.5_-0.3_0.5236/result.png, id=323, 637.38126pt x 387.4475pt>
+ <images/foto_test/0.5_-0.3_0.5236/result.png, id=339, 637.38126pt x 387.4475pt>
 File: images/foto_test/0.5_-0.3_0.5236/result.png Graphic file (type png)
  <use images/foto_test/0.5_-0.3_0.5236/result.png>
-Package pdftex.def Info: images/foto_test/0.5_-0.3_0.5236/result.png used on input line 1030.
+Package pdftex.def Info: images/foto_test/0.5_-0.3_0.5236/result.png used on input line 1064.
 (pdftex.def)             Requested size: 384.1096pt x 233.48714pt.
- <images/foto_test/0.5_-0.3_0.5236/chi_new.png, id=324, 784.9325pt x 467.7475pt>
+ <images/foto_test/0.5_-0.3_0.5236/chi_new.png, id=340, 784.9325pt x 467.7475pt>
 File: images/foto_test/0.5_-0.3_0.5236/chi_new.png Graphic file (type png)
  <use images/foto_test/0.5_-0.3_0.5236/chi_new.png>
-Package pdftex.def Info: images/foto_test/0.5_-0.3_0.5236/chi_new.png used on input line 1031.
+Package pdftex.def Info: images/foto_test/0.5_-0.3_0.5236/chi_new.png used on input line 1065.
 (pdftex.def)             Requested size: 384.1096pt x 228.8985pt.
 
 
-LaTeX Warning: Float too large for page by 21.39859pt on input line 1033.
+LaTeX Warning: Float too large for page by 21.39859pt on input line 1067.
 
-<images/foto_test/0.5_7_-4.7124/before_after.png, id=325, 640.3925pt x 384.43625pt>
+<images/foto_test/0.5_7_-4.7124/before_after.png, id=341, 640.3925pt x 384.43625pt>
 File: images/foto_test/0.5_7_-4.7124/before_after.png Graphic file (type png)
  <use images/foto_test/0.5_7_-4.7124/before_after.png>
-Package pdftex.def Info: images/foto_test/0.5_7_-4.7124/before_after.png used on input line 1039.
+Package pdftex.def Info: images/foto_test/0.5_7_-4.7124/before_after.png used on input line 1073.
 (pdftex.def)             Requested size: 384.1096pt x 230.58727pt.
- <images/foto_test/0.5_7_-4.7124/result.png, id=326, 642.4pt x 418.56375pt>
+ <images/foto_test/0.5_7_-4.7124/result.png, id=342, 642.4pt x 418.56375pt>
 File: images/foto_test/0.5_7_-4.7124/result.png Graphic file (type png)
  <use images/foto_test/0.5_7_-4.7124/result.png>
-Package pdftex.def Info: images/foto_test/0.5_7_-4.7124/result.png used on input line 1040.
+Package pdftex.def Info: images/foto_test/0.5_7_-4.7124/result.png used on input line 1074.
 (pdftex.def)             Requested size: 384.1096pt x 250.27797pt.
- <images/foto_test/0.5_7_-4.7124/chi_new.png, id=327, 640.3925pt x 385.44pt>
+ <images/foto_test/0.5_7_-4.7124/chi_new.png, id=343, 640.3925pt x 385.44pt>
 File: images/foto_test/0.5_7_-4.7124/chi_new.png Graphic file (type png)
  <use images/foto_test/0.5_7_-4.7124/chi_new.png>
-Package pdftex.def Info: images/foto_test/0.5_7_-4.7124/chi_new.png used on input line 1041.
+Package pdftex.def Info: images/foto_test/0.5_7_-4.7124/chi_new.png used on input line 1075.
 (pdftex.def)             Requested size: 384.1096pt x 231.18932pt.
 
 
-LaTeX Warning: Float too large for page by 42.27147pt on input line 1043.
+LaTeX Warning: Float too large for page by 42.27147pt on input line 1077.
 
-<images/foto_test/0.5_7_0.5236/before_after.png, id=328, 639.38875pt x 384.43625pt>
+<images/foto_test/0.5_7_0.5236/before_after.png, id=344, 639.38875pt x 384.43625pt>
 File: images/foto_test/0.5_7_0.5236/before_after.png Graphic file (type png)
  <use images/foto_test/0.5_7_0.5236/before_after.png>
-Package pdftex.def Info: images/foto_test/0.5_7_0.5236/before_after.png used on input line 1049.
+Package pdftex.def Info: images/foto_test/0.5_7_0.5236/before_after.png used on input line 1083.
 (pdftex.def)             Requested size: 384.1096pt x 230.95096pt.
- <images/foto_test/0.5_7_0.5236/result.png, id=329, 637.38126pt x 387.4475pt>
+ <images/foto_test/0.5_7_0.5236/result.png, id=345, 637.38126pt x 387.4475pt>
 File: images/foto_test/0.5_7_0.5236/result.png Graphic file (type png)
  <use images/foto_test/0.5_7_0.5236/result.png>
-Package pdftex.def Info: images/foto_test/0.5_7_0.5236/result.png used on input line 1050.
+Package pdftex.def Info: images/foto_test/0.5_7_0.5236/result.png used on input line 1084.
 (pdftex.def)             Requested size: 384.1096pt x 233.48714pt.
- <images/foto_test/0.5_7_0.5236/chi_new.png, id=330, 645.41125pt x 388.45125pt>
+ <images/foto_test/0.5_7_0.5236/chi_new.png, id=346, 784.9325pt x 467.7475pt>
 File: images/foto_test/0.5_7_0.5236/chi_new.png Graphic file (type png)
  <use images/foto_test/0.5_7_0.5236/chi_new.png>
-Package pdftex.def Info: images/foto_test/0.5_7_0.5236/chi_new.png used on input line 1051.
-(pdftex.def)             Requested size: 384.1096pt x 231.18173pt.
+Package pdftex.def Info: images/foto_test/0.5_7_0.5236/chi_new.png used on input line 1085.
+(pdftex.def)             Requested size: 384.1096pt x 228.8985pt.
 
 
-LaTeX Warning: Float too large for page by 25.83675pt on input line 1053.
+LaTeX Warning: Float too large for page by 23.55351pt on input line 1087.
 
-[38] <images/two_frames/P_PTP_PT_after_LS.png, id=338, 1325.95375pt x 692.5875pt>
+[40] <images/two_frames/P_PTP_PT_after_LS.png, id=352, 1325.95375pt x 692.5875pt>
 File: images/two_frames/P_PTP_PT_after_LS.png Graphic file (type png)
  <use images/two_frames/P_PTP_PT_after_LS.png>
-Package pdftex.def Info: images/two_frames/P_PTP_PT_after_LS.png used on input line 1067.
+Package pdftex.def Info: images/two_frames/P_PTP_PT_after_LS.png used on input line 1101.
 (pdftex.def)             Requested size: 426.79135pt x 222.92181pt.
- <images/two_frames/data_association_no_eval.png, id=340, 1333.98375pt x 699.61375pt>
+ <images/two_frames/data_association_no_eval.png, id=353, 1333.98375pt x 699.61375pt>
 File: images/two_frames/data_association_no_eval.png Graphic file (type png)
  <use images/two_frames/data_association_no_eval.png>
-Package pdftex.def Info: images/two_frames/data_association_no_eval.png used on input line 1072.
+Package pdftex.def Info: images/two_frames/data_association_no_eval.png used on input line 1106.
 (pdftex.def)             Requested size: 426.79135pt x 223.82759pt.
- <images/two_frames/data_association.png, id=341, 1329.96875pt x 699.61375pt>
+ <images/two_frames/data_association.png, id=354, 1329.96875pt x 699.61375pt>
 File: images/two_frames/data_association.png Graphic file (type png)
  <use images/two_frames/data_association.png>
-Package pdftex.def Info: images/two_frames/data_association.png used on input line 1077.
+Package pdftex.def Info: images/two_frames/data_association.png used on input line 1111.
 (pdftex.def)             Requested size: 426.79135pt x 224.5108pt.
- [39] <images/chi.jpeg, id=347, 642.4pt x 450.68375pt>
+ <images/chi.jpeg, id=355, 642.4pt x 450.68375pt>
 File: images/chi.jpeg Graphic file (type jpg)
  <use images/chi.jpeg>
-Package pdftex.def Info: images/chi.jpeg used on input line 1090.
+Package pdftex.def Info: images/chi.jpeg used on input line 1124.
 (pdftex.def)             Requested size: 426.79135pt x 299.42584pt.
- [40] [41 <./images/rviz.jpeg> <./images/rqt_bag.jpeg>] [42 <./images/mappa_dis/dis-B1-2011-09-27.png>] [43 <./images/mappa_dis/world_file.jpg> <./images/mappa_dis/yaml_file.jpg>] [44 <./images/mappa_dis/teleop_base.jpg>] [45 <./images/foto_test/-5_-0.3_-4.7124/before_after.png> <./images/foto_test/-5_-0.3_-4.7124/result.png> <./images/foto_test/-5_-0.3_-4.7124/chi_new.png>] [46 <./images/foto_test/-5_-0.3_0.5236/before_after.png> <./images/foto_test/-5_-0.3_0.5236/result.png> <./images/foto_test/-5_-0.3_0.5236/chi_new.png>] [47 <./images/foto_test/-5_7_-4.7124/before_after.png> <./images/foto_test/-5_7_-4.7124/result.png> <./images/foto_test/-5_7_-4.7124/chi_new.png>] [48 <./images/foto_test/-5_7_0.5236/before_after.png> <./images/foto_test/-5_7_0.5236/result.png> <./images/foto_test/-5_7_0.5236/chi_new.png>] [49 <./images/foto_test/0.5_-0.3_-4.7124/before_after.png> <./images/foto_test/0.5_-0.3_-4.7124/result.png> <./images/foto_test/0.5_-0.3_-4.7124/chi_new.png>] [50 <./images/foto_test/0.5_-0.3_0.5236/before_after.png> <./images/foto_test/0.5_-0.3_0.5236/result.png> <./images/foto_test/0.5_-0.3_0.5236/chi_new.png>] [51 <./images/foto_test/0.5_7_-4.7124/before_after.png> <./images/foto_test/0.5_7_-4.7124/result.png> <./images/foto_test/0.5_7_-4.7124/chi_new.png>] [52 <./images/foto_test/0.5_7_0.5236/before_after.png> <./images/foto_test/0.5_7_0.5236/result.png> <./images/foto_test/0.5_7_0.5236/chi_new.png>] [53 <./images/two_frames/P_PTP_PT_after_LS.png> <./images/two_frames/data_association_no_eval.png>] [54 <./images/two_frames/data_association.png> <./images/chi.jpeg>]
+ [41] [42 <./images/rviz.jpeg> <./images/rqt_bag.jpeg>] [43 <./images/mappa_dis/dis-B1-2011-09-27.png>] [44 <./images/mappa_dis/world_file.jpg> <./images/mappa_dis/yaml_file.jpg>] [45 <./images/mappa_dis/teleop_base.jpg>] [46 <./images/foto_test/-5_-0.3_-4.7124/before_after.png> <./images/foto_test/-5_-0.3_-4.7124/result.png> <./images/foto_test/-5_-0.3_-4.7124/chi_new.png>] [47 <./images/foto_test/-5_-0.3_0.5236/before_after.png> <./images/foto_test/-5_-0.3_0.5236/result.png> <./images/foto_test/-5_-0.3_0.5236/chi_new.png>] [48 <./images/foto_test/-5_7_-4.7124/before_after.png> <./images/foto_test/-5_7_-4.7124/result.png> <./images/foto_test/-5_7_-4.7124/chi_new.png>] [49 <./images/foto_test/-5_7_0.5236/before_after.png> <./images/foto_test/-5_7_0.5236/result.png> <./images/foto_test/-5_7_0.5236/chi_new.png>] [50 <./images/foto_test/0.5_-0.3_-4.7124/before_after.png> <./images/foto_test/0.5_-0.3_-4.7124/result.png> <./images/foto_test/0.5_-0.3_-4.7124/chi_new.png>] [51 <./images/foto_test/0.5_-0.3_0.5236/before_after.png> <./images/foto_test/0.5_-0.3_0.5236/result.png> <./images/foto_test/0.5_-0.3_0.5236/chi_new.png>] [52 <./images/foto_test/0.5_7_-4.7124/before_after.png> <./images/foto_test/0.5_7_-4.7124/result.png> <./images/foto_test/0.5_7_-4.7124/chi_new.png>] [53 <./images/foto_test/0.5_7_0.5236/before_after.png> <./images/foto_test/0.5_7_0.5236/result.png> <./images/foto_test/0.5_7_0.5236/chi_new.png>] [54 <./images/two_frames/P_PTP_PT_after_LS.png> <./images/two_frames/data_association_no_eval.png>] [55 <./images/two_frames/data_association.png> <./images/chi.jpeg>]
 \tf@lof=\write5
-\openout5 = `TSWLatexianTemp_000097.lof'.
+\openout5 = `TSWLatexianTemp_000525.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1096.
- [55
+ [56
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1096.
- (./TSWLatexianTemp_000097.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1096.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1096.
+\tf@lot=\write6
+\openout6 = `TSWLatexianTemp_000525.lot'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1131.
+ [57
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1131.
+ (./TSWLatexianTemp_000525.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1131.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1131.
 
 
-Package rerunfilecheck Warning: File `TSWLatexianTemp_000097.out' has changed.
+Package rerunfilecheck Warning: File `TSWLatexianTemp_000525.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `TSWLatexianTemp_000097.out':
+Package rerunfilecheck Info: Checksums for `TSWLatexianTemp_000525.out':
 (rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  5E12DDE8EC2A786E97AE1AF02FEC1B21;2356.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1096.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1131.
  ) 
 Here is how much of TeX's memory you used:
- 12145 strings out of 493014
- 182254 string characters out of 6133351
- 290649 words of memory out of 5000000
- 15200 multiletter control sequences out of 15000+600000
+ 12165 strings out of 493014
+ 182591 string characters out of 6133351
+ 286649 words of memory out of 5000000
+ 15212 multiletter control sequences out of 15000+600000
  109524 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,17n,43p,1085b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,17n,43p,1085b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TSWLatexianTemp_000097.pdf (55 pages, 1802471 bytes).
+Output written on TSWLatexianTemp_000525.pdf (57 pages, 3503743 bytes).
 PDF statistics:
- 518 PDF objects out of 1000 (max. 8388607)
- 398 compressed objects within 4 object streams
- 196 named destinations out of 1000 (max. 500000)
- 226 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 544 PDF objects out of 1000 (max. 8388607)
+ 407 compressed objects within 5 object streams
+ 200 named destinations out of 1000 (max. 500000)
+ 241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

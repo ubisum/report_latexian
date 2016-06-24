@@ -66,30 +66,20 @@
 \newpage
 
 \chapter{Introduction}
-Within the wide field of robotics, mobile robots gained much attention in recent years, because of the great ambit in which they can be involved in (Figure 1.1). Just to mention some of the areas of interest in which mobile robots are requested to operate, consider animation of digital characters, space exploration, mapping of and navigation in unknown and/or changing environments. \\
+Within the wide field of robotics, mobile robots gained much attention in recent years, because of the great ambit in which they can be involved in. Just to mention some of the areas of interest in which mobile robots are requested to operate, consider animation of digital characters, space exploration, mapping of and navigation in unknown and/or changing environments. \\
 For accomplishing the greatest part of aforementioned tasks, a robot is often required to plan a path and a series of actions, avoiding obstacles and trying not to hurt itself and the humans potentially at its reach. Path planning and actions can be surely managed via an accurate melting of control theory, mechanics and geometry, but all the process can't disregard an exhaustive knowledge of ambient. That is why mobile robots are equipped with a series of sensors (sonars, laser scanners, ...) which allow to perceive elements in the surroundings that are useful to derive a reliable structure of environment.
 
-\begin{figure}[htb]
+\begin{figure}[htbp]
 \centering
-\begin{minipage}[c]{0.9\textwidth}
-\centering\setlength{\captionmargin}{0pt}%
-\centerline{\includegraphics[width=0.6\textwidth]{images/nao.jpg}}
-(a)
-\end{minipage} \\
-\vspace{10mm}%
-\begin{minipage}[c]{0.9\textwidth}
-\centering\setlength{\captionmargin}{0pt}%
-\centerline{\includegraphics[width=0.6\textwidth]{images/rescue.jpg}}
-(b)
-\end{minipage} \\
-\vspace{10mm}%
-\begin{minipage}[c]{0.9\textwidth}
-\centering\setlength{\captionmargin}{0pt}%
-\centerline{\includegraphics[width=0.6\textwidth]{images/quadrotor.jpg}}
-(c)
-\end{minipage}
-\caption{Three examples of mobile robots: the Nao humanoid robot (a), a robot used for rescuing operations (b) and a quadrotor (c)}
+%\includegraphics[width=1.0\textwidth]{images/foto_test/-5_-0.3_-4.7124/plot.jpeg}
+%\includegraphics[width=1.0\textwidth]{images/foto_test/-5_-0.3_-4.7124/chi.jpeg}
+\includegraphics[width=0.9\textwidth]{images/nao.png}
+\includegraphics[width=0.9\textwidth]{images/rescue.jpg}
+\includegraphics[width=0.9\textwidth]{images/quadrotor.jpg}
+
+\caption{LSE test 1}
 \end{figure}
+
 
 Deriving the shape of ambient is not the only result that can be obtained by analysing measurements returned by sensors; indeed, such data, can be exploited to reconstruct the set of poses assumed by robot in all the spots where it used sensors to inspect environment; this furnishes a track of robot and sensors (in terms of position in space and orientation) in time. \\
 Tracking a robot along its path is a building block of many modern robotics applications, such as \emph{localisation} (which allows a robot to estimate its own position inside an ambient) and \emph{simultaneous localisation and mappig} or \emph{SLAM}, the process of constructing a map of ambient in which a self-localisation procedure is executed.
