@@ -3,6 +3,7 @@
 
 % packages loading
 \usepackage[T1]{fontenc}
+\usepackage{float}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{mathptmx}
@@ -66,52 +67,45 @@
 \newpage
 
 \chapter{Introduction}
-Within the wide field of robotics, mobile robots gained much attention in recent years, because of the great ambit in which they can be involved in. Just to mention some of the areas of interest in which mobile robots are requested to operate, consider animation of digital characters, space exploration, mapping of and navigation in unknown and/or changing environments. \\
+
+Within the wide field of robotics, mobile robots gained much attention in recent years, because of the great ambit in which they can be involved in (Figures 1.1, 1.2 and 1.3). Just to mention some of the areas of interest in which mobile robots are requested to operate, consider animation of digital characters, space exploration, mapping of and navigation in unknown and/or changing environments. \\
 For accomplishing the greatest part of aforementioned tasks, a robot is often required to plan a path and a series of actions, avoiding obstacles and trying not to hurt itself and the humans potentially at its reach. Path planning and actions can be surely managed via an accurate melting of control theory, mechanics and geometry, but all the process can't disregard an exhaustive knowledge of ambient. That is why mobile robots are equipped with a series of sensors (sonars, laser scanners, ...) which allow to perceive elements in the surroundings that are useful to derive a reliable structure of environment.
-
-%\begin{figure}[htbp]
-%\centering
-%\includegraphics[width=1.0\textwidth]{images/foto_test/-5_-0.3_-4.7124/plot.jpeg}
-%\includegraphics[width=1.0\textwidth]{images/foto_test/-5_-0.3_-4.7124/chi.jpeg}
-%\includegraphics[width=0.4\textwidth]{images/nao.jpg}\\
-%\includegraphics[width=0.4\textwidth]{images/rescue.jpg}\\
-%\includegraphics[width=0.4\textwidth]{images/quadrotor.jpg}
-
-%\caption{LSE test 1}
-%\end{figure}
+\begin{figure}[htb]
+\centering
+\centering\setlength{\captionmargin}{0pt}%
+\includegraphics[width=.90\textwidth]{images/nao.jpg}
+\caption{The Nao humanoid robot, used for research and reproduction of human behaviour}
+\end{figure}
 
 \begin{figure}[htb]
 \centering
-\begin{minipage}[c]{0.9\textwidth}
 \centering\setlength{\captionmargin}{0pt}%
-\centerline{\includegraphics[width=0.4\textwidth]{images/rescue.jpg}}
-(a)
-\end{minipage} \\
-\vspace{10mm}%
-\begin{minipage}[c]{0.9\textwidth}
-\centering\setlength{\captionmargin}{0pt}%
-\centerline{\includegraphics[width=0.9\textwidth]{images/quadrotor.jpg}}
-(b)
-\vspace{10mm}%
-\begin{minipage}[c]{0.9\textwidth}
-\centering\setlength{\captionmargin}{0pt}%
-\centerline{\includegraphics[width=0.9\textwidth]{images/quadrotor.jpg}}
-(c)
-\end{minipage}
-\caption{Original image (a) and extracted features (b), using an acceptance criterion for windows, as explained in 1.30}
+\includegraphics[width=.90\textwidth]{images/rescue.jpg}
+\caption{A robot used during rescue operations}
 \end{figure}
 
+\begin{figure}[htb]
+\centering
+\centering\setlength{\captionmargin}{0pt}%
+\includegraphics[width=.90\textwidth]{images/quadrotor.jpg}
+\caption{A quadrotor, used for aerial video shootings and observation of endangered areas}
+\end{figure}
 
-
-Deriving the shape of ambient is not the only result that can be obtained by analysing measurements returned by sensors; indeed, such data, can be exploited to reconstruct the set of poses assumed by robot in all the spots where it used sensors to inspect environment; this furnishes a track of robot and sensors (in terms of position in space and orientation) in time. \\
+Learning the structure of ambient is not the only result that can be obtained by analysing measurements returned by sensors; indeed, such data, can be exploited to reconstruct the set of poses assumed by robot (in terms of position in space and orientation) in time, while observing world through its sensors. \\
 Tracking a robot along its path is a building block of many modern robotics applications, such as \emph{localisation} (which allows a robot to estimate its own position inside an ambient) and \emph{simultaneous localisation and mappig} or \emph{SLAM}, the process of constructing a map of ambient in which a self-localisation procedure is executed.
 
-A lot of research has been done in last decades to perform robot tracking and environment mapping by maximising the outcome of sensors' acquisitions. In particular, we can mention two specific fields that particularly took advantage from research in tracking and mapping procedures: \\
-\begin{itemize}
- 	\item{\textbf{visual SLAM (VSLAM)}, i.e. the problem of building a sparse or dense 3D model of a scene while traversing it, determining, at the same time, the trajectory of robot's platform and of a camera mounted on it}
-	\item{\textbf{scan matching}, the process of computing the rigid transformation that best aligns two laser scans or maps}
-\end{itemize}
-In any case, all the algorithms that mean to deal with tracking and mapping tasks are required to be fast and robust, in order to reduce error to minimum and construct a reliable estimation of robot's track in real time.
+A lot of research has been done in last decades to perform robot tracking and environment mapping in the attempt to gather the maximum information from sensors. \\
+A good example is \emph{visual odometry}, used to determine the position and orientation of a robot through the data returned by a camera. Visual odometry solves the problem of impossibility to apply standard odometry algorithms to mobile robots that have no wheels and no encoders, consequently. Classical odometry, moreover, suffers measurement errors due to wheels' slippages and sliding; such errors, accumulate over time and cause odometry readings to be unreliable. A visual approach, on the other hand, allows to bypass the classical odometry's issues by exploiting the sequential camera images to estimate travelled distance. This requires to determine the \emph{optical flow} field, describing the apparent displacement of objects, caused by relative motion between an observer (a camera or human eye) and an observed scene (Figure 1.4). \\
+Another class of algorithms that took advantage from research in the fields of robot tracking and environment mapping is known as \emph{visual SLAM (VSLAM)}; the main goal of algorithms belonging to such class is building a sparse or dense 3D model of a scene while traversing it, determining, at the same time, the trajectory of robot, exploiting a camera and/or other kinds of sensors. 
+
+Visual odometry and VSLAM, along with a long series of other algorithm, base their operations in determining and extracting interesting elements, known as \emph{features}, from subsequent sensor readings (returned by camera, laser, etc) and trying to track their position across such acquisitions. Regarding the features to be extracted, there is not a unique choice, since performance requirements have a crucial role in determining a good selection; usually, lines or points with particular properties (for example, the ones returned by the well known \emph{scale-invariant feature transform} or \emph{SIFT}) represent a nice option.
+The features matching permits to find the rigid transformation that best aligns two laser scans or camera frames.
+\begin{figure}[htb]
+\centering
+\centering\setlength{\captionmargin}{0pt}%
+\includegraphics[width=.90\textwidth]{images/optical_flow.png}
+\caption{Example of an optical flow: the red arrows indicate how the content of a single pixel moved from its original position, across frames}
+\end{figure}
 
 In this thesis we will introduce a new method to solve scan matching issue, presenting it, in an innovative fashion, as a least squadre estimation problem. The performances of the algorithm we will present will show that chosen approach reveals to be very fast and effective, as confirmed by the convergence analysis reported in last chapter. Moreover, after testing on real data, we will determine that presented algorithm compares favourably with state of the art approaches in contexts for which it was designed.
 
