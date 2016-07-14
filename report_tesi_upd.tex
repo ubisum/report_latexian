@@ -1,6 +1,10 @@
 % document and page typologies
 \documentclass[a4paper, onecolumn]{report}
 
+\newenvironment{dedication}
+        {\vspace{6ex}\begin{quotation}\begin{center}\begin{em}}
+        {\par\end{em}\end{center}\end{quotation}}
+
 % packages loading
 \usepackage[T1]{fontenc}
 \usepackage{float}
@@ -62,6 +66,21 @@
 \Large
 \sloppy
 
+\thispagestyle{empty}
+\begin{flushright}
+"'What makes the desert beautiful', said the little prince, 'is that somewhere it hides a well...'" \\ 
+ANTOINE DE SAINT-EXUPERY, \emph{The little prince}
+\end{flushright}
+
+\newpage
+\thispagestyle{empty}
+\begin{flushright}
+\emph{
+To my grandfather, who would have seen this day, if he had had still grains to flow through his hourglass.\\
+To Gaia, for the enduring patience and the infinite love, two fundamental requisites when you begin to write a thesis. \\
+To my parents and the rest of the family crew, for believing that, one day, I would have done it.
+}
+\end{flushright}
 
 \tableofcontents
 \newpage
@@ -101,7 +120,8 @@ Another class of algorithms that took advantage from research in the fields of r
 Visual odometry and VSLAM, along with a long series of other algorithms, base their operations on determining and extracting interesting elements, known as \emph{features}, from subsequent sensor readings and trying to track their position across such acquisitions. Regarding the features to be extracted, there is not a unique choice, since performance requirements have a crucial role in determining a good selection; usually, lines or points with particular properties (for example, the ones returned by the well known \emph{scale-invariant feature transform} or \emph{SIFT}) represent a nice option.
 The features matching permits to find the rigid transformation that best aligns two laser scans or camera frames, solving the so called \emph{scan matching} problem. \\
 The approach to the research of desired transformation is not unique, as one may imagine; a possible resolution can be achieved using a probabilistic formulation of the problem, for instance maximising the quantity $p(x_t|x_{t-1}, u_t, y_t, y_{t-1})$, expressing the probability to have, at the time $t$, the robot pose $x_t$, given the previous pose $x_{t-1}$, the current and previous sensor readings $y_t$ and $y_{t-1}$, the current odometry measurements $u_t$. \\
-An alternative formulation can be obtained for point features if an initial set of association is known; in this case, minimising a squared error function, it is possible to retrieve sought transformation in closed form. When initial set of correspondences is not available at the beginning, it can be constructed using a random sampling of points or using a data association policy (for example, coupling each point to its nearest neighbour).\\
+An alternative formulation can be obtained for point features using \emph{iterative closest point (ICP)}, if an initial set of association is known; in this case, minimising a squared error function, it is possible to retrieve sought transformation in closed form. When initial set of correspondences is not available at the beginning, it can be constructed using a random sampling of points or using a data association policy (for example, coupling each point to its nearest neighbour).\\
+Anyway, dense approaches like ICP reveal to be very slow in computing the transformation in closed form and require a good initial guess. Moreover, they are too sensible to sudden changes in observed scenes. On the other hand, feature-based algorithms perform quickly, since they work on a subset of data and are insensible to scene changes, since such changes are simply ignored. \\
 \begin{figure}[htb]
 \centering
 \centering\setlength{\captionmargin}{0pt}%
@@ -109,7 +129,7 @@ An alternative formulation can be obtained for point features if an initial set 
 \includegraphics[width=.90\textwidth]{images/optical_flow.png}
 \caption{Example of an optical flow: the red arrows indicate how the content of a single pixel moved from its original position, across frames}
 \end{figure}
-In this thesis we will introduce a new method to solve scan matching issue, presenting it, in an innovative fashion, as a least square estimation problem. The performances of the algorithm we will present will show that chosen approach reveals to be very fast and effective, as confirmed by the convergence analysis reported in last chapter. Moreover, after testing on real data, we will determine that presented algorithm compares favourably with state of the art approaches in contexts for which it was designed.
+In this thesis we will introduce a new method to solve scan matching issue, presenting it as a least square estimation problem. We validated our approach with a systematic set of experiments. The results show that our method is fast, effective, robust and adequate for on-line operations.
 
 The outline of thesis can be summarised in the following list:
 \begin{itemize}
@@ -149,7 +169,7 @@ A possible choice for $\mathcal{P}$ is the the set of representations of lines i
 \begin{equation}
 	x\cos\theta + y\sin\theta = \rho
 \end{equation}
-in which $\theta$ expresses the direction of line's normal vectors and $\rho$ its distance from origin (see Figure 1.1), we can select a family of sets to apply HT:
+in which $\theta$ expresses the direction of line's normal vectors and $\rho$ its distance from origin (see Figure 2.1), we can select a family of sets to apply HT:
 \begin{equation}
 	\mathcal{F}_{(\theta, \rho)} =\{(x,y) | x\cos\theta + \sin\theta = \rho\}
 \end{equation}
@@ -176,7 +196,7 @@ Then, within parameter space $\mathcal{P}$:
 \begin{equation}
 	\mbox{HT}'(\rho, \theta) = \mbox{HT}(\theta+\phi, \rho+(\cos\theta \quad \sin\theta)T)
 \end{equation}
-Computing the HT passes through a discrete approximation of it, called \emph{Discrete Hough Transform (DHT)}; the comparison with simple HT is shown in Figure 1.2. DHT allows to redefine our family of sets as:
+Computing the HT passes through a discrete approximation of it, called \emph{Discrete Hough Transform (DHT)}; the comparison with simple HT is shown in Figure 2.2. DHT allows to redefine our family of sets as:
 \begin{equation}
 	\mathcal{D}_{(\theta, \rho)} = \{(x,y) | \ \rho\le x\cos\theta + y\sin\theta < \rho + \Delta\rho\} 
 \end{equation}
@@ -195,7 +215,7 @@ Computing the HT passes through a discrete approximation of it, called \emph{Dis
 \end{minipage}
 %\caption{Didascalia comune alledue figure\label{fig:minipage2}}
 \end{figure}
-For a complete definition of the scan matching algorithm based on HT, we need to define the so called \emph{Hough spectrum}. For such purpose, we need a funcional $g$ that is invariant to traslation. Theoretically speaking, this means that, given a function $f$:
+For a complete definition of the scan matching algorithm based on HT, we need to define the so called \emph{Hough spectrum}. For such purpose, we need a functional $g$ that is invariant to translation. Theoretically speaking, this means that, given a function $f$:
 \begin{equation}
 	f'(\tau) = f(\tau + \alpha) \Rightarrow g[f] = g[f']
 \end{equation}
@@ -203,7 +223,7 @@ So, it is possible to define the Hough Spectrum as
 \begin{equation}
 	\mbox{HS}_g[i](\theta) := g[\mbox{HT}[i](\theta, \cdot)]
 \end{equation}
-An interesting property of spectrum is its \emph{invariance}. If we define again two inputs $i(\bf{s})$ and $i'(\bf{s})$ as in (), the following statement is valid:
+An interesting property of spectrum is its \emph{invariance}. If we define again two inputs $i(\bf{s})$ and $i'(\bf{s})$ as in (2.5) and (2.6), the following statement is valid:
 \begin{equation}
 	\mbox{HS}_a[i](\theta) = \mbox{HS}_a[i'](\theta + \phi).
 \end{equation}
@@ -213,7 +233,7 @@ The set of possible choices for $g$ is wide and a natural one is the energy of t
 \begin{equation}
 	g[f] = \sum_i f_i^2
 \end{equation}
-Since the property illustrated in () holds, it is possible to estimate $\phi$ by correlating the discrete spectra of sensor data $\mbox{DHS}^S(\theta)$ and of reference data $\mbox{DHS}^R(\theta)$. Then, local maxima of correlation are ordered; beginning with the greatest maximum, proceeding up to a chosen number, a new hypothesis for $\phi$ is formulated. \\
+Since the property illustrated in (2.11) holds, it is possible to estimate $\phi$ by correlating the discrete spectra of sensor data $\mbox{DHS}^S(\theta)$ and of reference data $\mbox{DHS}^R(\theta)$. Then, local maxima of correlation are ordered; beginning with the greatest maximum, proceeding up to a chosen number, a new hypothesis for $\phi$ is formulated. \\
 We can suppose that, if $\Phi$ is the domain in which we search for the value of $\phi$, such domain can have an upper and lower bound, in such a way that $\Phi = [-\phi_U, \phi_U]$. If this assumption cannot be made, then it can be simply set $\Phi = [-\pi, \pi]$. \\
 The correlation between the two spectra can be obtained using the relation
 \begin{equation}
@@ -221,7 +241,7 @@ The correlation between the two spectra can be obtained using the relation
 \end{equation}
 The hypotheses ${\phi_1, \dots, \phi_k}$ are retrieved from local maxima of correlation.
 
-The scan matching problem is almost solved; what remains to be done is the estimation of traslation $T$. Let's assume $\phi=0$ (this can be obtained by shifting the columns of $\mbox{DHT}^S$ and $\mbox{DHT}^R$ by the $\phi$ previously computed). We can choose an arbitrary $\theta = \hat{\theta}$. According to (), we can derive that
+The scan matching problem is almost solved; what remains to be done is the estimation of translation $T$. Let's assume $\phi=0$ (this can be obtained by shifting the columns of $\mbox{DHT}^S$ and $\mbox{DHT}^R$ by the $\phi$ previously computed). We can choose an arbitrary $\theta = \hat{\theta}$. We can derive that
 \begin{equation}
 	\mbox{DHT}^R(\hat \theta, \rho) = \mbox{DHT}^S(\hat \theta, \rho + (\cos \hat \theta \quad \sin\hat\theta)T)
 \end{equation}
@@ -284,7 +304,7 @@ The procedure, known as \emph{LineMatch}, is described by Algorithm 1.
 		\item{$\bf{return}$ H}	
 	\end{algorithmic}
 \end{algorithm}
-The main tasks performed by algorithm are extracting lines from current scan and comparing them with the ones contained in a \emph{a priori} map. In particular, function \emph{SelectScanline} picks a a new line to be matched, while \emph{VerifyMatch} checks that a new pair \emph{(m, s)} of matched lines is compatible with the pairs alreary accepted in previous iterations of procedure. Finally, the algorithm returns a set of accepted pairs, that can be translated into positions from which robot may have taken scans (Figure 1.3). Proper constraints on lines' lengths and roto-traslations can allow algorithm to be more effective; this implies that it is not necessary to have a good estimate of robot's initial pose, since robot is able to recover from initial error.  
+The main tasks performed by algorithm are extracting lines from current scan and comparing them with the ones contained in a \emph{a priori} map. In particular, function \emph{SelectScanline} picks a a new line to be matched, while \emph{VerifyMatch} checks that a new pair \emph{(m, s)} of matched lines is compatible with the pairs already accepted in previous iterations of procedure. Finally, the algorithm returns a set of accepted pairs, that can be translated into positions from which robot may have taken scans (Figure 1.3). Proper constraints on lines' lengths and roto-traslations can allow algorithm to be more effective; this implies that it is not necessary to have a good estimate of robot's initial pose, since robot is able to recover from initial error.  
 \begin{figure}[htbp]
 \centering
 \centering\setlength{\captionmargin}{0pt}%
@@ -332,13 +352,13 @@ Thus, the tracking problem between two images $I$ and $J$ can be formulated in t
 	\delta = \boldsymbol{d}. \notag
 \end{equation}
 
-The equation () is not satisfied completely, then finding the six unknown motion parameters means to find $A$ and $\boldsymbol{d}$ that minimize dissimilarity
+The equation (2.21) is not satisfied completely, then finding the six unknown motion parameters means to find $A$ and $\boldsymbol{d}$ that minimise dissimilarity
 \begin{equation}
 	\epsilon = \int \int_W [J(A\boldsymbol{x} + \boldsymbol{d} - I(\boldsymbol{x})]^2 w(\boldsymbol{x})d\boldsymbol{x}
 \end{equation}
-with $W$ the feature window and $w(\boldsymbol{x})$ a weighting function (in the simpleste case, it can be set to 1. In the other cases, it can be a Gaussian-like function).
+with $W$ the feature window and $w(\boldsymbol{x})$ a weighting function (in the simplest case, it can be set to 1. In the other cases, it can be a Gaussian-like function).
 
-When we have a simple traslation, matrix $A$ must coincide with identity matrix. To minimize the value in equation (), it is possible to diffirentiate with respect to unknown parameters in $D$ and $\boldsymbol{d}$ and then set result to zero. The obtained system can linearized by a truncation in Taylor expansion:
+When we have a simple translation, matrix $A$ must coincide with identity matrix. To minimise the value in equation (2.23), it is possible to differentiate with respect to unknown parameters in $D$ and $\boldsymbol{d}$ and then set result to zero. The obtained system can linearised by a truncation in Taylor expansion:
 \begin{equation}
 	J(A\boldsymbol{x} + \boldsymbol{d}) = J(\boldsymbol{x}) + g^T(\boldsymbol{u}).
 \end{equation}
@@ -402,17 +422,17 @@ An example of how textures may be extracted and accepted according to condition 
 \chapter{Basic concepts}
 \section{Introduction}
 This chapter introduces to the main concepts on which this thesis is based.  \\
-First of all, we will concentrate ourselves on describing the concept of sensors and their importance in self-perception of robots. Sensors, indeed, are very useful to allow a robot to localize itself and have an idea of surrounding environment; anyway, to make all this possible, it is necessary to design them in such a way to satisfy a series of requirements. Sensors, although their immense utility, furnish noisy measurements with which localization algorithms must deal.
+First of all, we will concentrate ourselves on describing the concept of sensors and their importance in self-perception of robots. Sensors, indeed, are very useful to allow a robot to localise itself and have an idea of surrounding environment; anyway, to make all this possible, it is necessary to design them in such a way to satisfy a series of requirements. Sensors, although their immense utility, furnish noisy measurements with which localisation algorithms must deal.
 In this chapter, we will describe one particular kind of sensors, the ones based on the \emph{time of flight (TOF)} method.
 
-The main tecnique used by robots to estimate their current position and orientation is \emph{odometry}, which is based on data returned by robot's encoders. We will analyse the two types of errors it introduces and how they have been experimentally measured.
+The main technique used by robots to estimate their current position and orientation is \emph{odometry}, which is based on data returned by robot's encoders. We will analyse the two types of errors it introduces and how they have been experimentally measured.
 
 Data furnished by sensors is often huge, so it is important to extract only relevant parts of it, in order to reduce time in computation. We will describe how such parts can be extracted and which properties we expect them to have.
 
-Finally, we will propose a process based on least squares minimization, that allows to estimate a robot's state (in terms of position and orientation), exploiting the error between measured and expected state value.
+Finally, we will propose a process based on least squares minimisation, that allows to estimate a robot's state (in terms of position and orientation), exploiting the error between measured and expected state value.
 
 \section{Robot sensors}
-Robots can be considered, among human artefacts, as the ones closest to the concept of a living being, with their capabilities to sense world and change their own choices on the basis of what they perceive in the surrounding environment. Without a sensing system, robots could be just able to repeat the same task and wouldn't be able to adapt their decisions to an environment continously changing around them. Thanks to sensors, robots can operate in places that are too dangerous for humans and interact with each other. 
+Robots can be considered, among human artefacts, as the ones closest to the concept of a living being, with their capabilities to sense world and change their own choices on the basis of what they perceive in the surrounding environment. Without a sensing system, robots could be just able to repeat the same task and wouldn't be able to adapt their decisions to an environment continuously changing around them. Thanks to sensors, robots can operate in places that are too dangerous for humans and interact with each other. 
 
 When designing a sensor, there is a small set of requirements that should be kept into account:
 \begin{itemize}
@@ -437,7 +457,7 @@ There exists a class of range sensors widely used for such purpose based on the 
 where $d$ is the round-trip distance, $v$ is the speed of propagation of energy wave and $t$ is the elapsed time. The time interval $t$ in previous equations is the one that elapses while the energy wave reaches the obstacle and gets back to robot; thus, to retrieve the real range between robot and target, $t$ must be divided by two.
 
 The signal emitted by robot reaches an object and walks back on the same way to the robot, where it will be detected by a receiver, that can be located close to emitter or integrated with emitter itself.
-As it is evident in ( ), the range to an object can be easily retrieved and no further knowledge about object's nature is necessary.
+As it is evident in (3.1), the range to an object can be easily retrieved and no further knowledge about object's nature is necessary.
 
 Similarly to all kinds of sensors, even TOF systems are subject to measurements errors, which can be summarized in the following short list:
 \begin{itemize}
@@ -499,8 +519,8 @@ The new position, at the same instant of time, of its centerpoint will be:
 \end{equation}
 
 \subsection{Systematic and Non-Systematic errors in odometry}
-As explained previously, the odometry exploits three simple equations to estimate current position of robot. All of them, are based on the assumption that any encoder's measurement can be translated into a linear diplacement. Anyway, such assumption may lose its validity in certain circumstances; for instance, if a wheel slips, its encoder will register a measurement that is converted in a linear displacement, even if robot didn't move actually. \\
-Slippage is only one of the possible causes of errors in odometry; they can me summarized and divided into the following two categories:\\ \\
+As explained previously, the odometry exploits three simple equations to estimate current position of robot. All of them, are based on the assumption that any encoder's measurement can be translated into a linear displacement. Anyway, such assumption may lose its validity in certain circumstances; for instance, if a wheel slips, its encoder will register a measurement that is converted in a linear displacement, even if robot didn't move actually. \\
+Slippage is only one of the possible causes of errors in odometry; they can me summarised and divided into the following two categories:\\ \\
 \textbf{Systematic errors}
 \begin{itemize}
 	\item{wheels with different diameters}
@@ -518,9 +538,9 @@ Slippage is only one of the possible causes of errors in odometry; they can me s
 
 Both errors categories are very difficult to manage; the first ones, in fact, are constantly present and accumulate over time; the latter, are unpredictable and robot must be able to react promptly when they manifest.
 
-Across time, algorithms managing robot's position have thought it as surrounded by an error ellipse, denoting an area where robot may be in a certain moment. Ellipses grow with distance travelled, until an absolute measurement of position reduces ellipse's size. This method based on ellipses can be used to contain systematic errors only, since non systematic ones are unpredictable.
+Across time, algorithms managing robot's position have thought it as surrounded by an error ellipse (Figure 3.1), denoting an area where robot may be in a certain moment. Ellipses grow with distance travelled, until an absolute measurement of position reduces ellipse's size. This method based on ellipses can be used to contain systematic errors only, since non systematic ones are unpredictable.
 
-Estimating correctly the extent of odometric errors avoids further problems such as a wrong calibration of mobile platforms. In 1995, Borenstein and Feng developed a method based on a model which considers two erros to be dominant:
+Estimating correctly the extent of odometric errors avoids further problems such as a wrong calibration of mobile platforms. In 1995, Borenstein and Feng developed a method based on a model which considers two errors to be dominant:
 \begin{itemize}
 	\item{the error due to different wheels' diameters $E_d = \frac{D_R}{D_L}$, with $D_R$ and $D_L$, respectively, the actual diameters of right and left wheel}
 	\item{the error due to uncertainty about real wheelbase $E_b = \frac{b_{actual}}{b_{nominal}}$, with $b$ the wheelbase of robot}
@@ -534,7 +554,7 @@ Estimating correctly the extent of odometric errors avoids further problems such
 
 \subsection{Measuring Systematic errors}
 Before describing Borenstein and Feng's method to estimate systematic errors, it is useful to analyse Borenstein and Koren's method (1987). \\
-Let's suppose that robot starts its path from an initial position <$x_0, y_0, \theta_0$> and has to move on a 4x4 meter square path (Figure 2.2). The robot is programmed to return to its initial position at the end of the path, but because of systematic errors, this will not happen accurately and a series of errors will be accumulated (\emph{return position errors}):
+Let's suppose that robot starts its path from an initial position <$x_0, y_0, \theta_0$> and has to move on a 4x4 meter square path (Figure 3.2). The robot is programmed to return to its initial position at the end of the path, but because of systematic errors, this will not happen accurately and a series of errors will be accumulated (\emph{return position errors}):
 \begin{equation}
 	\begin{aligned}
 		\epsilon_{x} &= x_{abs}-x_{calc} \\
@@ -583,7 +603,7 @@ The square path test that was used to estimate systematic error, can be implemen
 The use of absolute values in previous equations is needed to avoid that two return orientation errors with opposite signs compensate each other. Thus, if after first run we have $\epsilon_\theta=1^\circ$ and after second one we have $\epsilon_\theta = -1^\circ$, we will not erroneously derive that $\epsilon_{avg}^{nonsys}=0^\circ$.
 
 \section{Extracting features}
-In many different fields (machine learning and pattern recognition, just to mention a pair) the amount of data to manage (for example, the measurements returned by robot sensor) is too huge to be used in toto, so it becomes of great importance to extract only the necessary information, removing, moreover, all the redundancies that could make computation unfeasible. Thus., it is convenient to design processes that are able to extract information that is representative of data and allows to overcome the problem of using data in its totality. Such processes perform what is called \emph{features extraction}, i.e. they retrieve (and sometimes compute) elements (\emph{features}) that are distinctive of data, with which it is easier to operate; features are required to be informative, discriminative and indipendent. For some uses, features are even required to mantain some properties across space and time. \\
+In many different fields (machine learning and pattern recognition, just to mention a pair) the amount of data to manage (for example, the measurements returned by robot sensor) is too huge to be used in toto, so it becomes of great importance to extract only the necessary information, removing, moreover, all the redundancies that could make computation unfeasible. Thus., it is convenient to design processes that are able to extract information that is representative of data and allows to overcome the problem of using data in its totality. Such processes perform what is called \emph{features extraction}, i.e. they retrieve (and sometimes compute) elements (\emph{features}) that are distinctive of data, with which it is easier to operate; features are required to be informative, discriminative and independent. For some uses, features are even required to maintain some properties across space and time. \\
 Usually, features have a numerical nature, but sometimes they can present a different aspect (in some cases they can be strings of characters or histograms).
 
 Before designing an extraction process, features' structure needs to be planned, in order to respect the goal of good representation of data and to obtain elements with which working will be easy and effective.
@@ -595,7 +615,7 @@ The choice about structure and computation of features depends on their final us
 	\item{edges and corners in computer vision}
 \end{itemize}
 
-As explained in previous section, data retrieved from odometry are often inaccurate and they can lead to errors in robot's position estimation; features, after their extraction from sensors' data, can add a precious information allowing to reduce the errors and gain a better estimate of robot position in time. Indeed, each feature carries information about its reciprocal position with respect to robot and it can be used to improve localization methods\\
+As explained in previous section, data retrieved from odometry are often inaccurate and they can lead to errors in robot's position estimation; features, after their extraction from sensors' data, can add a precious information allowing to reduce the errors and gain a better estimate of robot position in time. Indeed, each feature carries information about its reciprocal position with respect to robot and it can be used to improve localisation methods\\
 It is necessary to underline that even a well designed process of extraction can return a number of features that is too huge to be handled; so, it becomes crucial, in such cases, to be aware about which features are really necessary and which can be ignored. This mainly depends on the context in which robot operates, the perception system and the way features are represented.
 
 \subsection{Extracting lines as features}
@@ -607,9 +627,9 @@ When receiving data from a ranger sensor (for instance, a laser range), one need
 \end{itemize}
 For the purpose of this thesis, we will consider the second option.
 
-Across the years, many algorithms have been developed for extracting lines, starting from a laser's sequence of points, each with its pros and cons. The choice of an algorithm instead of another one depends mainly on one's needs. Sometimes speed needs to be preferred, in some other cases it is preferrable to give importance to quality, since bad extraction of features may lead to system's divergence. Complexity, too, is a particular not to be forgotten. \\ 
+Across the years, many algorithms have been developed for extracting lines, starting from a laser's sequence of points, each with its pros and cons. The choice of an algorithm instead of another one depends mainly on one's needs. Sometimes speed needs to be preferred, in some other cases it is preferable to give importance to quality, since bad extraction of features may lead to system's divergence. Complexity, too, is a particular not to be forgotten. \\ 
 Here, we will describe the so-called \emph{split and merge algorithm}, which operates using a \emph{divide et impera} logic, starting with an initial set of points, progressively divided into subsets (on the basis of a check condition), until satisfying the conditions for determining the existence of a line (the subset under inspection has not enough points to be divided into two subsets and/or no point satisfies check condition to proceed to another division).
-The main steps of procedure are described by Algorithm 1. In particular:
+The main steps of procedure are described by Algorithm 2. In particular:
 \begin{itemize}
 \item{\emph{isThereASetToSplit}($\mathcal{L})$ checks whether there is still a subset of points, among the ones in $\mathcal{L}$, that may be splitted into two subsets}
 \item{\emph{takeASetToSplit($\mathcal{L}$)} extracts a set $s_i$ among the candidates to be splitted in $\mathcal{L}$}
@@ -641,7 +661,7 @@ Let \textbf{x} be a vector variable indicating the state of the system and let's
 \begin{equation}
 	\{f_i(\textbf{x})\}_{i = 1:n} \notag
 \end{equation}
-which, given \textbf{x}, predict its measurement. \\Let's suppose, moreover, to have a series of real measurements ${\bf z_i}$. The goal is to extimate the state ${\bf x}$ that best fits the measurements ${\bf z_{i:n}}$.\\
+which, given \textbf{x}, predict its measurement. \\Let's suppose, moreover, to have a series of real measurements ${\bf z_i}$. The goal is to estimate the state ${\bf x}$ that best fits the measurements ${\bf z_{i:n}}$.\\
 We can, then, determine an error between each real measurement and the relative predicted one:
 \begin{equation}
 	\textbf{e}_i = \textbf{z}_i - f_i(\textbf{x})
@@ -659,13 +679,13 @@ Then, the problem of finding the state that best fits the real measurements can 
 \end{align}
 A general solution to the problem is to derive the global error function and find its nulls, but this would result in a complex solution which doesn't admit closed forms. So, proceeding with numerical approaches is a more practical path. 
 
-If a good initial guess is at disposal and the measurement functions are smooth in the neighborhood of minima, we can solve problem using iterative (local) linearizations. The iterative process is composed of three steps:
+If a good initial guess is at disposal and the measurement functions are smooth in the neighbourhood of minima, we can solve problem using iterative (local) linearisations. The iterative process is composed of three steps:
 \begin{itemize}
 	\item{linearize the problem around current initial guess}
 	\item{solve a linear system}
 	\item{compute a set of increments to be applied to current estimate in order to get closer to minima}
 \end{itemize}
-The first step is linearizing the problem and this can be done using a Taylor expansion:
+The first step is linearising the problem and this can be done using a Taylor expansion:
 \begin{align}
 	\textbf{e}_i(\textbf{x} + \Delta\textbf{x}) &\simeq \textbf{e}_i(\textbf{x}) + \frac{\partial \textbf{e}_i}{\partial \textbf{x}}\Delta\textbf{x}\\
 	&= \textbf{e}_i + \textbf{J}_i\Delta\textbf{x} \notag
@@ -697,9 +717,9 @@ with the optimal solution reached for
 \end{equation}
 Thus, an iterative algorithm can be designed; it will execute the following steps:
 \begin{itemize}
-	\item{linearize the system around current guess $\textbf{x}$ and compute $\textbf{e}_i(\textbf{x} + \Delta\textbf{x})$ as described in () and ()}
-	\item{compute $\textbf{b}^T$ and $\textbf{H}$ as described in () and ()}
-	\item{solve the system to get a new optimal increment $\Delta\textbf{x*}$, as indicated in ()}
+	\item{linearize the system around current guess $\textbf{x}$ and compute $\textbf{e}_i(\textbf{x} + \Delta\textbf{x})$ as described in (3.15) and (3.16)}
+	\item{compute $\textbf{b}^T$ and $\textbf{H}$ as described in (3.18) and (3.19)}
+	\item{solve the system to get a new optimal increment $\Delta\textbf{x*}$, as indicated in (3.21)}
 	\item{update the previous estimate: $\textbf{x} \leftarrow \textbf{x} + \Delta\textbf{x*}$}
 \end{itemize}
 
@@ -715,7 +735,7 @@ Given the lines obtained from each scan, it becomes interesting to track how the
 
 
 \section{Landmarks and features}
-As discussed in last chapters, once a robot has acquired information from a sensor (a laser scan, for instance), it is necessary to extract only the relevant part of data, in order to reduce complexity without affecting performances. Such relevant part is formed by \emph{features}, elements that describe reliably the part of environment perceived by a sensor's acquirement. They may represent physical objects and in robotics are often called \emph{landmarks}, to underline the fact that they are exploited by robot during navigation. Without losing generality, we can assume that robot is always able to measure the bearing and range of landmarks in its own reference frame (Figure 3.1). Sometimes, an extractor adds a \emph{signature} to measurements, in terms of a numerical value that can represent, for instance, an average color. The presence of signature is not strictly required and all what will be exposed in the following can be reduced to the case in which no signature has been introduced.
+As discussed in last chapters, once a robot has acquired information from a sensor (a laser scan, for instance), it is necessary to extract only the relevant part of data, in order to reduce complexity without affecting performances. Such relevant part is formed by \emph{features}, elements that describe reliably the part of environment perceived by a sensor's acquirement. They may represent physical objects and in robotics are often called \emph{landmarks}, to underline the fact that they are exploited by robot during navigation. Without losing generality, we can assume that robot is always able to measure the bearing and range of landmarks in its own reference frame (Figure 4.1). Sometimes, an extractor adds a \emph{signature} to measurements, in terms of a numerical value that can represent, for instance, an average color. The presence of signature is not strictly required and all what will be exposed in the following can be reduced to the case in which no signature has been introduced.
 
 If we denote with $f$ an extractor function, the extracted features can be represented as $f(z_t)$; let's indicate with $r$, $\phi$ and $s$ the range, the bearing and the signature. We can obtain, then, a feature vector as a collection of triplets:
 \begin{equation}
@@ -743,7 +763,7 @@ where $\epsilon_{\sigma_r^2}$, $\epsilon_{\sigma_\phi^2}$ and $\epsilon_{\sigma_
 \subsection{Extraction and model of features}
 When working with 2D landmarks, line segments represent a good choice for determining a reliable set of features, since they are simple geometric primitives but, at the same time, furnish a good amount of information to be used during localisation phases. The easiest way to represent a segment is by its endpoints; in some circumstances (for instance, the cases in which a robot scans an environment in which different corridors share a wall), the endpoints' information may be misleading, but the distance that can be measured between them is, at the least, a lower bound on the actual length of the segment they delimit.
 
-Given a scan from laser, the \emph{Split and merge} algorithm described in Section 2.4.1 can be used to extract segments, which can be characterised by their endpoints. When segments appear to be collinear and their extremes are close enough, they can be melted or joined, obtaining what is known as a \emph{polyline structure}. Segments that could not be joined and whose length falls below a determined threshold, can be deleted, since they represent a useless source of noise. It is, moreover, possible to gain a polar representation of segments, using the aforementioned equation 
+Given a scan from laser, the \emph{Split and merge} algorithm described in Section 3.4.1 can be used to extract segments, which can be characterised by their endpoints. When segments appear to be collinear and their extremes are close enough, they can be melted or joined, obtaining what is known as a \emph{polyline structure}. Segments that could not be joined and whose length falls below a determined threshold, can be deleted, since they represent a useless source of noise. It is, moreover, possible to gain a polar representation of segments, using the aforementioned equation 
 \begin{equation}
 	x\cos \theta + y\sin\theta = \rho, \notag 
 \end{equation}
@@ -755,7 +775,7 @@ What becomes of great interest at this moment is discovering whether one or more
 Finding out the associations between lines belonging to different scans allows to compute a rigid transformation $T$ from scan $j$ to scan $i$; such transformation, is actually able to translate the reference frame of robot in which $j$ was acquired onto reference frame in which $i$ was expressed. The sought transformation should be able to maximize the overlapping between the two reference frames, minimising, at the same time, the value of an opportune error function.
 
 \subsection{Solving matching problem using least squares estimation}
-The problem of determining $T$ can be formulated in terms of a least square estimation, by exploiting the concepts in Section 2.5. Let's suppose that a generic segment $l_i$ in scan $i$ can be expressed as 
+The problem of determining $T$ can be formulated in terms of a least square estimation, by exploiting the concepts in Section 3.5. Let's suppose that a generic segment $l_i$ in scan $i$ can be expressed as 
 \begin{equation}
 	l_i = \left(\begin{matrix} p_i \\ n_i \end{matrix} \right)
 \end{equation}
@@ -837,9 +857,9 @@ Let's suppose to have two scans $i$ and $j$ and that we need to find the transfo
 Then, we add to a set the couple of associated indexes $(i, j)$ if $p_{ij}$ is greater than a properly chosen threshold. This gives us a set of putative associations that needs to be pruned. \\
 Lately, for each couple of indexes, we evaluate the difference between the values of $\theta_i$ and $\theta_j$ of associated lines, along with the Euclidean distance between their midpoints. Both are requested two stay below two specific thresholds. All the couples of indexes, whose associated lines don't satisfy these last two conditions, are deleted from putative set. 
 
-\textbf{Computing local and global matrices}. Once we have a set of reliable couples of indexes (lines), for each couple we can compute the error $e_{ij}$ as expressed in Equation (3.9); this allows us to determine the local matrices $H_{ij}$ e $b_{ij}$ (Equations from 3.9 to 3.14), for each couple of associated lines. Once all local matrices have been computed, we can derive global matrices $H$ and $b$ (Equations 3.15).
+\textbf{Computing local and global matrices}. Once we have a set of reliable couples of indexes (lines), for each couple we can compute the error $e_{ij}$ as expressed in Equation (4.9); this allows us to determine the local matrices $H_{ij}$ e $b_{ij}$ (Equations from 4.9 to 4.14), for each couple of associated lines. Once all local matrices have been computed, we can derive global matrices $H$ and $b$ (Equations 4.15).
 
-\textbf{Solving linear system and updating current estimate of $T$}. Once the global matrices have been computed, it is possible to prepare linear system in (3.16). Its resolution gives us the new estimate $\Delta T$ of transformation matrix between scans $i$ and $j$.  By applying new estimate to old one, we get a new transformation matrix that can be used for a new iteration of algorithm or can be directly returned if the maximum number of iterations has been reached. A block representation of a single iteration can be found in Figure 3.2.
+\textbf{Solving linear system and updating current estimate of $T$}. Once the global matrices have been computed, it is possible to prepare linear system in (4.16). Its resolution gives us the new estimate $\Delta T$ of transformation matrix between scans $i$ and $j$.  By applying new estimate to old one, we get a new transformation matrix that can be used for a new iteration of algorithm or can be directly returned if the maximum number of iterations has been reached. A block representation of a single iteration can be found in Figure 4.2.
 
 \begin{figure}[htbp]
 \centering
@@ -857,9 +877,9 @@ According to Willow Garage, the research laboratory that developed it in 2007, t
 	\item{hardware abstraction}
 	\item{low-lovel device control}
 	\item{exchange and recording (in \emph{bag files}) of messages between processes}
-	\item{robot-specific features: pose estimation, localisation, mapping, navigation (Figure 4.1)}
+	\item{robot-specific features: pose estimation, localisation, mapping, navigation (Figure 5.1)}
 	\item{diagnostics, to produce, collect and aggregate data about robot, to control its state and produce an effective strategy to resolve incoming issues}
-	\item{tools for debugging, plotting, and visualizing the state of the system under development (Figure 4.2)}
+	\item{tools for debugging, plotting, and visualizing the state of the system under development (Figure 5.2)}
 	\item{package management}
 \end{itemize}
 
@@ -907,9 +927,9 @@ To generate an accurate simulation in \emph{Stage}, two elements are strictly ne
 
 With regards to maps, \emph{Stage} furnishes a certain number of them that can be used to start learning how a simulation in its environment works. Anyway, for more specific uses it could be required to create the map of a specific ambient in which robot has to move and sense. The definition of a map requires the creation of three objects:
 \begin{itemize}
-	\item{a \emph{.png} file representing the shape of environment, created with the use of a laser rangefinder or by graphics editors (Figure 4.3)}
-	\item{a \emph{.world} file, containing the description of ambient (dimension of map, robots' initial positions and colors). An example relative to Figure 4.3 is showm in Figure 4.4}
-	\item{a \emph{.yaml} file, containing information, for instance, regarding the position of origin of axes on \emph{.png} file, that will be used as a reference to track robot's position along its trajectory (Figure 4.5)}
+	\item{a \emph{.png} file representing the shape of environment, created with the use of a laser rangefinder or by graphics editors (Figure 5.3)}
+	\item{a \emph{.world} file, containing the description of ambient (dimension of map, robots' initial positions and colors). An example relative to Figure 5.3 is showm in Figure 5.4}
+	\item{a \emph{.yaml} file, containing information, for instance, regarding the position of origin of axes on \emph{.png} file, that will be used as a reference to track robot's position along its trajectory (Figure 5.5)}
 \end{itemize}
 \begin{figure}[htbp]
 \centering
@@ -921,14 +941,14 @@ With regards to maps, \emph{Stage} furnishes a certain number of them that can b
 \centering
 \fbox{
 \includegraphics[width=1\textwidth]{images/mappa_dis/world_file.jpg}}
-\caption{A \emph{.world} file relative to Figure 4.3}
+\caption{A \emph{.world} file relative to Figure 5.3}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
 \fbox{
 \includegraphics[width=1\textwidth]{images/mappa_dis/yaml_file.jpg}}
-\caption{A \emph{.yaml} file relative to Figure 4.3}
+\caption{A \emph{.yaml} file relative to Figure 5.3}
 \end{figure}
 
 Each robot on the map is usually represented as a small square with a different color; to make it move forward (along X or Y axes) or rotate, it is necessary to use another external library contained in another ROS node. \\
@@ -954,10 +974,10 @@ All the testing activities that will follow, can be essentially divided into two
 	\item{generation of testing data}
 	\item{testing of overall approach}
 \end{itemize}
-For the generation of data, we used the \emph{Stage} simulator and the map of first floor of DIAG department, depicted in Figure 4.3. The robot, represented, as usually, as a small square, was made move for a short journey along one of the corridors, using \emph{teleop\_base} and keyboard commands. While robot was moving, \emph{Stage} generated \emph{geometry\_msgs} and \emph{nav\_msgs} messages, that were recorded in a bag file. \\
+For the generation of data, we used the \emph{Stage} simulator and the map of first floor of DIAG department, depicted in Figure 5.3. The robot, represented, as usually, as a small square, was made move for a short journey along one of the corridors, using \emph{teleop\_base} and keyboard commands. While robot was moving, \emph{Stage} generated \emph{geometry\_msgs} and \emph{nav\_msgs} messages, that were recorded in a bag file. \\
 Subsequently, it was necessary to translate data in bag file into something more readable and useful for later uses; for such goal, an ad hoc ROS node was designed. Its task was listening to messages coming from the playback of bag file and record fundamental information on text files. In particular, the node extracted, from messages, information about odometric data and polar coordinates of scanned points, for each robot pose. The polar coordinates were converted in Cartesian coordinates (in robot's reference frame) before being saved on a text file.
 
-The testing part was inserted in a separate ROS node; the node first loaded all the information previously recorded of text files, paying attention not to consider more than once the same pose and its associated data. From the points returned at each scan, lines were extracted using the \emph{split and merge} algorithm described in Chapter 1.
+The testing part was inserted in a separate ROS node; the node first loaded all the information previously recorded of text files, paying attention not to consider more than once the same pose and its associated data. From the points returned at each scan, lines were extracted using the \emph{split and merge} algorithm described in Chapter 2.
 
 \subsection{Testing least squares estimation (LSE)}
 The first and easiest test that can be performed on LSE module requires to take the lines extracted from a scan of robot (at a given pose), to apply them a chosen transformation and to verify whether the LSE can reconstruct the applied transformation, without knowing it a priori.
@@ -985,7 +1005,7 @@ A measure of how fine are LSE's performances, can be retrieved by remembering th
 \begin{equation}
 	e_{ij}\Omega_{ij}e_{ij}^T
 \end{equation}
-The quantities in (5.3) computed at $i$-th iteration of LSE can be summed, an error measurement $\chi_i$. Thus, after $N$ iterations, LSE returns a total local error
+The quantities in (5.3) computed at $i$-th iteration of LSE can be summed, gaining an error measurement $\chi_i$. Thus, after $N$ iterations, LSE returns a total local error
 \begin{equation}
 	\chi = \sum_i^N \chi_i
 \end{equation}
@@ -1133,6 +1153,21 @@ Figure 5.18 shows that, after remaining constant up to 50th iteration, error $E_
 \caption{Number of iterations of data association module (X axis) and values of $E_j$ (Y axis)}
 \end{figure}
 
+\chapter{Conclusions}
+Along this thesis, we have presented a new method to solve the problem of scan registration, on which many robotics applications (that have necessity to perform tasks involving localisation and mapping) are based. \\
+We decided to use a feature-based approach, which extracts part of information and works solely with it; this is the reason why such methods reveal to be faster, if compared to dense methodologies which work with a greater amount of data, require a good initial guess and are too sensible to small changes in observed scene.
+
+As extracted features, we chose lines and designed a representation for them based on midpoints and normals; using this representation, we built a process based on least squares estimation (LSE) that iteratively estimates the rigid transformation to align two different frames, containing lines extracted from their relative laser scans. \\
+We prepared some systematic tests by taking a frame, applying a chosen transformation to it and requiring LSE to retrieve the best aligning transformation. As results have shown, the LSE module is perfectly able to determine the transformation that aligns transformed frame with the original one; moreover, by analysing the error accumulated by LSE along the iterations, we observed that it converges rapidly to zero after a few loops. This showed that our method is fast and effective at the same time, as we stated in introduction.
+
+Subsequently, we decided to stress our method with a harder test: instead of using an original frame and the one obtained by applying an initially known transformation to it, we considered two subsequent frames, containing lines extracted from two diverse poses of robot. In this case, LSE by itself is not able to retrieve an acceptable transformation to align the two frames; thus, it needs a new module to furnish it a good set of line correspondences at each iteration. \\
+Then, we designed a data association procedure that, on the basis of transformation calculated at last iteration, maps lines from one frame to another and, in the former, finds correspondences on the basis of a threefold criterion, based on normals' similarity, distance between midpoints and differences between slopes. \\
+With the introduction of such reinforcement, we were able to determine a good transformation that allows to align the two frames; using such transformation, our algorithm can perfectly compute the right associations between lines, as observed by visual inspection.
+
+Thus, judging our system based on LSE and data association as a whole, we can say that we designed a method that is non only fast and effective (in terms of obtained results and margin of error), but it is even robust and perfectly suitable for on-line operations, as we committed to do in introduction.
+
+Regarding possible future works, our representations of lines and all the work we have described so far can easily be extended to planes. \\
+Moreover, the scan registration system, formed by the LSE and data association blocks can be used for the so called \emph{graph SLAM}, which solves the SLAM problem by optimising a graph, whose nodes represent robot's poses or landmarks in the environment and whose edges describe either a transition from one pose to another one or an observation of a landmark from a giver pose. The functionalities of our system allow to perform a correct data association between the scans acquired at two different poses, recognising, thus, if a landmark was observed more that once, in order not to insert it repeatedly. 
 
 \listoffigures
 \listoftables
